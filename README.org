@@ -1,0 +1,3 @@
+* .Emacs.d repository
+
+for tracking changes to .emacs.d
