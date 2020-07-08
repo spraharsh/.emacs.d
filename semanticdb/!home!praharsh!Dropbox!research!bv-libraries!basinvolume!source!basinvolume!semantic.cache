@@ -1,0 +1,807 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("_BV_CHECK_OVERLAP_H" variable (:constant-flag t) nil [37 56])
+            ("cmath" include (:system-flag t) nil [58 74])
+            ("memory" include (:system-flag t) nil [75 92])
+            ("numeric" include (:system-flag t) nil [93 111])
+            ("stdexcept" include (:system-flag t) nil [112 132])
+            ("pele/array.h" include nil nil [134 157])
+            ("pele/distance.h" include nil nil [158 184])
+            ("mcpele/mc.h" include nil nil [186 208])
+            ("frozen_wrappers.h" include nil nil [210 238])
+            ("bv" type
+               (:members 
+                  ( ("CheckOverlap" type
+                       (:template 
+                          ( ("DIST_POL" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("protected" label nil (reparse-symbol classsubparts) [385 395])
+                            ("DIST_POL::_ndim" variable (:type "int") (reparse-symbol classsubparts) [429 445])
+                            ("m_hs_radii" variable (:type ("pele::Array" type
+                                 (:template-specifier 
+                                    ( ("double" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [450 481])
+                            ("m_nparticles" variable
+                               (:constant-flag t
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [486 512])
+                            ("m_dist" variable (:type ("std::shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("DIST_POL" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [517 550])
+                            ("public" label nil (reparse-symbol classsubparts) [551 558])
+                            ("CheckOverlap" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [563 589])
+                            ("CheckOverlap" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("hs_radii" variable (:type ("pele::Array" type
+                                         (:template-specifier 
+                                            ( ("double" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [608 637])
+                                    ("dist" variable (:type ("std::shared_ptr" type
+                                         (:template-specifier 
+                                            ( ("DIST_POL" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [638 669]))                                  
+                                :type ("CheckOverlap" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [595 1121])
+                            ("conf_test" function
+                               (:arguments 
+                                  ( ("trial_coords" variable
+                                       (:reference 1
+                                        :type ("pele::Array" type
+                                             (:template-specifier 
+                                                ( ("double" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1141 1175])
+                                    ("mc" variable
+                                       (:pointer 1
+                                        :type ("mcpele::MC" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1176 1192]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1126 2841]))                          
+                        :superclasses 
+                          ( ("mcpele::ConfTest" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [309 2844])
+                    ("CheckOverlapPeriodic" type
+                       (:template 
+                          ( ("size_t" type (:typevar "ndim") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2952 2959])
+                            ("CheckOverlapPeriodic" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("hs_radii" variable (:type ("pele::Array" type
+                                         (:template-specifier 
+                                            ( ("double" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [2985 3014])
+                                    ("boxvec" variable (:type ("pele::Array" type
+                                         (:template-specifier 
+                                            ( ("double" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [3015 3042]))                                  
+                                :type ("CheckOverlapPeriodic" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2964 3189]))                          
+                        :superclasses 
+                          ( ("CheckOverlap" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [2846 3192])
+                    ("CheckOverlapPeriodicFrozen" type
+                       (:template 
+                          ( ("size_t" type (:typevar "ndim") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [3311 3318])
+                            ("CheckOverlapPeriodicFrozen" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("hs_radii" variable (:type ("pele::Array" type
+                                         (:template-specifier 
+                                            ( ("double" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [3350 3379])
+                                    ("boxvec" variable (:type ("pele::Array" type
+                                         (:template-specifier 
+                                            ( ("double" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [3380 3407])
+                                    ("reference_coords" variable
+                                       (:reference 1
+                                        :type ("pele::Array" type
+                                             (:template-specifier 
+                                                ( ("double" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [3420 3458])
+                                    ("frozen_dof" variable
+                                       (:reference 1
+                                        :type ("pele::Array" type
+                                             (:template-specifier 
+                                                ( ("size_t" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [3459 3491]))                                  
+                                :type ("CheckOverlapPeriodicFrozen" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3323 3703]))                          
+                        :superclasses 
+                          ( ("ConfTestFrozenWrapper" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [3194 3706])
+                    ("CheckOverlapCartesian" type
+                       (:template 
+                          ( ("size_t" type (:typevar "ndim") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [3816 3823])
+                            ("CheckOverlapCartesian" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("hs_radii" variable (:type ("pele::Array" type
+                                         (:template-specifier 
+                                            ( ("double" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [3850 3879]))                                  
+                                :type ("CheckOverlapCartesian" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3828 4021]))                          
+                        :superclasses 
+                          ( ("CheckOverlap" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [3708 4024])
+                    ("CheckOverlapCartesianFrozen" type
+                       (:template 
+                          ( ("size_t" type (:typevar "ndim") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [4145 4152])
+                            ("CheckOverlapCartesianFrozen" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("hs_radii" variable (:type ("pele::Array" type
+                                         (:template-specifier 
+                                            ( ("double" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [4185 4214])
+                                    ("reference_coords" variable
+                                       (:reference 1
+                                        :type ("pele::Array" type
+                                             (:template-specifier 
+                                                ( ("double" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [4227 4265])
+                                    ("frozen_dof" variable
+                                       (:reference 1
+                                        :type ("pele::Array" type
+                                             (:template-specifier 
+                                                ( ("size_t" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [4266 4298]))                                  
+                                :type ("CheckOverlapCartesianFrozen" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4157 4504]))                          
+                        :superclasses 
+                          ( ("ConfTestFrozenWrapper" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [4026 4507])
+                    ("CheckOverlapLeesEdwards" type
+                       (:template 
+                          ( ("size_t" type (:typevar "ndim") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [4621 4628])
+                            ("CheckOverlapLeesEdwards" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("hs_radii" variable (:type ("pele::Array" type
+                                         (:template-specifier 
+                                            ( ("double" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [4657 4686])
+                                    ("boxvec" variable (:type ("pele::Array" type
+                                         (:template-specifier 
+                                            ( ("double" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [4687 4714])
+                                    ("shear" variable
+                                       (:constant-flag t
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [4715 4734]))                                  
+                                :type ("CheckOverlapLeesEdwards" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4633 4894]))                          
+                        :superclasses 
+                          ( ("CheckOverlap" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [4509 4897])
+                    ("CheckOverlapLeesEdwardsFrozen" type
+                       (:template 
+                          ( ("size_t" type (:typevar "ndim") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [5022 5029])
+                            ("CheckOverlapLeesEdwardsFrozen" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("hs_radii" variable (:type ("pele::Array" type
+                                         (:template-specifier 
+                                            ( ("double" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [5064 5093])
+                                    ("boxvec" variable (:type ("pele::Array" type
+                                         (:template-specifier 
+                                            ( ("double" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [5094 5121])
+                                    ("reference_coords" variable
+                                       (:reference 1
+                                        :type ("pele::Array" type
+                                             (:template-specifier 
+                                                ( ("double" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [5134 5172])
+                                    ("frozen_dof" variable
+                                       (:reference 1
+                                        :type ("pele::Array" type
+                                             (:template-specifier 
+                                                ( ("size_t" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [5173 5205])
+                                    ("shear" variable
+                                       (:constant-flag t
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [5206 5225]))                                  
+                                :type ("CheckOverlapLeesEdwardsFrozen" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5034 5450]))                          
+                        :superclasses 
+                          ( ("ConfTestFrozenWrapper" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [4899 5453]))                  
+                :type "namespace")
+                nil [240 5456]))          
+      :file "check_overlap.h"
+      :pointmax 5512
+      :fsize 5511
+      :lastmodtime '(24113 57487 583791 727000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_BV_CHECK_OVERLAP_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "frozen_wrappers.h"
+      :fsize 1315
+      :lastmodtime '(24105 56984 225432 378000))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("_BV_CHECK_OVERLAP_CELL_LISTS_H" variable (:constant-flag t) nil [48 78])
+            ("pele/cell_lists.h" include nil nil [80 108])
+            ("cell_lists_with_break_loop.h" include nil nil [110 149])
+            ("bv" type
+               (:members 
+                  ( ("OverlapAccumulator" type
+                       (:template 
+                          ( ("distance_policy" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("private" label nil (reparse-symbol classsubparts) [227 235])
+                            ("distance_policy::_ndim" variable (:type "int") (reparse-symbol classsubparts) [269 292])
+                            ("m_dist" variable (:type ("std::shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("distance_policy" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [297 337])
+                            ("m_coords" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("pele::Array" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [342 379])
+                            ("m_radii" variable
+                               (:constant-flag t
+                                :type ("pele::Array" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [384 418])
+                            ("m_legal" variable (:type "bool") (reparse-symbol classsubparts) [423 436])
+                            ("public" label nil (reparse-symbol classsubparts) [437 444])
+                            ("OverlapAccumulator" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("dist" variable
+                                       (:reference 1
+                                        :type ("std::shared_ptr" type
+                                             (:template-specifier 
+                                                ( ("distance_policy" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [468 508])
+                                    ("radii" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("pele::Array" type
+                                             (:template-specifier 
+                                                ( ("double" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [532 566]))                                  
+                                :type ("OverlapAccumulator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [449 647])
+                            ("reset_data" function
+                               (:arguments 
+                                  ( ("coords" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("pele::Array" type
+                                             (:template-specifier 
+                                                ( ("double" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [669 704]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [653 763])
+                            ("configuration_is_legal" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [769 836])
+                            ("get_squared_atom_distance" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("r1" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [875 899])
+                                    ("r2" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [900 924]))                                  
+                                :type "double")
+                                (reparse-symbol classsubparts) [842 1073])
+                            ("insert_atom_pair" function
+                               (:arguments 
+                                  ( ("atom_i" variable
+                                       (:constant-flag t
+                                        :type ("size_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1101 1121])
+                                    ("atom_j" variable
+                                       (:constant-flag t
+                                        :type ("size_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1122 1142])
+                                    ("isubdom" variable
+                                       (:constant-flag t
+                                        :type ("size_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1143 1164]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1079 1557]))                          )
+                        (reparse-symbol namespacesubparts) [167 1560])
+                    ("CellListCheckOverlap" type
+                       (:template 
+                          ( ("distance_policy" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("protected" label nil (reparse-symbol classsubparts) [1653 1663])
+                            ("distance_policy::_ndim" variable (:type "int") (reparse-symbol classsubparts) [1697 1720])
+                            ("m_dist" variable (:type ("std::shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("distance_policy" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1725 1765])
+                            ("m_cell_lists" variable (:type ("std::shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("pele::CellListsWithBreak" type (:template-specifier 
+                                        ( ("distance_policy" type nil nil nil))                                        ) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1770 1843])
+                            ("m_radii" variable
+                               (:constant-flag t
+                                :type ("pele::Array" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [1848 1882])
+                            ("m_overlap_acc" variable (:type ("OverlapAccumulator" type
+                                 (:template-specifier 
+                                    ( ("distance_policy" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1887 1937])
+                            ("m_specific" variable
+                               (:constant-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1942 1964])
+                            ("m_last_changed_atoms" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("long" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1969 2008])
+                            ("m_last_changed_coords" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("double" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2013 2055])
+                            ("merge_last_and_current_changes" function
+                               (:arguments 
+                                  ( ("changed_atoms" variable
+                                       (:reference 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("long" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [2097 2131])
+                                    ("changed_coords_old" variable
+                                       (:reference 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("double" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [2132 2173]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2061 2964])
+                            ("save_changes" function
+                               (:arguments 
+                                  ( ("trial_coords" variable
+                                       (:reference 1
+                                        :type ("pele::Array" type
+                                             (:template-specifier 
+                                                ( ("double" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [2988 3023])
+                                    ("mc" variable
+                                       (:pointer 1
+                                        :type ("mcpele::MC" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3024 3040]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2970 3545])
+                            ("public" label nil (reparse-symbol classsubparts) [3547 3554])
+                            ("CellListCheckOverlap" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [3559 3593])
+                            ("CellListCheckOverlap" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("hs_radii" variable
+                                       (:reference 1
+                                        :type ("pele::Array" type
+                                             (:template-specifier 
+                                                ( ("double" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [3620 3651])
+                                    ("dist" variable (:type ("std::shared_ptr" type
+                                         (:template-specifier 
+                                            ( ("distance_policy" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [3652 3690])
+                                    ("cell_lists" variable (:type ("std::shared_ptr" type
+                                         (:template-specifier 
+                                            ( ("pele::CellListsWithBreak" type (:template-specifier 
+                                                ( ("distance_policy" type nil nil nil))                                                ) nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [3691 3762])
+                                    ("specific" variable (:type "bool") (reparse-symbol arg-sub-list) [3763 3777]))                                  
+                                :type ("CellListCheckOverlap" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3599 4496])
+                            ("conf_test" function
+                               (:arguments 
+                                  ( ("trial_coords" variable
+                                       (:reference 1
+                                        :type ("pele::Array" type
+                                             (:template-specifier 
+                                                ( ("double" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [4517 4552])
+                                    ("mc" variable
+                                       (:pointer 1
+                                        :type ("mcpele::MC" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4553 4569]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [4502 6060]))                          
+                        :superclasses 
+                          ( ("mcpele::ConfTest" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1562 6063])
+                    ("CheckOverlapPeriodicCellLists" type
+                       (:template 
+                          ( ("size_t" type (:typevar "ndim") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [6188 6195])
+                            ("CheckOverlapPeriodicCellLists" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("hs_radii" variable (:type ("pele::Array" type
+                                         (:template-specifier 
+                                            ( ("double" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [6230 6259])
+                                    ("boxvec" variable (:type ("pele::Array" type
+                                         (:template-specifier 
+                                            ( ("double" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [6260 6287])
+                                    ("specific" variable (:type "bool") (reparse-symbol arg-sub-list) [6288 6302])
+                                    ("ncellx_scale" variable
+                                       (:default-value "1.0"
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [6303 6326]))                                  
+                                :type ("CheckOverlapPeriodicCellLists" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6200 6692]))                          
+                        :superclasses 
+                          ( ("CellListCheckOverlap" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [6065 6695])
+                    ("CheckOverlapPeriodicCellListsFrozen" type
+                       (:template 
+                          ( ("size_t" type (:typevar "ndim") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [6832 6839])
+                            ("CheckOverlapPeriodicCellListsFrozen" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("reference_coords" variable (:type ("pele::Array" type
+                                         (:template-specifier 
+                                            ( ("double" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [6880 6917])
+                                    ("frozen_dof" variable
+                                       (:reference 1
+                                        :type ("pele::Array" type
+                                             (:template-specifier 
+                                                ( ("size_t" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [6930 6962])
+                                    ("hs_radii" variable (:type ("pele::Array" type
+                                         (:template-specifier 
+                                            ( ("double" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [6963 6992])
+                                    ("boxvec" variable (:type ("pele::Array" type
+                                         (:template-specifier 
+                                            ( ("double" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [7005 7032])
+                                    ("specific" variable (:type "bool") (reparse-symbol arg-sub-list) [7033 7047])
+                                    ("ncellx_scale" variable
+                                       (:default-value "1.0"
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [7048 7071]))                                  
+                                :type ("CheckOverlapPeriodicCellListsFrozen" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6844 7359]))                          
+                        :superclasses 
+                          ( ("ConfTestFrozenWrapper" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [6697 7362])
+                    ("CheckOverlapCartesianCellLists" type
+                       (:template 
+                          ( ("size_t" type (:typevar "ndim") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [7488 7495])
+                            ("CheckOverlapCartesianCellLists" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("hs_radii" variable (:type ("pele::Array" type
+                                         (:template-specifier 
+                                            ( ("double" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [7531 7560])
+                                    ("boxvec" variable (:type ("pele::Array" type
+                                         (:template-specifier 
+                                            ( ("double" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [7561 7588])
+                                    ("specific" variable (:type "bool") (reparse-symbol arg-sub-list) [7589 7603])
+                                    ("ncellx_scale" variable
+                                       (:default-value "1.0"
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [7604 7627]))                                  
+                                :type ("CheckOverlapCartesianCellLists" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7500 7973]))                          
+                        :superclasses 
+                          ( ("CellListCheckOverlap" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [7364 7976])
+                    ("CheckOverlapCartesianCellListsFrozen" type
+                       (:template 
+                          ( ("size_t" type (:typevar "ndim") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [8115 8122])
+                            ("CheckOverlapCartesianCellListsFrozen" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("reference_coords" variable (:type ("pele::Array" type
+                                         (:template-specifier 
+                                            ( ("double" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [8164 8201])
+                                    ("frozen_dof" variable
+                                       (:reference 1
+                                        :type ("pele::Array" type
+                                             (:template-specifier 
+                                                ( ("size_t" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [8214 8246])
+                                    ("hs_radii" variable (:type ("pele::Array" type
+                                         (:template-specifier 
+                                            ( ("double" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [8247 8276])
+                                    ("boxvec" variable (:type ("pele::Array" type
+                                         (:template-specifier 
+                                            ( ("double" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [8289 8316])
+                                    ("specific" variable (:type "bool") (reparse-symbol arg-sub-list) [8317 8331])
+                                    ("ncellx_scale" variable
+                                       (:default-value "1.0"
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [8332 8355]))                                  
+                                :type ("CheckOverlapCartesianCellListsFrozen" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8127 8645]))                          
+                        :superclasses 
+                          ( ("ConfTestFrozenWrapper" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [7978 8648])
+                    ("CheckOverlapLeesEdwardsCellLists" type
+                       (:template 
+                          ( ("size_t" type (:typevar "ndim") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [8779 8786])
+                            ("CheckOverlapLeesEdwardsCellLists" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("hs_radii" variable (:type ("pele::Array" type
+                                         (:template-specifier 
+                                            ( ("double" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [8824 8853])
+                                    ("boxvec" variable (:type ("pele::Array" type
+                                         (:template-specifier 
+                                            ( ("double" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [8854 8881])
+                                    ("shear" variable
+                                       (:constant-flag t
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [8882 8901])
+                                    ("specific" variable (:type "bool") (reparse-symbol arg-sub-list) [8902 8916])
+                                    ("ncellx_scale" variable
+                                       (:default-value "1.0"
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [8917 8940]))                                  
+                                :type ("CheckOverlapLeesEdwardsCellLists" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [8791 9320]))                          
+                        :superclasses 
+                          ( ("CellListCheckOverlap" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [8650 9323])
+                    ("CheckOverlapLeesEdwardsCellListsFrozen" type
+                       (:template 
+                          ( ("size_t" type (:typevar "ndim") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [9466 9473])
+                            ("CheckOverlapLeesEdwardsCellListsFrozen" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("reference_coords" variable (:type ("pele::Array" type
+                                         (:template-specifier 
+                                            ( ("double" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [9517 9554])
+                                    ("frozen_dof" variable
+                                       (:reference 1
+                                        :type ("pele::Array" type
+                                             (:template-specifier 
+                                                ( ("size_t" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [9567 9599])
+                                    ("hs_radii" variable (:type ("pele::Array" type
+                                         (:template-specifier 
+                                            ( ("double" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [9600 9629])
+                                    ("boxvec" variable (:type ("pele::Array" type
+                                         (:template-specifier 
+                                            ( ("double" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [9642 9669])
+                                    ("shear" variable
+                                       (:constant-flag t
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [9670 9689])
+                                    ("specific" variable (:type "bool") (reparse-symbol arg-sub-list) [9690 9704])
+                                    ("ncellx_scale" variable
+                                       (:default-value "1.0"
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [9705 9728]))                                  
+                                :type ("CheckOverlapLeesEdwardsCellListsFrozen" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9478 10029]))                          
+                        :superclasses 
+                          ( ("ConfTestFrozenWrapper" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [9325 10032]))                  
+                :type "namespace")
+                nil [151 10035]))          
+      :file "check_overlap_cell_lists.h"
+      :pointmax 10102
+      :fsize 10101
+      :lastmodtime '(24105 57026 647305 421000)
+      :unmatched-syntax '((punctuation 3593 . 3594) (punctuation 1695 . 1696) (symbol 1688 . 1694) (symbol 1681 . 1687) (STATIC 1674 . 1680) (CONST 1668 . 1673) (punctuation 267 . 268) (symbol 260 . 266) (symbol 253 . 259) (STATIC 246 . 252) (CONST 240 . 245))
+      :lexical-table 
+        '(("_BV_CHECK_OVERLAP_CELL_LISTS_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "cell_lists_with_break_loop.h"
+      :fsize 1016
+      :lastmodtime '(24105 57026 647305 421000)))
+  :file "!home!praharsh!Dropbox!research!bv-libraries!basinvolume!source!basinvolume!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

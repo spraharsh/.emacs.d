@@ -1,0 +1,38 @@
+;; -*- emacs-lisp -*- <20/01/21 14:42:56 /home/praharsh/.emacs.d/tramp>
+;; Tramp connection history.  Don't change this file.
+;; You can delete it, forcing Tramp to reapply the checks.
+
+(((tramp-file-name "ssh" "surya031" nil "login.msi.umn.edu" nil nil nil)
+  ("uname" "Linux 2.6.32-754.14.2.el6.x86_64")
+  ("locale" "LC_ALL=en_US.utf8")
+  ("test" "test")
+  ("remote-path"
+   ("/bin" "/usr/bin" "/sbin" "/usr/sbin" "/usr/local/bin" "/usr/local/sbin"))
+  ("remote-shell" "/bin/sh")
+  ("~" "/home/burnellf/surya031")
+  ("file-exists" "test -e")
+  ("stat" "env QUOTING_STYLE=locale \\stat")
+  ("id" "/usr/bin/id")
+  ("gid-integer" 10685)
+  ("gid-string" "burnellf"))
+ ((tramp-file-name "sshx" nil nil "msi" nil nil nil)
+  ("uname" "Linux 2.6.32-754.14.2.el6.x86_64")
+  ("locale" "LC_ALL=en_US.utf8")
+  ("test" "test")
+  ("remote-path"
+   ("/bin" "/usr/bin" "/sbin" "/usr/sbin" "/usr/local/bin" "/usr/local/sbin"))
+  ("remote-shell" "/bin/sh")
+  ("~" "/home/burnellf/surya031")
+  ("file-exists" "test -e")
+  ("stat" "env QUOTING_STYLE=locale \\stat")
+  ("id" "/usr/bin/id")
+  ("gid-integer" 10685)
+  ("gid-string" "burnellf")
+  ("case-insensitive" nil)
+  ("readlink" "\\readlink")
+  ("perl-file-spec" t)
+  ("perl-cwd-realpath" t)
+  ("perl" "\\perl")
+  ("git" "\\git"))
+ ((tramp-file-name "ssh" nil nil "msi" nil nil nil)
+  nil))

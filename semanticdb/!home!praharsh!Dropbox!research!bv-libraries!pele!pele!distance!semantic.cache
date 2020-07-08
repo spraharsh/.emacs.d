@@ -1,0 +1,22 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+    (semanticdb-project-database-file "semanticdb-project-database-file"
+      :tables
+      (list
+        (semanticdb-table "semanticdb-table"
+          :major-mode c++-mode
+          :tags 
+        '( ("PY_SSIZE_T_CLEAN" variable (:constant-flag t) nil [44 60])
+            ("Python.h" include nil nil [61 80]))          
+          :file "_put_in_box_cpp.cxx"
+          :pointmax 431453
+          :fsize 431452
+          :lastmodtime '(24112 43865 825461 576000)
+          :unmatched-syntax '((punctuation 357 . 358) (punctuation 356 . 357) (number 353 . 356) (symbol 346 . 352) (symbol 343 . 345) (punctuation 341 . 342) (number 338 . 341) (symbol 331 . 337) (symbol 322 . 330) (symbol 315 . 321) (symbol 309 . 314) (punctuation 308 . 309) (punctuation 203 . 204) (symbol 197 . 203) (symbol 194 . 196) (symbol 186 . 193) (symbol 174 . 185) (symbol 166 . 173) (symbol 159 . 165) (punctuation 157 . 158) (symbol 147 . 157) (symbol 145 . 146) (symbol 137 . 144) (symbol 134 . 136) (symbol 127 . 133) (symbol 119 . 126) (symbol 112 . 118) (symbol 106 . 111) (punctuation 105 . 106))
+          :lexical-table 
+        '(("PY_SSIZE_T_CLEAN")
+          )
+))
+      :file "!home!praharsh!Dropbox!research!bv-libraries!pele!pele!distance!semantic.cache"
+      :semantic-tag-version "2.0"
+      :semanticdb-version "2.2")

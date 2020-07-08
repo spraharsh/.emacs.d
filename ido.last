@@ -1,0 +1,343 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/praharsh/Dropbox/classes/umn-fall-2018/" . "research-sem/")
+ ("/10.42.75.110:/home/praharsh/praharsh-exactdiag/" . "sykdiag/")
+ ("/10.42.75.110:/home/praharsh/" . "praharsh-exactdiag/")
+ ("/10.42.75.110:/home/" . "praharsh/")
+ ("/10.42.75.110:/" . "home/")
+ ("/home/praharsh/Dropbox/workexactdiag/workfolder/" . "generalhamcode/")
+ ("/home/praharsh/Dropbox/applications/" . "SOPs/")
+ ("/home/praharsh/Dropbox/applications/SOPs/" . "oxford/")
+ ("/tyrone-cluster:/home/phd/13/chpkaus/" . "workfolder/")
+ ("/tyrone-cluster:/home/phd/13/" . "chpkaus/")
+ ("/tyrone-cluster:/home/phd/" . "13/")
+ ("/tyrone-cluster:/home/" . "phd/")
+ ("/tyrone-cluster:/" . "home/")
+ ("/home/praharsh/git-work-reps/test4/" . "pycftboot/")
+ ("/home/praharsh/Dropbox/workfolder/" . ".git/")
+ ("/home/praharsh/.emacs.d/elpa/" . "spaceline-all-the-icons-20170719.131/")
+ ("/home/praharsh/notes/research-notes/workiitk2017/" . "d20170815/")
+ ("/home/praharsh/.emacs.d/snippets/" . "latex-mode/")
+ ("/home/praharsh/notes/research-notes/" . "workiitk2017/")
+ ("/home/praharsh/notes/" . "research-notes/")
+ ("/home/praharsh/git-work-reps/spraharsh.github.io/" . "_posts/")
+ ("/scp:chep-server:/home/praharsh/tester/spectrum2d/" . "work-env/")
+ ("/scp:chep-server:/home/praharsh/tester/" . "spectrum2d/")
+ ("/scp:chep-server:/home/praharsh/" . "tester/")
+ ("/scp:chep-server:/home/praharsh/tester/mpiparallel/" . "mpibootstrap/")
+ ("/home/praharsh/git-work-reps/" . "test4/")
+ ("/home/praharsh/Downloads/" . "auto/")
+ ("/home/praharsh/public_html/" . "img/")
+ ("/home/praharsh/.emacs.d/plugins/" . "yasnippet/")
+ ("/home/praharsh/.emacs.d/" . "elpa/")
+ ("/scp:praharsh@10.42.75.247:/home/praharsh/pyth/envs/" . "py3/")
+ ("/scp:praharsh@10.42.75.247:/home/praharsh/pyth/" . "envs/")
+ ("/home/praharsh/Documents/" . "journal/")
+ ("/praharsh@10.42.75.247:bootstrap-workfile/d20170605/" . "pycftboot/")
+ ("/praharsh@10.42.75.247:bootstrap-workfile/" . "d20170605/")
+ ("/praharsh@10.42.75.247:" . "bootstrap-workfile/")
+ ("/scp:praharsh@10.42.75.247:/home/praharsh/bootstrap-workfile/d20170605/" . "pycftboot/")
+ ("/scp:praharsh@10.42.75.247:/home/praharsh/bootstrap-workfile/" . "d20170605/")
+ ("/scp:praharsh@10.42.75.247:/home/praharsh/" . "pyth/")
+ ("/home/praharsh/summerwork/" . "pycft2/")
+ ("/home/praharsh/miniconda2/envs/" . "basemacs/")
+ ("/home/praharsh/miniconda2/" . "envs/")
+ ("/home/praharsh/py2/envs/" . "bootstrap/")
+ ("/home/praharsh/py2/" . "envs/")
+ ("/home/praharsh/Documents/journal/" . "images/")
+ ("/home/praharsh/magnet/present/" . "magnetpresent/")
+ ("/home/praharsh/magnet/" . "present/")
+ ("/home/praharsh/backup/coursework/particle/homework/" . "hw1/")
+ ("/home/praharsh/backup/coursework/particle/" . "homework/")
+ ("/home/praharsh/backup/coursework/" . "particle/")
+ ("/home/praharsh/backup/" . "coursework/")
+ ("/home/praharsh/mp2/" . "thing/")
+ ("/home/praharsh/SOPs/inb/December15th/" . "Maryland/")
+ ("/home/praharsh/SOPs/inb/" . "December15th/")
+ ("/home/praharsh/SOPs/December15th/Chicago/" . "auto/")
+ ("/home/praharsh/SOPs/December15th/" . "Chicago/")
+ ("/home/praharsh/SOPs/" . "December15th/")
+ ("/home/praharsh/reports/" . "endsempresent/")
+ ("/" . "home/")
+ ("/home/praharsh/yasnippets-latex/" . "snippets/")
+ ("/home/praharsh/readproj/" . "operator product expansion/")
+ ("/home/" . "praharsh/")
+ ("/home/praharsh/mp/" . "d20161204/")
+ ("/home/praharsh/" . "miniconda3/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/praharsh/Dropbox/"
+ "/10.42.75.110:/home/praharsh/praharsh-exactdiag/"
+ "/home/praharsh/"
+ "/home/praharsh/Dropbox/workexactdiag/workfolder/generalhamcode/"
+ "/home/praharsh/Desktop/"
+ "/home/praharsh/Dropbox/workexactdiag/workfolder/"
+ "/home/praharsh/Dropbox/workexactdiag/workfolder/body2ent/"
+ "/home/praharsh/Dropbox/workexactdiag/workfolder/SYKentanglement/"
+ "/home/praharsh/Dropbox/workexactdiag/workfolder/2body/"
+ "/home/praharsh/Dropbox/workexactdiag/workfolder/SYKmodelcode/"
+ "/home/praharsh/Dropbox/notes/KAWS2018/alday/"
+ "/home/praharsh/Dropbox/applications/SOPs/oxford/"
+ "/home/praharsh/Dropbox/applications/SOPs/stonybrook/"
+ "/home/praharsh/Dropbox/applications/SOPs/boston/"
+ "/home/praharsh/Dropbox/applications/"
+ "/home/praharsh/Dropbox/applications/SOPs/minnesota/"
+ "/home/praharsh/Dropbox/applications/SOPs/hopkins/"
+ "/tyrone-cluster:/home/phd/13/chpkaus/workfolder/"
+ "/scp:tyrone-cluster:/home/phd/13/chpkaus/pycftboot/"
+ "/home/praharsh/git-work-reps/test4/pycftboot/"
+ "/home/praharsh/Dropbox/notes/cftnotes/"
+ "/home/praharsh/Dropbox/workfolder/.git/"
+ "/home/praharsh/Dropbox/Summerwork/opemaxlinear/"
+ "/home/praharsh/Dropbox/charactersheets/iitk/"
+ "/home/praharsh/Mastersproject2/workfolder/"
+ "/home/praharsh/Downloads/"
+ "/home/praharsh/.emacs.d/elpa/spaceline-all-the-icons-20170719.131/"
+ "/home/praharsh/.emacs.d/elpa/"
+ "/home/praharsh/.emacs.d/snippets/latex-mode/"
+ "/home/praharsh/notes/research-notes/workiitk2017/d20170815/"
+ "/home/praharsh/.emacs.d/elpa/graphene-20170810.640/"
+ "/home/praharsh/scrath/"
+ "/usr/share/texlive/texmf-dist/tex/latex/fontspec/"
+ "/home/praharsh/notes/research-notes/workiitk2017/d20170806/"
+ "/home/praharsh/git-work-reps/spraharsh.github.io/_posts/"
+ "/home/praharsh/website/"
+ "/home/praharsh/haskelllearn/"
+ "/home/praharsh/git-work-reps/spraharsh.github.io/"
+ "/home/praharsh/.emacs.d/elpa/graphene-20161120.938/"
+ "/home/praharsh/notes/research-notes/bootstrap/"
+ "/scp:chep-server:/home/praharsh/tester/spectrum2d/work-env/"
+ "/scp:chep-server:/home/praharsh/tester/pycft2/"
+ "/home/praharsh/haskelllearn/exercises/chapter1/"
+ "/scp:chep-server:/home/praharsh/tester/pycftboot/"
+ "/home/praharsh/summerwork/pycft2/"
+ "/scp:chep-server:/home/praharsh/tester/mpiparallel/mpibootstrap/"
+ "/home/praharsh/git-work-reps/spraharsh.github.io/_data/"
+ "/home/praharsh/.emacs.d/lisp/"
+ "/home/praharsh/summerwork/workfolder/d20170628/"
+ "/home/praharsh/Documents/journal/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "init2.el"
+ "greensfunccode.py"
+ ".emacs"
+ ".conkyrc2"
+ "plotentropy.py"
+ "genentropy.py"
+ "hubbardmodel.py"
+ "main.py"
+ "mainhf.py"
+ "body2plot.py"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/praharsh/.emacs.d/elpa/graphene-20180529.1112/" (23440 28725 171997 932000) "graphene-env.el" "graphene-helper-functions.elc" "graphene-helper-functions.el" "graphene-smartparens-config.elc" "graphene-windows-defaults.elc" "graphene-projects.elc" "graphene.elc" "graphene.el" "graphene-projects.el" "graphene-linux-defaults.elc" "graphene-look.el" "graphene-other-defaults.el" "graphene-editing.elc" "graphene-pkg.el" "graphene-other-defaults.elc" "graphene-linux-defaults.el" "graphene-autoloads.el" "graphene-osx-defaults.el" "graphene-env.elc" "../" "graphene-look.elc" "graphene-editing.el" "graphene-osx-defaults.elc" "graphene-smartparens-config.el" "graphene-windows-defaults.el" "./")
+
+ ("/home/praharsh/" (23569 17886 484668 167000) "Desktop/" "Videos/" ".bashrc" ".dropbox-dist/" "Downloads/" "thing/" "2018-11-04-194440_1920x1080_scrot.png" ".xscreensaver" ".thunderbird/" "2018-11-04-194800_1920x1080_scrot.png" ".Mathematica/" ".dmrc" ".nv/" ".bash_history" "2018-11-04-205136_1920x1080_scrot.png" ".gnupg/" ".Wolfram/" "2018-11-19-193610_1920x1080_scrot.png" ".t-engine/" "2018-11-04-202520_1920x1080_scrot.png" ".xsession-errors.old" "Documents/" ".dbus/" "snap/" ".xsession-errors" ".ICEauthority" "2018-11-04-204545_1920x1080_scrot.png" ".mozilla/" ".bash_logout" "linux_signing_key.pub" ".Xauthority" ".Xdefaults" ".dropbox/" "Mathematica_11.3.0_LINUX.sh" "auto/" "2018-11-04-224213_1920x1080_scrot.png" ".wget-hsts" "2018-11-04-214008_1920x1080_scrot.png" ".elfeed/" ".local/" "Dropbox/" ".gvfs/" "Pictures/" "example/" "2018-11-04-233849_1920x1080_scrot.png" ".sudo_as_admin_successful" ".thumbnails/" ".emacs.d/" "../" ".xmonad/" "2018-11-04-204534_1920x1080_scrot.png" "2018-11-04-230208_1920x1080_scrot.png" "sol1.tex" ".config/" "Music/" ".oracle_jre_usage/" ".gnome/" ".gphoto/" "Templates/" ".cabal/" ".profile" ".purple/" ".cache/" ".ssr/" ".pki/" ".viminfo" "print.pdf" "decay_calc.pdf" ".emacs" "2018-11-20-005633_1920x1080_scrot.png" "2018-11-19-193621_1920x1080_scrot.png" "./")
+
+ ("/home/praharsh/Dropbox/classes/umn-fall-2018/research-sem/" (23562 63811 786542 998000) "victoria.tex" "vlad.org" "mans.tex" "mans.org" "victoria.org" "mans.pdf" "auto/" "zudov.tex" "greven.pdf" "kewang.org" "catell.org" "catell.tex" "patrickelly.tex" "../" "crowell.org" "zudov.pdf" ".#kewang.org" "patrickelly.org" "patrickelly.pdf" "alekseycherman.pdf" "catell.pdf" "alekseycherman.org" "greven.tex" "vlad.tex" "victoria.pdf" "vlad.pdf" "./" "greven.org" "zudov.org" "alekseycherman.tex")
+
+ ("/home/praharsh/Dropbox/classes/umn-fall-2018/stat-therm/notes2/" (23562 46944 580030 462000) "prv_notes2.log" "cg.png" "func1.png" "notes2.tex" "auto/" "_region_.prv/" "func2.png" "_region_.tex" "RG.png" "notes2.log" "notes2.aux" ".#notes2.tex" "../" "draw.png" "_region_.log" "notes2.pdf" "prv_notes2.fmt" "./" "notes2.synctex.gz")
+
+ ("/home/praharsh/Dropbox/classes/umn-fall-2018/stat-therm/homework/HW_10/" (23553 25363 963703 247000) "HW_10.aux" ".#HW_10.tex" "prv_HW_10.log" "auto/" "_region_.prv/" "prv_HW_10.fmt" "HW_10.log" "_region_.tex" "../" "HW_10.synctex.gz" "HW_10.tex" "_region_.log" "./" "HW_10.pdf")
+
+ ("/home/praharsh/Dropbox/classes/umn-fall-2018/classical-mech/homework/hw_7/" (23515 65134 876839 762000) "hw_7.pdf" "hw_7.aux" "prv_hw_7.log" "prv_hw_7.fmt" "hw_7.tex" "auto/" "_region_.prv/" "hw_7.log" "_region_.tex" "../" "_region_.log" "hw_7.synctex.gz" "./")
+
+ ("/home/praharsh/Dropbox/classes/umn-fall-2018/" (23445 58278 796835 725000) "homeworktemplate.tex" "TA-intro-phys/" "stat-therm/" "auto/" "classical-mech/" "quantum-mech/" "bestpractteaching/" "../" "research-sem/" "./")
+
+ ("/home/praharsh/Dropbox/classes/umn-fall-2018/stat-therm/" (23447 52680 841728 62000) "homework/" "notes/" "schwabl.pdf" "../" "./")
+
+ ("/home/praharsh/Dropbox/classes/umn-fall-2018/stat-therm/notes/" (23498 3627 327346 935000) "prv_notes.log" "prv_notes.fmt" "notes.tex" "auto/" "_region_.prv/" "notes.aux" ".#notes.tex" "_region_.tex" "../" "notes.pdf" "_region_.log" "notes.synctex.gz" "notes.log" "./")
+
+ ("/home/praharsh/Dropbox/classes/umn-fall-2018/classical-mech/homework/hw_2/" (23460 35883 628575 575000) "prv_hw_2.log" "hw_2.synctex.gz" "hw_2.tex" "auto/" "_region_.prv/" "hw_2.pdf" "hw_2.aux" "_region_.tex" "hw_2.log" "../" "_region_.log" "./")
+
+ ("/home/praharsh/.emacs.d/snippets/latex-mode/" (23459 8385 120826 159000) "it.yasnippet" "fdv.yasnippet" "table.yasnippet" "itd.yasnippet" "bracket1.yasnippet" "verb.yasnippet" "COPYING" "matrix.yasnippet" "frame.yasnippet" "subfig.yasnippet" "bold.yasnippet" "mathbold.yasnippet" "semicolon.yasnippet" "block.yasnippet" "vec3d.yasnippet" "quadspace.yasnippet" "enum.yasnippet" "big.yasnippet" "doc.yasnippet" "modd.yasnippet" "em.yasnippet" "use.yasnippet" "homework.yasnippet" "alignstar.yasnippet" "install.sh" "graphics.yasnippet" "eqs.yasnippet" "case.yasnippet" "equaltoalign.yasnippet" "chastar.yasnippet" "partial.yasnippet" ".gitignore" "align.yasnippet" "secstar.yasnippet" "bracket2.yasnippet" "label.yasnippet" "par.yasnippet" "squarebrack.yasnippet" "sec.yasnippet" "item.yasnippet" "circ.yasnippet" "braketq.yasnippet" "cite.yasnippet" "powerup.yasnippet" "array.yasnippet" "cha.yasnippet" "lim.yasnippet" "vec.yasnippet" "pdv.yasnippet" "README" "braket3.yasnippet" "bigop.yasnippet" "hattt.yasnippet" "int.yasnippet" ".yas-ignore-filenames-as-triggers" "begin.yasnippet" "tt.yasnippet" "sum.yasnippet" "frac.yasnippet" "newline.yasnippet" "letter.yasnippet" "ssub.yasnippet" ".yas-parents" "bib.yasnippet" "cos.yasnippet" "mel.yasnippet" "minipage.yasnippet" "article.yasnippet" "derivative.yasnippet" "beamer.yasnippet" "gls.yasnippet" "../" "substar.yasnippet" "overline.yasnippet" "coprod.yasnippet" "sub.yasnippet" "ref.yasnippet" "ssubstar.yasnippet" "desc.yasnippet" ".yas-make-groups" "href.yasnippet" "vertline.yasnippet" "mathbb.yasnippet" "text.yasnippet" "prod.yasnippet" "mathcal" "ket.yasnippet" ".git/" "binom.yasnippet" "eq.yasnippet" "dyad1.yasnippet" "bra.yasnippet" "expectationvalue.yasnippet" "sc.yasnippet" "dotp.yasnippet" "dx.yasnippet" "math.yasnippet" "./" "fig.yasnippet" "url.yasnippet" "abstract.yasnippet" "powerdown.yasnippet")
+
+ ("/home/praharsh/miniconda3/" (23351 56344 743306 153000) "mkspecs/" "plugins/" "LICENSE.txt" "include/" "ssl/" "lib/" "conda-meta/" "x86_64-conda_cos6-linux-gnu/" "../" "translations/" "pkgs/" "compiler_compat/" "./" "envs/" "qml/" "bin/" "resources/" "share/" "phrasebooks/" "doc/" "libexec/" "var/" "etc/")
+
+ ("/home/praharsh/Dropbox/" (23355 43038 492525 85000) "scratch.org" "funxkcd/" "workfolder/" ".ipynb_checkpoints/" "figure_n1.png" "Assignment-task 2.ipynb" "fonts/" "SF-Mono-Font/" "todogo.org" "biblio.bib" "haskellearn/" "kwantester (1).ipynb" "Test code 0D .ipynb" "init2.el" ".dropbox.cache/" ".emacs.d/" "sessionscompleted.org" "graphene maker-Copy1.ipynb" "emacstuff/" "f4cg.nfo" "Tester.ipynb" "applications/" "Summerwork/" "todo.org_archive" "emacsbackup/" "charactersheets/" "Camera Uploads/" "referencauctex.tex" "pictures/" "Getting Started with Orgzly.org" "assignmentstopocm/" "../" "Apps/" "e0_25.png" "todo.html" "Backup_2018-05-22_17-21-14.pctb" "resume/" "auto/" "./" "referencauctex.pdf" "e025omeg10.png" "daydreams.org" "notes/" "foo.el" "bulk transition.ipynb" "music/" "week3assignment.ipynb" "Berry-Phase-Copy1.ipynb" "journal/" "referencauctex.synctex.gz" "stuffilike.org" "workexactdiag/" ".dropbox" "Assignment-task 2(1) (2).ipynb" "figure_1-5.png" "todo/" "humor/" "edge-apparent transitions.ipynb" "daydreams.org_archive" "mails/" "Workflow.jpeg" "file_id.diz" "Assignment-task 2(1).ipynb" "todo.org" "Getting Started.pdf" "assignmentw2(1).ipynb" ".#todogo.org" "currivita (1)/" "books/" "Phase transition without edge.ipynb" "cftbiblio.bib" "currivitae.pdf" "usvisa/" "research-notes/" "referencauctex.log" "pcbackups/" "scripts/" "research/" "0d.ipynb" "note.org" "Debugger.ipynb")
+
+ ("/home/praharsh/Dropbox/workexactdiag/workfolder/generalhamcode/" (23359 41360 413604 864000) "ealltempvsentropyphs26.npy" "histogramfit.py" "eallNvsententropyhf8.npy" "eallNvsententropy8.npy" "sykext.py" "__pycache__/" "ealltempvsentropy212.npy" "plotnew.py" "ealltempvsentropy26.npy" "eigenvaluehistogram.py" "../" ".#sykext.py" ".git/" "./" "ealltempvsentropyphs28.npy" "tempvsentropy6_8_10_12_.pdf" "fermioned.py" "ealltempvsentropyphs210.npy" "ealltempvsentropy28.npy" "scratch.py" "eigvals50.npy" "__init__.py" "syk.py" "plotentropy.py" "doc/" "twobodymatches.py" "ealltempvsentropy210.npy" "genentropy.py" "ententropy.py")
+
+ ("/home/praharsh/local-python/" (23351 54607 230410 586000) "mkspecs/" "plugins/" "LICENSE.txt" "include/" "ssl/" "lib/" "conda-meta/" "x86_64-conda_cos6-linux-gnu/" "../" "translations/" "pkgs/" "compiler_compat/" "./" "envs/" "qml/" "bin/" "resources/" "share/" "phrasebooks/" "doc/" "libexec/" "var/" "etc/")
+
+ ("/home/praharsh/Dropbox/workexactdiag/" (23345 9319 770026 0) "workfolder/" "ententropynewhf.png" "subirentanglementresults.csv" "ententropynewpng.png" "entropyexact.png" "Figure_1-w1.png" "__pycache__/" "Figure_1-1.png" "../" "./" "1603.05246.pdf.png" "QGAN.py" "results/" "entropycalcexactdiag.png" "Figure_1-imp.png" "1603.05246.svg" "greensfuncsubir.csv" "1101.3281.pdf" "sumilan.pdf" "1603.05246.pdf")
+
+ ("/home/praharsh/Dropbox/workexactdiag/workfolder/" (23345 9319 765365 0) "SYKmodel/" "subirsykent8.csv" "SYKentanglement/" "level2.py" "greensfunc/" ".#level2.py" "Figure_1-2.png" "../" "site2heisenberg.py" "subirsyk8.csv" "SYKplan/" "subirsyk12.csv" "2body/" "./" "heisenberg_flymake.py" "body2ent/" "SYKmodelcode/" "hubbardmodel.py" "generalhamcode/" "plotcompare2b4b.py" "documentation/" "heisenbergmag.py" "1603.05246.pdf" "SYKgeneralhamdoc/" "heisenberg.py")
+
+ ("/home/" (23121 24501 355655 120000) "../" "praharsh/" "./")
+
+ ("/home/praharsh/Dropbox/workexactdiag/workfolder/greensfunc/" (23322 27249 59161 806000) ".#greensfunccode.py" "__pycache__/" "greensfunccode.py" "../" "main.py" "./")
+
+ ("/home/praharsh/.emacs.d/elpa/yasnippet-snippets-20180503.657/snippets/python-mode/" (23298 55903 428449 310000) "np" "pl" "not_impl" "method_docstring" "utf8" "from" "with" "ife" "metaclass" "str" "embed" "eq" "init" "celery_pdb" "assertNotEqual" "method" "setup" "__new__" "ipdbdebug" "self" "iter" "unicode_literals" "if" "bang" "main" "parser" "init_docstring" "repr" "arg_positional" "assertRaises.with" "assertNotIn" "size" "ifmain" "try" "assert" "assertTrue" ".yas-setup.elc" "assertRaises" "assertFalse" "tryelse" "prop" "trace" "with_statement" "function" "django_test_class" ".yas-parents" "function_docstring_numpy" "script" ".yas-setup.el" "assertIn" "arg" "static" "parse_args" "while" "test_file" "pass" "test_class" "__setitem__" "all" "classmethod" "scls" "cls" "../" "__getitem__" "print" "assertEqual" "__enter__" "unicode" "self_without_dot" "doc" "logger_name" "setdef" "function_docstring" "./" "selfassign" "lambda" "deftest" "interact" "logging" "list" "for" "return" "super" "import" "dec" "__len__" "doctest" "__contains__" "reg" "__exit__")
+
+ ("/home/praharsh/Dropbox/scripts/" (23309 28009 901343 235000) "pcgraphs.py" "../" ".#pcgraphs.py" "./")
+
+ ("/home/praharsh/Dropbox/workexactdiag/workfolder/SYKmodelcode/" (23301 40327 931305 886000) "diagdebug.py" "__pycache__/" "integrated1bynplot.py" "ealltempvsentropy28.npy" "1101.3281.pdf" "plotter.py" "tempvsentropy4.npy" "tempvsentropy.npy" "funcs.py" "energies.npy" "ealltempvsentropy6.npy" "diag_code3.py" "linearfit.py" "functions/" "ealltempvsentropy26.npy" "Integratedthermalentropyvs1byN.pdf" "diag_code.py" "densityofstatecode.py" "ealltempvsentropy27.npy" "diag_code2.py" "tempvsentropy10.npy" "ealltempvsentropy29.npy" "ealltempvsentropy24.npy" "plotmain.py" "ealltempvsentropy212.npy" "../" "funcsold.py" ".#diag_code3.py" "diag_code4.py" "tempvsentropy6.npy" "tempvsentropy8.npy" "dos_histogram.pdf" "./" "debuf.py" "funcs.pyc" "ealltempvsentropy210.npy" "tempvsentropy6_8_10_12_.pdf")
+
+ ("/home/praharsh/Desktop/" (23275 59017 442498 659000) "../" "./")
+
+ ("/home/praharsh/Dropbox/workexactdiag/workfolder/SYKmodel/" (23282 34109 37642 83000) "SYKnotes.pdf" "prv_SYKnotes.log" "_region_.prv/" "prv_SYKnotes.fmt" "_region_.tex" "SYKnotes.tex" "_region_.log" "../" "./" "auto/" "SYKnotes.log" "SYKnotes.aux" "SYKnotes.synctex.gz")
+
+ ("/home/praharsh/Dropbox/workexactdiag/workfolder/body2ent/" (23280 8526 487325 832000) "__pycache__/" "ealltempvsentropy28.npy" "body2ent.py" ".#body2ent.py" "ealltempvsentropy228.npy" "../" "main.py" ".#main.py" "./")
+
+ ("/home/praharsh/Dropbox/workexactdiag/workfolder/SYKentanglement/" (23280 2807 337821 804000) "__pycache__/" "ententropyfuncsSYK.py" "ealltempvsentropy28.npy" "entanglemententropy8ensemblenumber20.npy" "entanglemententropy6ensemblenumber20.npy" "ealltempvsentropy26.npy" "entanglemententropy10ensemblenumber5.npy" "entanglemententropy10ensemblenumber20.npy" "entanglemententropy8ensemblenumber40.npy" "comparisonbetween2b4bN12.pdf" "plotmain.py" "../" "tempvsentropy6_8_10_12_2b.pdf" "main.py" "mainhf.py" "./" "plotmain_flymake.py" "tempvsentropy6_8_10_12_.pdf")
+
+ ("/home/praharsh/Dropbox/workexactdiag/workfolder/2body/" (23249 49767 301866 266000) "__pycache__/" "ealltempvsentropy28.npy" "funcs2body.py" "ealltempvsentropy26.npy" "ealltempvsentropy24.npy" "../" "main.py" ".#main.py" "./" "2bodyfuncs.py")
+
+ ("/home/praharsh/Dropbox/notes/KAWS2018/alday/" (23166 59612 77765 911000) "_region_.prv/" "prv_alday1.log" "_region_.synctex.gz" "simpler-wick.sty" "_region_.tex" "_region_.log" "../" "alday1.aux" "./" "alday1.log" "auto/" "alday1.pdf" "alday1.tex")
+
+ ("/home/praharsh/Dropbox/applications/SOPs/oxford/" (23137 46955 84671 382000) "oxford.synctex.gz" "oxford.out" "prv_oxford.log" "oxford.aux" "oxford.tex" "_region_.prv/" "oxford.pdf" "_region_.synctex.gz" "oxfordmain.tex" "_region_Notes.bib" "oxfordmain.synctex.gz" "_region_.tex" "_region_.log" "biblio.bib" "../" ".#biblio.bib" "oxford.log" "oxfordNotes.bib" "oxford.blg" "oxfordmain.log" "./" "auto/" "oxfordmain.pdf" "oxford.bbl" "oxfordmain.aux")
+
+ ("/home/praharsh/Dropbox/applications/" (23132 53614 251118 382000) "places.tex" "transcriptbs.3.pdf" "SOPs/" "places.org" "places.html" "places1.pdf" "placesamit.tex" "../" "transcriptbs.2.pdf" "placesamit.org" "stonybrook/" "./" "places.pdf" "auto/" "transcriptbs.pdf" "transcriptms.pdf" "transcriptbs.1.pdf")
+
+ ("/home/praharsh/Dropbox/applications/SOPs/" (23136 14892 52655 780000) "minnesota/" "hopkins/" "boston/" "oxford/" "washington/" "maryland/" "pennstate.org" "../" "oldchicago/" "UCdavis/" "stonybrook/" "./" "auto/" "hopkins.tex")
+
+ ("/home/praharsh/Dropbox/applications/SOPs/maryland/" (23137 48518 24714 529000) "maryland.bbl" "marylandNotes.bib" "maryland.synctex.gz" "maryland.tex" "maryland.aux" "maryland.pdf" "../" "maryland.blg" "./" "auto/" "maryland.log")
+
+ ("/home/praharsh/anaconda3/" (23132 43658 596150 592000) "plugins/" "include/" "pkgs/" "LICENSE.txt" "translations/" "qml/" "ssl/" "phrasebooks/" "../" "etc/" "libexec/" "lib/" "man/" "doc/" "var/" "share/" "envs/" "x86_64-conda_cos6-linux-gnu/" "./" "mkspecs/" "conda-meta/" "bin/" "compiler_compat/")
+
+ ("/home/praharsh/Dropbox/applications/SOPs/boston/" (23132 19169 766603 532000) "boston.aux" "_region_.prv/" "_region_.synctex.gz" "bostonNotes.bib" "boston.tex" "_region_Notes.bib" "boston.synctex.gz" "_region_.tex" "prv_boston.log" "boston.pdf" "_region_.log" "../" "./" "boston.log" "auto/")
+
+ ("/home/praharsh/Dropbox/applications/SOPs/hopkins/" (23121 40358 732640 151000) "hopkins.log" "hopkins.pdf" "hopkinsNotes.bib" "hopkins.synctex.gz" "../" "hopkins.aux" "./" "auto/" "hopkins.tex")
+
+ ("/home/praharsh/Dropbox/applications/SOPs/UCdavis/" (23116 53564 613478 526000) ".#personalhistory.org" "../" "./")
+
+ ("/home/praharsh/Dropbox/applications/SOPs/minnesota/" (23092 36489 142369 490000) "minnesota3.aux" "minnesota2Notes.bib" "maryland.blg" "minnesota2.aux" "maryland.aux" "minnesota2.synctex.gz" "marylandNotes.bib" "minnesota3.tex" "minnesota2.pdf" "minnesota3.pdf" "minnesota3.synctex.gz" "minnesota3.log" "minnesota3Notes.bib" "minnesota.log" "minnesotaNotes.bib" "../" "maryland.pdf" "minnesota.pdf" "auto/" "./" "maryland.tex" "minnesota2.tex" "maryland.synctex.gz" "maryland.log" "minnesota.tex" "minnesota.aux" "maryland.bbl" "minnesota2.log" "minnesota.synctex.gz")
+
+ ("/home/praharsh/Dropbox/currivita (1)/" (23080 8965 119255 828000) "biblio (1).bib" "cv (1).pdf" "cv (1).synctex.gz" "cv (1).log" "cv (1).tex" "auto (1)/" "cv (1).out" "ree (1).tex" "../" "cv.synctex (1).gz" "auto/" "./" ".#cv (1).tex" "cv.pdf" "cv (1).aux")
+
+ ("/home/praharsh/git-work-reps/test4/pycftboot/" (23072 5810 11212 184000) "wrap.py" "common.py" "LICENSE" "blocks2.py" "README.md" "../" "./" "tutorial.py" "bootstrap.py" "compat_juliboots.py" "blocks1.py" ".git/")
+
+ ("/home/praharsh/git-work-reps/test4/" (23072 5805 235212 261000) "../" "./" "pycftboot/")
+
+ ("/home/praharsh/git-work-reps/" (23072 5723 815213 581000) "test4/" "test3/" "../" "./" "test2/" "pycftboot/" "spraharsh.github.io/")
+
+ ("/home/praharsh/git-work-reps/pycftboot/" (23072 3422 127250 897000) "wrap.py" "common.py" "LICENSE" "tester.py" "mySDP.out" "blocks1.pyc" "blocks2.py" "README.md" "testiterator_flymake.py" "mySDP.xml" "../" "thing.m" "compat_juliboots_flymake.py" "./" "tutorial.py" "bootstrap.py" "compat_juliboots.py" "playinwitsymengine.py" "blocks1.py" "testiterator.py" "bootstrap.pyc" ".git/")
+
+ ("/home/praharsh/git-work-reps/test2/" (23049 30070 91588 8000) "../" "./" "pycftboot/")
+
+ ("/home/praharsh/git-work-reps/test2/pycftboot/" (23058 60630 665935 75000) "wrap.py" "common.py" "LICENSE" "blocks2.py" "README.md" "thing.py" "../" ".#bootstrap.py" "./" "tutorial.py" "bootstrap.py" "compat_juliboots.py" "blocks1.py" "bootstrap.pyc" ".git/")
+
+ ("/home/praharsh/Dropbox/notes/cftnotes/" (23039 513 331689 322000) "prv_cftnotes.fmt" "cftnotes.log" "cftnotes.blg" "_region_.tex" "cftnotes.pdf" "_region_.log" "prv_cftnotes.log" "cftnotes.synctex.gz" "../" "auto/" "./" "cftnotes.bbl" "cftnotes.tex" ".#cftnotes.tex" "cftnotes.aux" "_region_.prv/")
+
+ ("/home/praharsh/Dropbox/workfolder/reproduce-2/" (23006 26009 317378 184000) "main.py" "__pycache__/" "../" "funcs.py" "./" "idea/")
+
+ ("/home/praharsh/Dropbox/workfolder/" (22983 59687 647898 104000) "reproduce-2/" "../" "reproduce-1/" "./" ".git/")
+
+ ("/home/praharsh/Dropbox/workfolder/reproduce-1/" (22986 16254 362962 821000) "Figure_1-1.png" "lowv.png" "Different.png" "arrayn3t19.npy" ".#scratch.py" "array30t19a1.npy" "newer (praharsh-ThinkPad-X230's conflicted copy 2017-09-21).py" "array2t19a0.npy" "array30t19a0.npy" "workingwala.png" "array20t19a0.npy" "positiongiver.py" "arrayunderstand_flymake.py" "scratch.py" "arrayunderstand (praharsh-ThinkPad-X230's conflicted copy 2017-09-21).py" "highspacing.png" "scratch.org" "../" "./" "array4t19a1.npy" "array12t19a1.npy" "bands.npy" "array20t1a0.npy" "newer.py" "arrayunderstand.py" "idea/" "arrayn30t19.npy" "array2t30a0.npy" "mainfigure.png" "array1t19a0.npy" "array3t19a1.npy" "array20t3a0.npy")
+
+ ("/home/praharsh/Dropbox/charactersheets/inferences/" (22982 36673 816830 123000) "love.css" "love.html" "love.org" "../" "auto/" "love.tex" "love.org.html" "./" "love.pdf")
+
+ ("/home/praharsh/Dropbox/Summerwork/sdpbtables/usage/" (22981 23566 999557 999000) ".#usage.tex" "../" "auto/" "./" "usage.tex")
+
+ ("/home/praharsh/Dropbox/workfolder/idea/" (22974 49133 676940 348000) "prv_idea.log" "_region_.tex" "idea.tex" "idea.blg" "idea.synctex.gz" "_region_.log" "idea.pdf" "../" "auto/" "./" "idea.aux" "idea.log" "idea.bbl" "prv_idea.fmt" ".#idea.tex" "_region_.prv/")
+
+ ("/home/praharsh/Dropbox/workfolder/.git/" (22971 50481 115367 189000) "index.lock" "description" "objects/" "branches/" "config" "../" "HEAD" "logs/" "./" "info/" "index" "COMMIT_EDITMSG" "refs/" "hooks/")
+
+ ("/home/praharsh/Mastersproject2/d20170414/" (22970 23141 212906 287000) ".#diffopp.py" "n=19twoBZ.png" "driven.png" "n=30,1BZ.png" "diffopp.py" "saved.py" "../" "drivenmoreBZ.png" "./" "Bands.png" "test.out")
+
+ ("/home/praharsh/Dropbox/Summerwork/opemaxlinear/" (22962 58323 180771 723000) "_region_.tex" "opemaxlinear.log" "prv_opemaxlinear.log" "_region_.log" "../" "opemaxlinear.pdf" "auto/" "./" "opemaxlinear.tex" "opemaxlinear.aux" "prv_opemaxlinear.fmt" "opemaxlinear.synctex.gz" ".git/" "_region_.prv/")
+
+ ("/home/praharsh/Dropbox/humor/" (22957 39779 371697 119000) "comedy.org" "comedy.pdf" "../" "comedy.tex" "./" ".git/")
+
+ ("/home/praharsh/Dropbox/journal/" (22956 54686 949531 298000) "20170624" "20170626" "20170825" "20170717" "20170821.html" "20170601" "20170530" "20170821.tex" "20170622" "20170613.tex" "20170520" "20170824" "20170607" "20170901" "20170614" "20170715" "20170829" "20170605" "20170816" "ltxpng/" "20170522" "20170524" "journaltogether.pdf" "todofiles/" "20170628" "20170823" "journaltgether.html" "20170716" "20170616.html" "20170527" "20170613.pdf" "appendeach.py" "20170822" "checker.org" "images/" "20170603" "20170831" "20170609" "20170702" "20170611" "journaltogether.tex" "20170723" "20170616" "20170523" "../" "20170526" "20170821" "20170828" ".#20170725" "20170617" "20170711" "20170630" "auto/" "20170528" "journaltgether.org" "./" "20170625" "20170629" "20170521" "20170902" "journaltogether.html" "20170830" "20170904" "20170613" "20170618_archive" "20170714" "20170529" "journaltogether.org" "20170821.pdf" "20170615" "20170610" "20170710" "20170531" "20170617.ics" "20170718" "20170620" "20170701" "data/" "20170627" "20170606" "20170827" "20170719" "personalfiles/" "20170623" "20170613.html" "20170604" "20170712" "20170619" "20170618" "20170608")
+
+ ("/home/praharsh/Mastersproject2/workfolder/" (22955 52892 689246 654000) "../" "./" ".#newer.py" "newer.py" ".git/")
+
+ ("/home/praharsh/Dropbox/charactersheets/" (22953 5524 809642 198000) "iitk/" "../" "./")
+
+ ("/home/praharsh/Dropbox/charactersheets/iitk/" (22954 52642 748965 53000) "jayameenakshi.org" "navya.org" "anushka.org" "ritwik.org" "chetan.org" "../" "./" "shalini.org" ".git/")
+
+ ("/home/praharsh/miniconda2/envs/base3/" (22949 57110 619115 961000) "phrasebooks/" "share/" "var/" "sbin/" "plugins/" "mkspecs/" "doc/" "lib/" "qml/" "ssl/" "bin/" "../" "./" "libexec/" "translations/" "conda-meta/" "etc/" "include/")
+
+ ("/home/praharsh/Mastersproject2/" (22950 52218 311310 713000) "reponew/" "PhysRevB.93.144307.pdf" "edge-modes.png" "bukov2015.pdf" "workfolder/" "reportextra.pdf" "summary/" "thing/" "PhysRevB.66.205320.pdf" "Floquet scattering paper.pdf" "10.1038@nphys384.pdf.pdf" "n_1.png" "N-2.png" "d20170930/" "d20170203/" "d20170414/" "endsemrep.pdf" "endsempresent/" "d20170422/" "writeup20170203/" "../" "figure_1-3.png" "10.1038@nphys384.pdf" "PhysRevB.60.15732.pdf" "./" "Eckardt_2015_New_J._Phys._17_093039.pdf" "bw2.pdf" "floquetmagneticbarriers/" "assacode/" "PhysRevLett.107.216601.pdf" "floquetm/" "1169.full.pdf" "topoinmaglong.pdf" "fiig.png" "assapaper/" "PhysRevLett.109.226602.pdf" "mathematica/" "topocm_content-master/")
+
+ ("/home/praharsh/miniconda2/envs/" (22949 56369 534502 298000) "../" "./" "basemacs/" "base3/")
+
+ ("/home/praharsh/Downloads/" (22949 53472 488051 343000) "hoel-response.docx" "sigplan-why.ps.gz" "SFPro/" "SFMono-Regular.otf" "__MACOSX/" "(Graduate texts in contemporary physics) Philippe Francesco, Pierre Mathieu, David Senechal-Conformal field theory-Springer (1997).djvu" "0JRFsciencehumanities.pdf" "google-chrome-stable_current_amd64.deb" "nova_mono.zip" "Mastersproject2-20170829T201501Z-001.zip" "file-icons.ttf" "GOT 7x06.torrent" "Category_Theory (2).pdf" "Color Plots.nb" "20170613.tex" "poetry.zip" "IOPEXPORT_BIB.bib" "rejuvyesh.key" "Mastersproject2/" "xar/" "Rick.and.Morty.S03E04.HDTV.x264-BATV[eztv].mkv" "dropbox_2015.10.28_amd64.deb" "bolubos_short.doc" "Keep your hands dirtyDo Calculationswrite notes (1).jpg" "Pirates of the Caribbean Dead Men Tell No Tales 2017 PROPER HD-TS x264-CPG/" "DualNucleationEvents_000.avi" "Age of Empires III - Complete Collection [Origami]/" "skypeforlinux-64.deb" "sigplan-why (1).ps.gz" "New-Text-Document-3.txt" "SFPro.zip" "out2.npy" "eclipse-inst-linux64.tar.gz" "Monsters.Den.Godfall.v1.061.rar" "PanelRemarks-March8-2017.pptx" "pgpax7T2kjfMD.pgp" "Consent_Form copy.pdf" "dropbox.py" "keygen.rar" "Job.php" "Medieval.jpg" "predictive (1).tar.gz" "HamiltonMusical.zip" "mpsolve.tgz" "why-org-mode.org" "material-design-icons.ttf" "wordtoparents.pdf" "Praharsh Aadhar1.pdf" "categories_for_programmers (2).pdf" "Category Theory-20170805T113251Z-001.zip" "Monaco-Linux.ttf" "categories_for_programmers (1).pdf" "theme-1115.epf" "Menlo-Regular.ttf" "Game.of.Thrones.S07E04.The.Spoils.of.War.1080p.AMZN.WEB-DL.DDP5.1.H.264-GoT[ettv]/" "SDPB-Manual (1).pdf" "LifesizeCloud-10.3.6-228-signed.pkg" "SDPB-Manual.pdf" "Awodey - Category Theory.pdf" "Cconsent_Form copy copy.pdf" "Game.of.Thrones.S07E05.720p.WEB.h264-TBS[eztv].mkv" "Green Light - Lorde (DJJOhAL.Com).mp3" "30601088.mp4" "file-icons (2).ttf" "categories_for_programmers.pdf" "0326 - Pokemon Mystery Dungeon - Gates to Infinity (Europe) (En,Fr,De,Es,It) Decrypted.torrent" "Monaco_Linux.ttf" "material.php" "xar-1.6.1/" "Category_Theory.pdf" "Mathematica_11.1.0_Keygen.rar" "cv_bajpai (2).pdf" "Guardians.of.the.Galaxy.Vol.2.2017.720p.HDTC.mp4" "citra-linux-20170803-0dc285d/" "Game.of.Thrones.S07E07.The.Dragon.and.the.Wolf.AMZN.WEBRip.DDP2.0.x264-GoT[rarbg]/" "Game of Thrones Leak s7e3-4 scripts/" "book (1).ps" "9783319281629-c2.pdf" "Mathematica_11.1.1_LINUX.sh" "forticlientsslvpn/" "masterkreatif.com-k9on.rar" "File_000.jpeg" "Mathematica_11.1.0_Keygen.exe" "octicons.ttf" "auto/" "[fmovies.se] Guardians of the Galaxy Vol. 2 - Full.srt" "Extremalfunctionalinear.nb" "keygen/" "GOT7x06.mov" "Pyre.PC.torrent" "xkcd-Regular.otf" "categories_for_programmers (3).pdf" "mu-0.9.18.tar.gz" "citra-linux-20170803-0dc285d.tar.xz" "Anaconda2-4.4.0-MacOSX-x86_64.sh" "spaceline-all-the-icons.el/" "021. Passenger - Let Her Go.mp3" "Mathematica8.0_Linux_MenuSetup.tr" "[A._Yu._Kitaev,_A._H._Shen,_M._N._Vyalyi]_Classica(b-ok.org).djvu" "image_demo.py" "eclipse-installer/" "Physics-20170816T181007Z-001.zip" "xmonad-x86_64-linux" "mpsolve (1).tgz" "Lawvere and Schanuel - Conceptual Mathematics - A First Introduction to Categories.pdf" "Category_Theory (1).pdf" "book.ps" "ceevee.aux" "source-archive.zip" "cv_bajpai (1).pdf" "Donald E. Knuth-The Art of Computer Programming, Volume 1_ Fundamental Algorithms (3rd Edition) (1997).djvu" "file-icons (1).ttf" "cv_bajpai.pdf" "DualNucleationEvents_000 (1).avi" "all-the-icons (1).ttf" "HamiltonMusical (1).zip" "first-post-on-dft-book-blog.org" "Cconsent_Form copy copy (1).pdf" "Category_Theory (3).pdf" "2017_07_20_18337794341846534041.jpg" "Attachment-1.pkpass" "05NoyesFluddeOp.59NoyeNoyeTakeThouThyCompan.zip" "theme-1115.xml" "PILLO TRONO 7X06 PARTE 2.mp4" "PILLO TRONO 7X06 PARTE 1.mp4" "Simple Resume CV.zip" "xvwtjg.MP4.crdownload" "Keep your hands dirtyDo Calculationswrite notes.jpg" "predictive.tar.gz" "sage-8.0-Ubuntu_16.04-x86_64.tar.bz2" "Monsters.Den.Godfall.v1.061/" "Rick.and.Morty.S03E04.720p.HDTV.x264-BATV[rarbg]/" "all-the-icons.ttf" "Keep your hands dirtyDo Calculationswrite notes (2).jpg" "Gnu_meditate_levitate.png" "xar-1.6.1.tar.gz" "(C88) [DA HOOTCH (Various)] Bestiary 3 [English] {PSYN}.torrent" "RSSOwl.2.2.1.Linux-x64.zip" "MASTERkreatif.URL" "philo.gram" "libpng12-0_1.2.50-2+deb8u3_amd64.deb" "../" "./")
+
+ ("/home/praharsh/Dropbox/research/" (22949 53542 471923 959000) "Journal.org" ".#Journal.org" "paperstoread/" "../" "./")
+
+ ("/home/praharsh/.emacs.d/elpa/spaceline-all-the-icons-20170719.131/" (22940 9302 619575 255000) ".gitignore" "logo.png" "spaceline-all-the-icons-segments.el" "LICENSE" "spaceline-all-the-icons-pkg.el" "spaceline-all-the-icons-segments.elc" "spaceline-all-the-icons-autoloads.el" "README.md" "spaceline-all-the-icons.elc" "../" "./" "spaceline-all-the-icons-separators.elc" "spaceline-all-the-icons.el" "spaceline-all-the-icons-separators.el" ".git/")
+
+ ("/home/praharsh/summerwork/cluster-code/" (22940 16768 666033 565000) "tester.py" "work-env/" "../" "mpibootstrap/" "./" "boundata.py" ".#newer.py" "newer.py")
+
+ ("/home/praharsh/Documents/journal/" (22940 3162 554207 510000) "20170624" "20170626" "20170717" "20170821.html" "20170601" "20170530" "20170821.tex" "20170622" "20170613.tex" "20170520" "20170607" "20170614" "20170715" "20170605" "20170816" "ltxpng/" "20170522" "20170524" "journaltogether.pdf" "todofiles/" "20170628" "20170716" "20170616.html" "20170527" "20170613.pdf" "appendeach.py" "20170822" "checker.org" "images/" "20170603" "20170609" "20170702" "20170611" "journaltogether.tex" "20170723" "20170616" "20170523" "../" "20170526" "20170821" ".#20170725" "20170617" "20170711" "20170630" "auto/" "20170528" "./" "20170625" "20170629" "20170521" "journaltogether.html" "20170613" "20170618_archive" "20170714" "20170529" "journaltogether.org" "20170821.pdf" "20170615" "20170610" "20170710" "20170531" "20170617.ics" "20170718" "20170620" "20170701" "data/" "20170627" "20170606" "20170719" "personalfiles/" "20170623" "20170613.html" "20170604" "20170712" "20170619" "20170618" "20170608")
+
+ ("/home/praharsh/.emacs.d/elpa/" (22939 57069 746938 427000) "git-commit-20170821.2057/" "yasnippet-20170808.940/" "flycheck-20170817.57/" "org-alert-20170701.1855/" "async-20170804.2158/" "org-alert-20170724.2116/" "exec-path-from-shell-20170508.4/" "ac-math-20141116.1327/" "color-theme-sanityinc-solarized-20160429.1903/" "project-persist-drawer-20151108.422/" "math-symbol-lists-20170221.553/" "highlight-indentation-20170502.43/" "smartparens-20170718.1310/" "json-snatcher-20150511.2047/" "dash-functional-20160615.1351/" "let-alist-1.0.5/" "auctex-11.91.0.signed" "elfeed-20170709.954/" "all-the-icons-20170817.642/" "s-20170428.1026/" "helm-20170821.954/" "goto-last-change-20150109.1023/" "auto-complete-auctex-20140223.958/" "multiple-cursors-20170813.38/" "solarized-theme-20170430.800/" "spaceline-20170630.2327/" "use-package-20170812.2256/" "helm-core-20170821.2134/" "doom-themes-20170809.1218/" "elfeed-goodies-20160926.209/" "sr-speedbar-20161025.131/" "key-chord-20160227.438/" "d-mode-20161022.717/" "emojify-20170709.207/" "pyvenv-20170224.538/" "smex-20151212.1409/" "lua-mode-20170130.435/" "color-theme-sanityinc-tomorrow-20170813.237/" "ace-jump-mode-20140616.115/" "yasnippet-20170818.1916/" "htmlize-20161211.1019/" "all-the-icons-dired-20170418.1431/" "zenburn-theme-readme.txt" "auctex-latexmk-20170618.936/" "look-mode-20151211.1026/" "auto-complete-20170124.1845/" "alert-20170503.1714/" "auctex-readme.txt" "company-20170818.340/" "magit-popup-20170810.917/" "bind-chord-20170717.1152/" "powerline-20161121.2320/" "magit-20170808.1712/" "let-alist-1.0.5.signed" "gntp-20141024.1950/" "find-file-in-project-20170725.133/" "archives/" "goto-chg-20131228.659/" "with-editor-20170817.1240/" "graphene-meta-theme-20161204.807/" "dad-joke-20170814.824/" "leuven-theme-20170818.250/" "pkg-info-20150517.443/" "web-mode-20170807.903/" "elfeed-org-20170423.128/" "json-reformat-20160212.53/" "rainbow-delimiters-20160430.2358/" "noflet-20141102.654/" "org-journal-20170712.657/" "diminish-20170419.1036/" "cython-mode-20170723.1342/" "seq-2.20.signed" "auto-complete-pcmp-20140226.2251/" "ac-rtags-readme.txt" "org-journal-20170221.612/" "json-mode-20170719.2205/" "yaml-mode-20170727.1531/" "xbm-life-20160103.217/" "smartparens-20170723.1205/" "org2jekyll-20170225.115/" "helm-tramp-20170616.1725/" "haskell-mode-20170810.1519/" "yaml-mode-20170406.241/" "dired+-20170818.1411/" "biblio-core-20160901.1115/" "color-theme-20080305.34/" "yaxception-20150105.652/" "ht-20161015.1945/" "ido-completing-read+-20170819.1045/" "markdown-mode-20170817.822/" "hydra-20170813.1058/" "ido-ubiquitous-20170819.1045/" "undo-tree-20161012.701/" "graphene-20170810.640/" "org-20170821/" "arxiv-reader.el" "web-mode-20170709.922/" "auctex-lua-20151121.810/" "project-persist-20150519.1324/" "epl-20150517.433/" "cyberpunk-theme-20170724.924/" "helm-bibtex-20170808.1124/" "mu4e-maildirs-extension-20170217.40/" "spaceline-all-the-icons-20170719.131/" "bind-key-20161218.1520/" "popup-20160709.729/" "helm-tramp-20170708.320/" "seq-2.20/" "flycheck-cython-20170724.258/" "biblio-20161014.1604/" "use-package-20170710.1234/" "memoize-20170720.1802/" "f-20170404.1039/" "deferred-20170531.2135/" "4clojure-20131014.1507/" "with-editor-20170803.917/" "auctex-latexmk-readme.txt" "popwin-20150315.600/" "gnupg/" "font-lock+-20170222.1755/" "log4e-20170401.604/" "parsebib-20170501.347/" "ivy-20170817.1000/" "dash-20170810.137/" "undo-tree-20170706.246/" "ppd-sr-speedbar-20151108.424/" "org-ac-20170401.607/" "aggressive-indent-20170627.1223/" "solarized-theme-20170818.447/" "evil-20170815.1422/" "kv-20140108.734/" "dired-quick-sort-20161208.1312/" "elpy-20170701.1412/" "powerline-20170708.1442/" "rainbow-blocks-20140306.1033/" "edit-server-20170725.859/" "auctex-11.91.0/" "request-20170131.1747/" "../" "./")
+
+ ("/home/praharsh/.emacs.d/" (22939 60907 13774 481000) "session.10e13b9f6ae5e74556148948744768985900000014300050" ".emacs.d/" ".org-id-locations" "url/" "tramp" "elpa/" "ido.last" "current-theme" "bookmarks" ".#.graphene-geometry" "magithub/" "session.1025d3ee71aae2fc97150209643422167000000017080059" "plugins/" "games/" "session.10470fdd40dad9be1a147440268018371200000016490050" "ido.last~" "session.10ac4df67587a30b86149631940480513500000184290035" "elfeed.org" "snippets/" "image-dired/" "session.10462192915a47723b1495287696737200000013970054" "session.1019e277763e350a51149173316051025300000153050052" ".graphene-geometry" "../" "smex-items" "./" ".mc-lists.el" "org-gcal/" "request/" "ac-comphist.dat" "thing-theme.el" "session.10a1eb9f705749e5cf149858397371862000000080940067" "org-clock-save.el" "auto-save-list/" "emojis/")
+
+ ("/home/praharsh/notes/research-notes/workiitk2017/d20170815/" (22932 40469 701710 533000) "lowencalc.bbl" "_region_.tex" "prv_lowencalc.fmt" "lowencalc.aux" "prv_lowencalc.log" "lowencalc.tex" "lowencalc.synctex.gz" "_region_.log" "psigraph.jpg" "lowencalc.blg" "../" "auto/" "./" "lowencalc.log" "lowencalc.pdf" "_region_.prv/")
+
+ ("/home/praharsh/notes/research-notes/workiitk2017/" (22930 48519 774463 332000) "d20170806/" "d20170815/" "../" "./")
+
+ ("/home/praharsh/notes/research-notes/" (22919 4867 282822 37000) "paperworkout/" "../" "./" "workiitk2017/" "basm2017/" "bootstrap/")
+
+ ("/home/praharsh/.emacs.d/elpa/auctex-11.91.0/" (22921 59621 206333 74000) "RELEASE" "ChangeLog.1" "install-sh" "README" ".gitignore" "plain-tex.el" "configure.ac" "context.elc" "prv-install.elc" "font-latex.el" "tex-site.elc" "preview.elc" "context.el" "tex-jp.elc" "font-latex.elc" "tex-font.el" "plain-tex.elc" "preview.el" "auctex-pkg.el" "style/" "dir" ".elpaignore" "lpath.el" "tex-bar.el" "prv-emacs.el" "latex/" "latex.el" "Makefile.in" "tex-info.elc" "tex-ispell.elc" "latex.elc" "tex-site.el" "toolbar-x.elc" "tex-style.el" "doc/" "tex-mik.elc" "context-en.el" "auctex.el" "tex-site.el.in" "tex-mik.el" "auctex-autoloads.el" "mkinstalldirs" "tex-buf.el" "images/" "tex-font.elc" "bib-cite.el" "texmathp.elc" "auctex.el.in" "multi-prompt.el" "auctex.elc" "tex-ispell.el" "tex-bar.elc" "context-en.elc" "tex-fold.el" "preview-latex.info" "build-aux/" "toolbar-x.el" "../" "auctex-pkg.elc" "GNUmakefile" "tests/" "auctex.info" "bib-cite.elc" "multi-prompt.elc" "./" "tex-fold.elc" "tex.elc" "autogen.sh" "ChangeLog-preview.1" "tex-info.el" "tex-style.elc" "context-nl.elc" "circ.tex" "aclocal.m4" "README.GIT" "tex.el" "lpath.elc" "etc/" "preview-latex.spec" "texmathp.el" "tex-wizard.el" "auctex.spec" "tex-wizard.elc" "prv-emacs.elc" "ChangeLog-preview" "prv-xemacs.el" "tex-buf.elc" "ChangeLog" "COPYING" "tex-jp.el" "prv-xemacs.elc" "context-nl.el" "prv-install.el")
+
+ ("/home/praharsh/.emacs.d/elpa/auctex-11.91.0/doc/" (22921 59615 894345 981000) ".gitignore" "fdl.texi" "preview-faq.texi" "auctex.texi" "tex-ref.tex" "Makefile.in" "intro.texi" "preview-problems.texi" "wininstall.texi" "copying.texi" "history.texi" "preview-todo.texi" "../" "install.texi" "./" "quickstart.texi" "changes.texi" "macros.texi" "todo.texi" "faq.texi" "preview-dtxdoc.pl" "preview-latex.texi" "preview-readme.texi")
+
+ ("/home/praharsh/.emacs.d/elpa/graphene-20170810.640/" (22926 47202 326016 633000) "graphene-other-defaults.el" "graphene-look.el" "graphene-windows-defaults.elc" "graphene-osx-defaults.elc" "graphene-linux-defaults.elc" "graphene-smartparens-config.el" "graphene-autoloads.el" "graphene-projects.elc" "graphene-other-defaults.elc" "graphene-helper-functions.elc" "graphene-projects.el" "graphene-look.elc" "graphene-env.elc" "../" "./" "graphene-editing.elc" "graphene.el" "graphene.elc" "graphene-pkg.el" "graphene-linux-defaults.el" "graphene-env.el" "graphene-helper-functions.el" "graphene-editing.el" "graphene-smartparens-config.elc" "graphene-windows-defaults.el" "graphene-osx-defaults.el")
+
+ ("/home/praharsh/scrath/" (22925 58999 906873 156000) ".gitignore" "LICENSE" "simpleresumecv.cls" "README.md" "Miscellaneous/" "Fonts/" "datetime2.sty" "CV.log" "../" "auto/" "./" "CV.tex")
+
+ ("/usr/share/texlive/texmf-dist/tex/latex/fontspec/" (22838 52756 731995 215000) "fontspec.sty" "../" "fontspec-xetex.sty" "./" "fontspec.lua" "fontspec-luatex.sty" "fontspec.cfg")
+
+ ("/home/praharsh/notes/research-notes/workiitk2017/d20170806/" (22925 58061 714199 308000) "Plotsv0-5t0x.pdf" "squarefunction.synctex.gz" "Plotsv2t10y.pdf" "Plotsv10t1y.pdf" "Plotsv2t10.pdf" "_region_.tex" "squarefunction.pdf" "Plots.nb" "Plotsv2t00.pdf" "Plotsv2t00y.pdf" "_region_.log" "Plotsv10t1x.pdf" "Plotsv05t10.pdf" "sy/" "../" "Plotsv100t0.pdf" "prv_squarefunction.fmt" "squarefunction.tex" "auto/" "Plotsv0-5t0y.pdf" "newerdata/" "./" "Plotsv100t10.pdf" "Plotsv10t0x.pdf" "squarefunction.aux" "Plotsv0-5t1-0.pdf" "prv_squarefunction.log" "Plotsv05t05.pdf" "Plotsv10t0y.pdf" "Plotsv2t00x.pdf" "squarefunction.log" "Plotsv2t10x.pdf" "sx/" "_region_.prv/")
+
+ ("/home/praharsh/.emacs.d/snippets/" (22866 4399 145790 825000) "../" "./" "latex-mode/" "org-mode/")
+
+ ("/home/praharsh/git-work-reps/spraharsh.github.io/_posts/" (22899 13637 195590 126000) "2017-07-22-post3.html" "../" "2017-06-30-post1.html" "./" "2017-07-14-post2.html")
+
+ ("/home/praharsh/website/" (22914 65346 358080 231000) "prv_blog.fmt" "blog.tex" "_region_.tex" "blog.synctex.gz" "blog.blg" "post3.org" "links.org" "post2.html" "_region_.log" "blog.aux" "../" "auto/" "./" "links.html" "blog.bbl" "post3.html" "post1.org" "biblio.bib" "work.org" "index.org" "blog.html" "blog.log" "post1.html" "blog.pdf" "new.org" "post2.org" "prv_blog.log" "_region_.prv/")
+
+ ("/home/praharsh/notes/research-notes/bootstrap/" (22914 49903 680566 161000) "codedocumentation.synctex.gz" "codedocumentation.tex" "spectrumextract.html" "spectrum-extraction.pdf" "ltximg/" "rationalapproximations.synctex.gz" "_region_.tex" "rationalapproximations.tex" "prv_codedocumentation.log" "codedocumentation.aux" "rationalapproximations.pdf" "rationalapproximations.log" "prv_spectrum-extraction.fmt" "prv_rationalapproximations.log" "_region_.log" "prv_spectrum-extraction.log" "cubicanistropy.org" "../" "codedocumentation.log" "auto/" "./" "spectrum-extraction.synctex.gz" "spectrumextract.org" "rationalapproximations.aux" "spectrum-extraction.aux" "codedocumentation.pdf" "spectrum-extraction.log" "spectrum-extraction.tex" "_region_.prv/" ".#codedocumentation.tex")
+
+ ("/home/praharsh/notes/research-notes/basm2017/" (22912 19701 271596 138000) "shiraz.tex" "../" "auto/" "./" "surbhi.tex" ".#shiraz.tex")
+
+ ("/home/praharsh/notes/funxkcd/" (22907 5820 654837 700000) "../" "./" ".#new.py")
+
+ ("/home/praharsh/notes/" (22907 4700 153895 820000) "research-notes/" "funxkcd/" "../" "./" "haskellearn/")
+
+ ("/home/praharsh/haskelllearn/" (22900 48971 172141 826000) "functions.o" "haskellnotes.html" "haskellnotes.org" "exercises/" "functions.hs" "dub.hs" "hackerrank/" "../" "functions" "./" "functions.hi")
+
+ ("/home/praharsh/emacsbackup/" (22895 8191 884695 70000) ".emacs.d/" ".emacs" "README.md" "../" "./" ".git/")
+
+ ("/home/praharsh/.emacs.d/games/" (22901 42693 144100 824000) ".#tetris-scores" "tetris-scores" "../" "./")
+
+ ("/home/praharsh/git-work-reps/spraharsh.github.io/" (22895 7876 648567 812000) "package.json" "_site/" "ply/" ".gitignore" "members.html" "projects/" "_data/" "mentions.html" "_includes/" "_layouts/" "feed.xml" "projectors/" "search/" "ppanchor.matin" "README.md" "lib/" "colorscheme.scss" "favicon.png" "project-pages-gh-pages/" "stl/" "js/" "wwork.html" "Gruntfile.js" "img/" "../" "plugin/" "notes.md" "blog.md" "./" "LICENSE.md" "links.html" "proselinks.jsonp" "this.html" "_posts/" "about.md" "css/" "index.html" "_config.yml" ".git/")
+
+ ("/home/praharsh/.emacs.d/elpa/graphene-20161120.938/" (22892 58197 505290 779000) "graphene-other-defaults.el" "graphene-look.el" "graphene-windows-defaults.elc" "graphene-osx-defaults.elc" "graphene-linux-defaults.elc" "graphene-smartparens-config.el" "graphene-autoloads.el" "graphene-projects.elc" "graphene-other-defaults.elc" "graphene-helper-functions.elc" "graphene-projects.el" "../" "./" "graphene-editing.elc" "graphene.el" "graphene.elc" "graphene-pkg.el" "graphene-linux-defaults.el" "graphene-env.el" "graphene-helper-functions.el" "graphene-editing.el" "graphene-smartparens-config.elc" "graphene-windows-defaults.el" "graphene-osx-defaults.el")
+
+ ("/home/praharsh/research-notes/" (22862 34686 875852 609000) "paperworkout/" "../" "./" "bootstrap/")
+
+ ("/home/praharsh/summerwork/workfolder/d20170609/" (22887 38248 726698 151000) "thing.npy" "concatdata.npy" "appender.py" "scratch.py" "data.npy" "enlarged/" "output.npy" "../" "./" "dataplot.py")
+
+ ("/home/praharsh/haskelllearn/exercises/chapter1/" (22885 56788 4835 801000) "problem4.o" "../" "problem4.hi" "./" "problem3" "problem3.hs" "problem4" "problem3.o" "problem3.hi" "problem4.hs")
+
+ ("/home/praharsh/summerwork/" (22882 27886 570303 699000) "workfolder/" "presentationfolder/" "mpi4pytry/" "sdpbfiles/" "scratch.py" "work-env/" "pycft2/" "../" "./" "readfiles/" "mathematicafiles/")
+
+ ("/home/praharsh/summerwork/pycft2/" (22882 27618 12354 631000) "wrap.py" "common.py" "LICENSE" "tester.py" "mySDP.out" "blocks2.py" "README.md" "mySDP.xml" "../" "./" "tutorial.py" "bootstrap.py" "compat_juliboots.py" "blocks1.py" "bootstrap.pyc" ".git/")
+
+ ("/home/praharsh/summerwork/workfolder/" (22867 23301 420282 849000) "d20170606/" "d20170602/" "d20170610/" "../" "d20170609/" "d20170624/" "./" "d20170628/")
+
+ ("/home/praharsh/summerwork/presentationfolder/" (22860 1719 735729 984000) "pres2/" "New Folder/" "../" "./")
+
+ ("/home/praharsh/summerwork/readfiles/" (22879 14727 505279 765000) "testrea.txt" ".#reader.py" "SDP0.52_1.43.out" "SDP0.518_1.465.out" "../" "./" "reader.py")
+
+ ("/home/praharsh/miniconda2/envs/basemacs/lib/python2.7/site-packages/numpy/" (22837 21685 433999 937000) "polynomial/" "distutils/" "ctypeslib.pyc" "ctypeslib.py" "testing/" "dual.pyc" "__config__.py" "_import_tools.py" "core/" "dual.py" "doc/" "lib/" "random/" "matrixlib/" "linalg/" "__config__.pyc" "matlib.pyc" "add_newdocs.py" "setup.py" "__init__.pyc" "../" "f2py/" "tests/" "version.pyc" "./" "_distributor_init.pyc" "_import_tools.pyc" "_globals.pyc" "ma/" "version.py" "matlib.py" "add_newdocs.pyc" "fft/" "setup.pyc" "compat/" "_distributor_init.py" "__init__.py" "_globals.py")
+
+ ("/home/praharsh/miniconda2/envs/basemacs/" (22877 4683 933073 973000) "phrasebooks/" "share/" "var/" ".index/" "sbin/" "plugins/" "mkspecs/" "doc/" "lib/" "qml/" "ssl/" "bin/" "../" "./" "libexec/" "translations/" "conda-meta/" "etc/" "include/")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

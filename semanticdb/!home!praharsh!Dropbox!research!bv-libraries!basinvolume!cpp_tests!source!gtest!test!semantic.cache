@@ -1,0 +1,22 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+    (semanticdb-project-database-file "semanticdb-project-database-file"
+      :tables
+      (list
+        (semanticdb-table "semanticdb-table"
+          :major-mode c++-mode
+          :tags 
+        '( ("GTEST_TEST_GTEST_PARAM_TEST_TEST_H_" variable (:constant-flag t) nil [1813 1848])
+            ("gtest/gtest.h" include nil nil [1850 1874]))          
+          :file "gtest-param-test_test.h"
+          :pointmax 2344
+          :fsize 2343
+          :lastmodtime '(24112 36051 387445 645000)
+          :unmatched-syntax nil
+          :lexical-table 
+        '(("GTEST_TEST_GTEST_PARAM_TEST_TEST_H_")
+          )
+))
+      :file "!home!praharsh!Dropbox!research!bv-libraries!basinvolume!cpp_tests!source!gtest!test!semantic.cache"
+      :semantic-tag-version "2.0"
+      :semanticdb-version "2.2")

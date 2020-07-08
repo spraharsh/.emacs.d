@@ -1,0 +1,6 @@
+(
+ (:id "sha1:85457c729378cc93c732b6a3941c8e4f9c2e60f3" :fingerprint "sha1:ab:a6:d7:6a:b3:d3:63:fa:19:0d:65:41:60:23:6e:ef:d3:2a:46:dc" :host "marmalade-repo.org:443" :conditions (:expired :unknown-ca :invalid))
+ (:id "sha1:85b31c268009209a8d3c5387033b219264f7e62b" :fingerprint "sha1:08:2f:ae:78:63:d8:0d:3f:3b:dc:f1:b9:f2:2c:76:b7:60:4a:5e:a6" :host "melpa.org:443" :conditions (:unknown-ca :invalid))
+ (:id "sha1:21aac5cdccf1e74f90c027066548afda692cc040" :fingerprint "sha1:e3:f0:f9:2c:f1:a8:3f:cf:3d:fc:bc:31:a1:d5:0a:07:e3:f5:49:cf" :host "ironport2.iitk.ac.in:443" :conditions (:unknown-ca :invalid))
+ (:id "sha1:83bf48e8e2bece054f64dae27023545ae5dafb7a" :fingerprint "sha1:4d:4d:60:25:c7:9a:2e:0c:29:c0:50:c9:07:3f:c2:79:72:50:a4:35" :host "icanhazdadjoke.com:443" :conditions (:no-host-match))
+)

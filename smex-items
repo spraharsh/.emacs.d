@@ -1,0 +1,36 @@
+
+;; ----- smex-history -----
+(
+ package-list-packages
+ python-mode
+ byte-compile-file
+ package-install
+ package-autoremove
+ load-theme
+ customize-group
+)
+
+;; ----- smex-data -----
+(
+ (package-install . 23)
+ (customize . 1)
+ (customize-themes . 7)
+ (elpy-config . 7)
+ (make-directory . 2)
+ (mkdir . 6)
+ (emacs-lisp-byte-compile . 1)
+ (reftex-mode . 1)
+ (flymake-mode . 2)
+ (package-list-packages . 2)
+ (multiple-cursors-mode . 1)
+ (TeX-error-overview . 3)
+ (undo-tree-mode . 11)
+ (rainbow-delimiters-mode . 2)
+ (customize-variable . 4)
+ (list-packages . 1)
+ (customize-group . 1)
+ (load-theme . 1)
+ (package-autoremove . 1)
+ (byte-compile-file . 1)
+ (python-mode . 2)
+)

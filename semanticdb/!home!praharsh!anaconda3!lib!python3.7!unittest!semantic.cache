@@ -1,0 +1,1252 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+    (semanticdb-project-database-file "semanticdb-project-database-file"
+      :tables
+      (list
+        (semanticdb-table "semanticdb-table"
+          :major-mode python-mode
+          :tags 
+        '( ("\"\"\"Test case implementation\"\"\"" code nil nil [1 31])
+            ("sys" include nil nil [33 43])
+            ("functools" include nil nil [44 60])
+            ("difflib" include nil nil [61 75])
+            ("logging" include nil nil [76 90])
+            ("pprint" include nil nil [91 104])
+            ("re" include nil nil [105 114])
+            ("warnings" include nil nil [115 130])
+            ("collections" include nil nil [131 149])
+            ("contextlib" include nil nil [150 167])
+            ("traceback" include nil nil [168 184])
+            ("result" include nil nil [193 206])
+            ("" code nil nil [225 334])
+            ("__unittest" variable nil nil [336 353])
+            ("_subtest_msg_sentinel" variable nil nil [355 387])
+            ("DIFF_OMITTED" variable nil nil [389 493])
+            ("SkipTest" type
+               (:documentation "
+    Raise this exception in a test to skip it.
+
+    Usually you can use TestCase.skipTest() or one of the skipping decorators
+    instead of raising this directly.
+    "
+                :superclasses ("Exception")
+                :type "class")
+                nil [495 702])
+            ("_ShouldStop" type
+               (:documentation "
+    The test should stop.
+    "
+                :superclasses ("Exception")
+                :type "class")
+                nil [703 775])
+            ("_UnexpectedSuccess" type
+               (:documentation "
+    The test was supposed to fail, but it didn't!
+    "
+                :superclasses ("Exception")
+                :type "class")
+                nil [776 879])
+            ("_Outcome" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [950 980])
+                            ("self" variable nil (reparse-symbol indented_block_body) [989 1009])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1018 1079])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1088 1107])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1116 1133])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1142 1169])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1178 1194]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [922 926])
+                            ("result" variable nil (reparse-symbol function_parameters) [928 934]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [909 1195])
+                    ("testPartExecutor" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1252 1256])
+                            ("test_case" variable nil (reparse-symbol function_parameters) [1258 1267])
+                            ("isTest" variable nil (reparse-symbol function_parameters) [1269 1275]))                          
+                        :decorators 
+                          ( ("contextlib.contextmanager" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [1200 2171]))                  
+                :type "class")
+                nil [881 2171])
+            ("_id" function (:arguments 
+              ( ("obj" variable nil (reparse-symbol function_parameters) [2181 2184]))              ) nil [2173 2202])
+            ("skip" function
+               (:documentation "
+    Unconditionally skip a test.
+    "
+                :arguments 
+                  ( ("reason" variable nil (reparse-symbol function_parameters) [2212 2218]))                  )
+                nil [2203 2646])
+            ("skipIf" function
+               (:documentation "
+    Skip a test if the condition is true.
+    "
+                :arguments 
+                  ( ("condition" variable nil (reparse-symbol function_parameters) [2658 2667])
+                    ("reason" variable nil (reparse-symbol function_parameters) [2669 2675]))                  )
+                nil [2647 2797])
+            ("skipUnless" function
+               (:documentation "
+    Skip a test unless the condition is true.
+    "
+                :arguments 
+                  ( ("condition" variable nil (reparse-symbol function_parameters) [2813 2822])
+                    ("reason" variable nil (reparse-symbol function_parameters) [2824 2830]))                  )
+                nil [2798 2960])
+            ("expectedFailure" function (:arguments 
+              ( ("test_item" variable nil (reparse-symbol function_parameters) [2981 2990]))              ) nil [2961 3066])
+            ("_is_subtype" function (:arguments 
+              ( ("expected" variable nil (reparse-symbol function_parameters) [3083 3091])
+                ("basetype" variable nil (reparse-symbol function_parameters) [3093 3101]))              ) nil [3067 3276])
+            ("_BaseTestCaseContext" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [3349 3375]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3323 3327])
+                            ("test_case" variable nil (reparse-symbol function_parameters) [3329 3338]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [3310 3376])
+                    ("_raiseFailure" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3399 3403])
+                            ("standardMsg" variable nil (reparse-symbol function_parameters) [3405 3416]))                          )
+                        (reparse-symbol indented_block_body) [3381 3537]))                  
+                :type "class")
+                nil [3277 3537])
+            ("_AssertRaisesBaseContext" type
+               (:superclasses ("_BaseTestCaseContext")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("_BaseTestCaseContext" code nil (reparse-symbol indented_block_body) [3667 3713])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3722 3746])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3755 3781])
+                            ("if" code nil (reparse-symbol indented_block_body) [3790 3877])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3885 3921])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3930 3950])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3959 3974]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3610 3614])
+                            ("expected" variable nil (reparse-symbol function_parameters) [3616 3624])
+                            ("test_case" variable nil (reparse-symbol function_parameters) [3626 3635])
+                            ("expected_regex" variable nil (reparse-symbol function_parameters) [3637 3651]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [3597 3975])
+                    ("handle" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3991 3995])
+                            ("name" variable nil (reparse-symbol function_parameters) [3997 4001])
+                            ("args" variable nil (reparse-symbol function_parameters) [4003 4007])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [4009 4015]))                          
+                        :documentation "
+        If args is empty, assertRaises/Warns is being used as a
+        context manager, so check for a 'msg' kwarg and return self.
+        If args is not empty, call a callable passing positional and keyword
+        arguments.
+        ")
+                        (reparse-symbol indented_block_body) [3980 5336]))                  
+                :type "class")
+                nil [3538 5336])
+            ("_AssertRaisesContext" type
+               (:documentation "A context manager used to implement TestCase.assertRaises* methods."
+                :superclasses ("_AssertRaisesBaseContext")
+                :members 
+                  ( ("_base_type" variable nil (reparse-symbol indented_block_body) [5475 5501])
+                    ("_base_type_str" variable nil (reparse-symbol indented_block_body) [5506 5570])
+                    ("__enter__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5590 5594]))                          )
+                        (reparse-symbol indented_block_body) [5576 5617])
+                    ("__exit__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5635 5639])
+                            ("exc_type" variable nil (reparse-symbol function_parameters) [5641 5649])
+                            ("exc_value" variable nil (reparse-symbol function_parameters) [5651 5660])
+                            ("tb" variable nil (reparse-symbol function_parameters) [5662 5664]))                          )
+                        (reparse-symbol indented_block_body) [5622 6732]))                  
+                :type "class")
+                nil [5338 6732])
+            ("_AssertWarnsContext" type
+               (:documentation "A context manager used to implement TestCase.assertWarns* methods."
+                :superclasses ("_AssertRaisesBaseContext")
+                :members 
+                  ( ("_base_type" variable nil (reparse-symbol indented_block_body) [6869 6889])
+                    ("_base_type_str" variable nil (reparse-symbol indented_block_body) [6894 6953])
+                    ("__enter__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6973 6977]))                          )
+                        (reparse-symbol indented_block_body) [6959 7425])
+                    ("__exit__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7443 7447])
+                            ("exc_type" variable nil (reparse-symbol function_parameters) [7449 7457])
+                            ("exc_value" variable nil (reparse-symbol function_parameters) [7459 7468])
+                            ("tb" variable nil (reparse-symbol function_parameters) [7470 7472]))                          )
+                        (reparse-symbol indented_block_body) [7430 8817]))                  
+                :type "class")
+                nil [6734 8817])
+            ("_LoggingWatcher" variable nil nil [8820 8943])
+            ("_CapturingHandler" type
+               (:documentation "
+    A logging handler capturing all (raw and formatted) logging output.
+    "
+                :superclasses ("logging.Handler")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("logging" code nil (reparse-symbol indented_block_body) [9109 9139])
+                            ("self" variable nil (reparse-symbol indented_block_body) [9148 9186]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9094 9098]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [9081 9187])
+                    ("flush" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9202 9206]))                          )
+                        (reparse-symbol indented_block_body) [9192 9222])
+                    ("emit" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9236 9240])
+                            ("record" variable nil (reparse-symbol function_parameters) [9242 9248]))                          )
+                        (reparse-symbol indented_block_body) [9227 9369]))                  
+                :type "class")
+                nil [8946 9369])
+            ("_AssertLogsContext" type
+               (:documentation "A context manager used to implement TestCase.assertLogs()."
+                :superclasses ("_BaseTestCaseContext")
+                :members 
+                  ( ("LOGGING_FORMAT" variable nil (reparse-symbol indented_block_body) [9494 9547])
+                    ("__init__" function
+                       (:suite 
+                          ( ("_BaseTestCaseContext" code nil (reparse-symbol indented_block_body) [9612 9658])
+                            ("self" variable nil (reparse-symbol indented_block_body) [9667 9697])
+                            ("if" code nil (reparse-symbol indented_block_body) [9706 9832])
+                            ("self" variable nil (reparse-symbol indented_block_body) [9840 9855]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9566 9570])
+                            ("test_case" variable nil (reparse-symbol function_parameters) [9572 9581])
+                            ("logger_name" variable nil (reparse-symbol function_parameters) [9583 9594])
+                            ("level" variable nil (reparse-symbol function_parameters) [9596 9601]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [9553 9856])
+                    ("__enter__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9875 9879]))                          )
+                        (reparse-symbol indented_block_body) [9861 10519])
+                    ("__exit__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10537 10541])
+                            ("exc_type" variable nil (reparse-symbol function_parameters) [10543 10551])
+                            ("exc_value" variable nil (reparse-symbol function_parameters) [10553 10562])
+                            ("tb" variable nil (reparse-symbol function_parameters) [10564 10566]))                          )
+                        (reparse-symbol indented_block_body) [10524 11041]))                  
+                :type "class")
+                nil [9372 11041])
+            ("_OrderedChainMap" type
+               (:superclasses ("collections.ChainMap")
+                :members 
+                  ( ("__iter__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11106 11110]))                          )
+                        (reparse-symbol indented_block_body) [11093 11292]))                  
+                :type "class")
+                nil [11043 11292])
+            ("TestCase" type
+               (:documentation "A class whose instances are single test cases.
+
+    By default, the test code itself should be placed in a method named
+    'runTest'.
+
+    If the fixture may be used for many test cases, create as
+    many test methods as are needed. When instantiating such a TestCase
+    subclass, specify in the constructor arguments the name of the test method
+    that the instance is to execute.
+
+    Test authors should subclass TestCase for their own tests. Construction
+    and deconstruction of the test's environment ('fixture') can be
+    implemented by overriding the 'setUp' and 'tearDown' methods respectively.
+
+    If it is necessary to override the __init__ method, the base class
+    __init__ method must always be called. It is important that subclasses
+    should not change the signature of their __init__ method, since instances
+    of the classes are instantiated automatically by parts of the framework
+    in order to be run.
+
+    When subclassing TestCase, you can set these attributes:
+    * failureException: determines which exception will be raised when
+        the instance's assertion methods fail; test methods raising this
+        exception will be deemed to have 'failed' rather than 'errored'.
+    * longMessage: determines whether long messages (including repr of
+        objects used in assert methods) will be printed on failure in *addition*
+        to any explicit message passed.
+    * maxDiff: sets the maximum length of a diff in failure messages
+        by assert methods using difflib. It is looked up as an instance
+        attribute so can be configured by individual tests if required.
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("failureException" variable nil (reparse-symbol indented_block_body) [12957 12990])
+                    ("longMessage" variable nil (reparse-symbol indented_block_body) [12996 13014])
+                    ("maxDiff" code nil (reparse-symbol indented_block_body) [13020 13034])
+                    ("_diffThreshold" variable nil (reparse-symbol indented_block_body) [13150 13172])
+                    ("_classSetupFailed" variable nil (reparse-symbol indented_block_body) [13228 13253])
+                    ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"Create an instance of the class that will use the named test
+           method when executed. Raises a ValueError if the instance does
+           not have a method with the specified name.
+        \"\"\"" code nil (reparse-symbol indented_block_body) [13309 13512])
+                            ("self" variable nil (reparse-symbol indented_block_body) [13521 13554])
+                            ("self" variable nil (reparse-symbol indented_block_body) [13563 13583])
+                            ("self" variable nil (reparse-symbol indented_block_body) [13592 13623])
+                            ("try" code nil (reparse-symbol indented_block_body) [13632 14079])
+                            ("self" variable nil (reparse-symbol indented_block_body) [14087 14106])
+                            ("self" variable nil (reparse-symbol indented_block_body) [14115 14135])
+                            ("self" variable nil (reparse-symbol indented_block_body) [14314 14344])
+                            ("self" code nil (reparse-symbol indented_block_body) [14353 14402])
+                            ("self" code nil (reparse-symbol indented_block_body) [14411 14460])
+                            ("self" code nil (reparse-symbol indented_block_body) [14469 14520])
+                            ("self" code nil (reparse-symbol indented_block_body) [14529 14576])
+                            ("self" code nil (reparse-symbol indented_block_body) [14585 14638])
+                            ("self" code nil (reparse-symbol indented_block_body) [14647 14700]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13272 13276])
+                            ("methodName" variable nil (reparse-symbol function_parameters) [13278 13288]))                          
+                        :documentation "Create an instance of the class that will use the named test
+           method when executed. Raises a ValueError if the instance does
+           not have a method with the specified name.
+        "
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [13259 14701])
+                    ("addTypeEqualityFunc" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14730 14734])
+                            ("typeobj" variable nil (reparse-symbol function_parameters) [14736 14743])
+                            ("function" variable nil (reparse-symbol function_parameters) [14745 14753]))                          
+                        :documentation "Add a type specific assertEqual style function to compare a type.
+
+        This method is for use by TestCase subclasses that need to register
+        their own type equality functions to provide nicer error messages.
+
+        Args:
+            typeobj: The data type to call this function on when both values
+                    are of the same type in assertEqual().
+            function: The callable taking two arguments and an optional
+                    msg= argument that raises self.failureException with a
+                    useful error message when the two arguments are not equal.
+        ")
+                        (reparse-symbol indented_block_body) [14706 15428])
+                    ("addCleanup" function
+                       (:documentation "Add a function, with arguments, to be called when the test is
+        completed. Functions added are called on a LIFO basis and are
+        called after tearDown on test failure or success.
+
+        Cleanup items are called even if setUp fails (unlike tearDown)."
+                        :arguments 
+                          ( ("args" variable nil (reparse-symbol function_parameters) [15448 15453])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [15455 15463]))                          )
+                        (reparse-symbol indented_block_body) [15433 16306])
+                    ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16321 16325]))                          )
+                        (reparse-symbol indented_block_body) [16311 16417])
+                    ("tearDown" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16435 16439]))                          )
+                        (reparse-symbol indented_block_body) [16422 16531])
+                    ("setUpClass" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [16568 16571]))                          )
+                        (reparse-symbol indented_block_body) [16536 16660])
+                    ("tearDownClass" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [16700 16703]))                          )
+                        (reparse-symbol indented_block_body) [16665 16803])
+                    ("countTestCases" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16827 16831]))                          )
+                        (reparse-symbol indented_block_body) [16808 16851])
+                    ("defaultTestResult" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16878 16882]))                          )
+                        (reparse-symbol indented_block_body) [16856 16920])
+                    ("shortDescription" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16946 16950]))                          
+                        :documentation "Returns a one-line description of the test, or None if no
+        description has been provided.
+
+        The default implementation of this method returns the first line of
+        the specified test method's docstring.
+        ")
+                        (reparse-symbol indented_block_body) [16925 17289])
+                    ("id" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17302 17306]))                          )
+                        (reparse-symbol indented_block_body) [17295 17383])
+                    ("__eq__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17399 17403])
+                            ("other" variable nil (reparse-symbol function_parameters) [17405 17410]))                          )
+                        (reparse-symbol indented_block_body) [17388 17551])
+                    ("__hash__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17569 17573]))                          )
+                        (reparse-symbol indented_block_body) [17556 17632])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17649 17653]))                          )
+                        (reparse-symbol indented_block_body) [17637 17732])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17750 17754]))                          )
+                        (reparse-symbol indented_block_body) [17737 17861])
+                    ("_addSkip" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17879 17883])
+                            ("result" variable nil (reparse-symbol function_parameters) [17885 17891])
+                            ("test_case" variable nil (reparse-symbol function_parameters) [17893 17902])
+                            ("reason" variable nil (reparse-symbol function_parameters) [17904 17910]))                          )
+                        (reparse-symbol indented_block_body) [17866 18217])
+                    ("subTest" function
+                       (:parent "dummy"
+                        :decorators 
+                          ( ("contextlib.contextmanager" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18265 18269])
+                            ("msg" variable nil (reparse-symbol function_parameters) [18271 18274])
+                            ("params" variable nil (reparse-symbol function_parameters) [18298 18306]))                          
+                        :documentation "Return a context manager that will return the enclosed block
+        of code in a subtest identified by the optional message and
+        keyword parameters.  A failure in the subtest marks the test
+        case as failed but resumes execution at the end of the enclosed
+        block, allowing further test code to be executed.
+        ")
+                        (reparse-symbol indented_block_body) [18222 19577])
+                    ("_feedErrorsToResult" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19606 19610])
+                            ("result" variable nil (reparse-symbol function_parameters) [19612 19618])
+                            ("errors" variable nil (reparse-symbol function_parameters) [19620 19626]))                          )
+                        (reparse-symbol indented_block_body) [19582 20010])
+                    ("_addExpectedFailure" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [20039 20043])
+                            ("result" variable nil (reparse-symbol function_parameters) [20045 20051])
+                            ("exc_info" variable nil (reparse-symbol function_parameters) [20053 20061]))                          )
+                        (reparse-symbol indented_block_body) [20015 20400])
+                    ("_addUnexpectedSuccess" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [20431 20435])
+                            ("result" variable nil (reparse-symbol function_parameters) [20437 20443]))                          )
+                        (reparse-symbol indented_block_body) [20405 21040])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21053 21057])
+                            ("result" variable nil (reparse-symbol function_parameters) [21059 21065]))                          )
+                        (reparse-symbol indented_block_body) [21045 23901])
+                    ("doCleanups" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23921 23925]))                          
+                        :documentation "Execute all cleanup functions. Normally called for you after
+        tearDown.")
+                        (reparse-symbol indented_block_body) [23906 24380])
+                    ("__call__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [24398 24402])
+                            ("args" variable nil (reparse-symbol function_parameters) [24404 24409])
+                            ("kwds" variable nil (reparse-symbol function_parameters) [24411 24417]))                          )
+                        (reparse-symbol indented_block_body) [24385 24459])
+                    ("debug" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [24474 24478]))                          
+                        :documentation "Run the test without collecting errors in a TestResult")
+                        (reparse-symbol indented_block_body) [24464 24769])
+                    ("skipTest" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [24787 24791])
+                            ("reason" variable nil (reparse-symbol function_parameters) [24793 24799]))                          
+                        :documentation "Skip this test.")
+                        (reparse-symbol indented_block_body) [24774 24863])
+                    ("fail" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [24877 24881])
+                            ("msg" variable nil (reparse-symbol function_parameters) [24883 24886]))                          
+                        :documentation "Fail immediately, with the given message.")
+                        (reparse-symbol indented_block_body) [24868 24991])
+                    ("assertFalse" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25012 25016])
+                            ("expr" variable nil (reparse-symbol function_parameters) [25018 25022])
+                            ("msg" variable nil (reparse-symbol function_parameters) [25024 25027]))                          
+                        :documentation "Check that the expression is false.")
+                        (reparse-symbol indented_block_body) [24996 25227])
+                    ("assertTrue" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25247 25251])
+                            ("expr" variable nil (reparse-symbol function_parameters) [25253 25257])
+                            ("msg" variable nil (reparse-symbol function_parameters) [25259 25262]))                          
+                        :documentation "Check that the expression is true.")
+                        (reparse-symbol indented_block_body) [25232 25464])
+                    ("_formatMessage" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25488 25492])
+                            ("msg" variable nil (reparse-symbol function_parameters) [25494 25497])
+                            ("standardMsg" variable nil (reparse-symbol function_parameters) [25499 25510]))                          
+                        :documentation "Honour the longMessage attribute when generating failure messages.
+        If longMessage is False this means:
+        * Use only an explicit message if it is provided
+        * Otherwise use the standard message for the assert
+
+        If longMessage is True:
+        * Use the standard message
+        * If an explicit message is provided, plus ' : ' and the explicit message
+        ")
+                        (reparse-symbol indented_block_body) [25469 26329])
+                    ("assertRaises" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [26351 26355])
+                            ("expected_exception" variable nil (reparse-symbol function_parameters) [26357 26375])
+                            ("args" variable nil (reparse-symbol function_parameters) [26377 26382])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [26384 26392]))                          
+                        :documentation "Fail unless an exception of class expected_exception is raised
+           by the callable when invoked with specified positional and
+           keyword arguments. If a different type of exception is
+           raised, it will not be caught, and the test case will be
+           deemed to have suffered an error, exactly as for an
+           unexpected exception.
+
+           If called with the callable and arguments omitted, will return a
+           context object used like this::
+
+                with self.assertRaises(SomeException):
+                    do_something()
+
+           An optional keyword argument 'msg' can be provided when assertRaises
+           is used as a context object.
+
+           The context manager keeps a reference to the exception as
+           the 'exception' attribute. This allows you to inspect the
+           exception after the assertion::
+
+               with self.assertRaises(SomeException) as cm:
+                   do_something()
+               the_exception = cm.exception
+               self.assertEqual(the_exception.error_code, 3)
+        ")
+                        (reparse-symbol indented_block_body) [26334 27739])
+                    ("assertWarns" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [27760 27764])
+                            ("expected_warning" variable nil (reparse-symbol function_parameters) [27766 27782])
+                            ("args" variable nil (reparse-symbol function_parameters) [27784 27789])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [27791 27799]))                          
+                        :documentation "Fail unless a warning of class warnClass is triggered
+           by the callable when invoked with specified positional and
+           keyword arguments.  If a different type of warning is
+           triggered, it will not be handled: depending on the other
+           warning filtering rules in effect, it might be silenced, printed
+           out, or raised as an exception.
+
+           If called with the callable and arguments omitted, will return a
+           context object used like this::
+
+                with self.assertWarns(SomeWarning):
+                    do_something()
+
+           An optional keyword argument 'msg' can be provided when assertWarns
+           is used as a context object.
+
+           The context manager keeps a reference to the first matching
+           warning as the 'warning' attribute; similarly, the 'filename'
+           and 'lineno' attributes give you information about the line
+           of Python code from which the warning was triggered.
+           This allows you to inspect the warning after the assertion::
+
+               with self.assertWarns(SomeWarning) as cm:
+                   do_something()
+               the_warning = cm.warning
+               self.assertEqual(the_warning.some_attribute, 147)
+        ")
+                        (reparse-symbol indented_block_body) [27744 29200])
+                    ("assertLogs" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [29220 29224])
+                            ("logger" variable nil (reparse-symbol function_parameters) [29226 29232])
+                            ("level" variable nil (reparse-symbol function_parameters) [29239 29244]))                          
+                        :documentation "Fail unless a log message of level *level* or higher is emitted
+        on *logger_name* or its children.  If omitted, *level* defaults to
+        INFO and *logger* defaults to the root logger.
+
+        This method must be used as a context manager, and will yield
+        a recording object with two attributes: `output` and `records`.
+        At the end of the context manager, the `output` attribute will
+        be a list of the matching formatted log messages and the
+        `records` attribute will be a list of the corresponding LogRecord
+        objects.
+
+        Example::
+
+            with self.assertLogs('foo', level='INFO') as cm:
+                logging.getLogger('foo').info('first message')
+                logging.getLogger('foo.bar').error('second message')
+            self.assertEqual(cm.output, ['INFO:foo:first message',
+                                         'ERROR:foo.bar:second message'])
+        ")
+                        (reparse-symbol indented_block_body) [29205 30248])
+                    ("_getAssertEqualityFunc" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [30280 30284])
+                            ("first" variable nil (reparse-symbol function_parameters) [30286 30291])
+                            ("second" variable nil (reparse-symbol function_parameters) [30293 30299]))                          
+                        :documentation "Get a detailed comparison function for the types of the two args.
+
+        Returns: A callable accepting (first, second, msg=None) that will
+        raise a failure exception if first != second with a useful human
+        readable error message for those types.
+        ")
+                        (reparse-symbol indented_block_body) [30253 31518])
+                    ("_baseAssertEqual" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [31544 31548])
+                            ("first" variable nil (reparse-symbol function_parameters) [31550 31555])
+                            ("second" variable nil (reparse-symbol function_parameters) [31557 31563])
+                            ("msg" variable nil (reparse-symbol function_parameters) [31565 31568]))                          
+                        :documentation "The default assertEqual implementation, not type specific.")
+                        (reparse-symbol indented_block_body) [31523 31857])
+                    ("assertEqual" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [31878 31882])
+                            ("first" variable nil (reparse-symbol function_parameters) [31884 31889])
+                            ("second" variable nil (reparse-symbol function_parameters) [31891 31897])
+                            ("msg" variable nil (reparse-symbol function_parameters) [31899 31902]))                          
+                        :documentation "Fail if the two objects are unequal as determined by the '=='
+           operator.
+        ")
+                        (reparse-symbol indented_block_body) [31862 32131])
+                    ("assertNotEqual" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [32155 32159])
+                            ("first" variable nil (reparse-symbol function_parameters) [32161 32166])
+                            ("second" variable nil (reparse-symbol function_parameters) [32168 32174])
+                            ("msg" variable nil (reparse-symbol function_parameters) [32176 32179]))                          
+                        :documentation "Fail if the two objects are equal as determined by the '!='
+           operator.
+        ")
+                        (reparse-symbol indented_block_body) [32136 32521])
+                    ("assertAlmostEqual" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [32548 32552])
+                            ("first" variable nil (reparse-symbol function_parameters) [32554 32559])
+                            ("second" variable nil (reparse-symbol function_parameters) [32561 32567])
+                            ("places" variable nil (reparse-symbol function_parameters) [32569 32575])
+                            ("msg" variable nil (reparse-symbol function_parameters) [32582 32585])
+                            ("delta" variable nil (reparse-symbol function_parameters) [32618 32623]))                          
+                        :documentation "Fail if the two objects are unequal as determined by their
+           difference rounded to the given number of decimal places
+           (default 7) and comparing to zero, or by comparing that the
+           difference between the two objects is more than the given
+           delta.
+
+           Note that decimal places (from zero) are usually not the same
+           as significant digits (measured from the most significant digit).
+
+           If the two objects compare equal then they will automatically
+           compare almost equal.
+        ")
+                        (reparse-symbol indented_block_body) [32526 34144])
+                    ("assertNotAlmostEqual" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [34174 34178])
+                            ("first" variable nil (reparse-symbol function_parameters) [34180 34185])
+                            ("second" variable nil (reparse-symbol function_parameters) [34187 34193])
+                            ("places" variable nil (reparse-symbol function_parameters) [34195 34201])
+                            ("msg" variable nil (reparse-symbol function_parameters) [34208 34211])
+                            ("delta" variable nil (reparse-symbol function_parameters) [34247 34252]))                          
+                        :documentation "Fail if the two objects are equal as determined by their
+           difference rounded to the given number of decimal places
+           (default 7) and comparing to zero, or by comparing that the
+           difference between the two objects is less than the given delta.
+
+           Note that decimal places (from zero) are usually not the same
+           as significant digits (measured from the most significant digit).
+
+           Objects that are equal automatically fail.
+        ")
+                        (reparse-symbol indented_block_body) [34149 35702])
+                    ("assertSequenceEqual" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [35731 35735])
+                            ("seq1" variable nil (reparse-symbol function_parameters) [35737 35741])
+                            ("seq2" variable nil (reparse-symbol function_parameters) [35743 35747])
+                            ("msg" variable nil (reparse-symbol function_parameters) [35749 35752])
+                            ("seq_type" variable nil (reparse-symbol function_parameters) [35759 35767]))                          
+                        :documentation "An equality assertion for ordered sequences (like lists and tuples).
+
+        For the purposes of this function, a valid ordered sequence type is one
+        which can be indexed, has a length, and has an equality operator.
+
+        Args:
+            seq1: The first sequence to compare.
+            seq2: The second sequence to compare.
+            seq_type: The expected datatype of the sequences, or None if no
+                    datatype should be enforced.
+            msg: Optional message to use on failure instead of a list of
+                    differences.
+        ")
+                        (reparse-symbol indented_block_body) [35707 40081])
+                    ("_truncateMessage" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [40107 40111])
+                            ("message" variable nil (reparse-symbol function_parameters) [40113 40120])
+                            ("diff" variable nil (reparse-symbol function_parameters) [40122 40126]))                          )
+                        (reparse-symbol indented_block_body) [40086 40301])
+                    ("assertListEqual" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [40326 40330])
+                            ("list1" variable nil (reparse-symbol function_parameters) [40332 40337])
+                            ("list2" variable nil (reparse-symbol function_parameters) [40339 40344])
+                            ("msg" variable nil (reparse-symbol function_parameters) [40346 40349]))                          
+                        :documentation "A list-specific equality assertion.
+
+        Args:
+            list1: The first list to compare.
+            list2: The second list to compare.
+            msg: Optional message to use on failure instead of a list of
+                    differences.
+
+        ")
+                        (reparse-symbol indented_block_body) [40306 40698])
+                    ("assertTupleEqual" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [40724 40728])
+                            ("tuple1" variable nil (reparse-symbol function_parameters) [40730 40736])
+                            ("tuple2" variable nil (reparse-symbol function_parameters) [40738 40744])
+                            ("msg" variable nil (reparse-symbol function_parameters) [40746 40749]))                          
+                        :documentation "A tuple-specific equality assertion.
+
+        Args:
+            tuple1: The first tuple to compare.
+            tuple2: The second tuple to compare.
+            msg: Optional message to use on failure instead of a list of
+                    differences.
+        ")
+                        (reparse-symbol indented_block_body) [40703 41105])
+                    ("assertSetEqual" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [41129 41133])
+                            ("set1" variable nil (reparse-symbol function_parameters) [41135 41139])
+                            ("set2" variable nil (reparse-symbol function_parameters) [41141 41145])
+                            ("msg" variable nil (reparse-symbol function_parameters) [41147 41150]))                          
+                        :documentation "A set-specific equality assertion.
+
+        Args:
+            set1: The first set to compare.
+            set2: The second set to compare.
+            msg: Optional message to use on failure instead of a list of
+                    differences.
+
+        assertSetEqual uses ducktyping to support different types of sets, and
+        is optimized for sets specifically (parameters must support a
+        difference method).
+        ")
+                        (reparse-symbol indented_block_body) [41110 42704])
+                    ("assertIn" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [42722 42726])
+                            ("member" variable nil (reparse-symbol function_parameters) [42728 42734])
+                            ("container" variable nil (reparse-symbol function_parameters) [42736 42745])
+                            ("msg" variable nil (reparse-symbol function_parameters) [42747 42750]))                          
+                        :documentation "Just like self.assertTrue(a in b), but with a nicer default message.")
+                        (reparse-symbol indented_block_body) [42709 43079])
+                    ("assertNotIn" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [43100 43104])
+                            ("member" variable nil (reparse-symbol function_parameters) [43106 43112])
+                            ("container" variable nil (reparse-symbol function_parameters) [43114 43123])
+                            ("msg" variable nil (reparse-symbol function_parameters) [43125 43128]))                          
+                        :documentation "Just like self.assertTrue(a not in b), but with a nicer default message.")
+                        (reparse-symbol indented_block_body) [43084 43472])
+                    ("assertIs" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [43490 43494])
+                            ("expr1" variable nil (reparse-symbol function_parameters) [43496 43501])
+                            ("expr2" variable nil (reparse-symbol function_parameters) [43503 43508])
+                            ("msg" variable nil (reparse-symbol function_parameters) [43510 43513]))                          
+                        :documentation "Just like self.assertTrue(a is b), but with a nicer default message.")
+                        (reparse-symbol indented_block_body) [43477 43821])
+                    ("assertIsNot" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [43842 43846])
+                            ("expr1" variable nil (reparse-symbol function_parameters) [43848 43853])
+                            ("expr2" variable nil (reparse-symbol function_parameters) [43855 43860])
+                            ("msg" variable nil (reparse-symbol function_parameters) [43862 43865]))                          
+                        :documentation "Just like self.assertTrue(a is not b), but with a nicer default message.")
+                        (reparse-symbol indented_block_body) [43826 44125])
+                    ("assertDictEqual" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [44150 44154])
+                            ("d1" variable nil (reparse-symbol function_parameters) [44156 44158])
+                            ("d2" variable nil (reparse-symbol function_parameters) [44160 44162])
+                            ("msg" variable nil (reparse-symbol function_parameters) [44164 44167]))                          )
+                        (reparse-symbol indented_block_body) [44130 44724])
+                    ("assertDictContainsSubset" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [44758 44762])
+                            ("subset" variable nil (reparse-symbol function_parameters) [44764 44770])
+                            ("dictionary" variable nil (reparse-symbol function_parameters) [44772 44782])
+                            ("msg" variable nil (reparse-symbol function_parameters) [44784 44787]))                          
+                        :documentation "Checks whether dictionary is a superset of subset.")
+                        (reparse-symbol indented_block_body) [44729 45829])
+                    ("assertCountEqual" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [45856 45860])
+                            ("first" variable nil (reparse-symbol function_parameters) [45862 45867])
+                            ("second" variable nil (reparse-symbol function_parameters) [45869 45875])
+                            ("msg" variable nil (reparse-symbol function_parameters) [45877 45880]))                          
+                        :documentation "An unordered sequence comparison asserting that the same elements,
+        regardless of order.  If the same element occurs more than once,
+        it verifies that the elements occur the same number of times.
+
+            self.assertEqual(Counter(list(first)),
+                             Counter(list(second)))
+
+         Example:
+            - [0, 1, 1] and [1, 0, 1] compare equal.
+            - [0, 0, 1] and [0, 1] compare unequal.
+
+        ")
+                        (reparse-symbol indented_block_body) [45835 47180])
+                    ("assertMultiLineEqual" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [47210 47214])
+                            ("first" variable nil (reparse-symbol function_parameters) [47216 47221])
+                            ("second" variable nil (reparse-symbol function_parameters) [47223 47229])
+                            ("msg" variable nil (reparse-symbol function_parameters) [47231 47234]))                          
+                        :documentation "Assert that two multi-line strings are equal.")
+                        (reparse-symbol indented_block_body) [47185 48260])
+                    ("assertLess" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [48280 48284])
+                            ("a" variable nil (reparse-symbol function_parameters) [48286 48287])
+                            ("b" variable nil (reparse-symbol function_parameters) [48289 48290])
+                            ("msg" variable nil (reparse-symbol function_parameters) [48292 48295]))                          
+                        :documentation "Just like self.assertTrue(a < b), but with a nicer default message.")
+                        (reparse-symbol indented_block_body) [48265 48547])
+                    ("assertLessEqual" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [48572 48576])
+                            ("a" variable nil (reparse-symbol function_parameters) [48578 48579])
+                            ("b" variable nil (reparse-symbol function_parameters) [48581 48582])
+                            ("msg" variable nil (reparse-symbol function_parameters) [48584 48587]))                          
+                        :documentation "Just like self.assertTrue(a <= b), but with a nicer default message.")
+                        (reparse-symbol indented_block_body) [48552 48853])
+                    ("assertGreater" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [48876 48880])
+                            ("a" variable nil (reparse-symbol function_parameters) [48882 48883])
+                            ("b" variable nil (reparse-symbol function_parameters) [48885 48886])
+                            ("msg" variable nil (reparse-symbol function_parameters) [48888 48891]))                          
+                        :documentation "Just like self.assertTrue(a > b), but with a nicer default message.")
+                        (reparse-symbol indented_block_body) [48858 49146])
+                    ("assertGreaterEqual" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [49174 49178])
+                            ("a" variable nil (reparse-symbol function_parameters) [49180 49181])
+                            ("b" variable nil (reparse-symbol function_parameters) [49183 49184])
+                            ("msg" variable nil (reparse-symbol function_parameters) [49186 49189]))                          
+                        :documentation "Just like self.assertTrue(a >= b), but with a nicer default message.")
+                        (reparse-symbol indented_block_body) [49151 49458])
+                    ("assertIsNone" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [49480 49484])
+                            ("obj" variable nil (reparse-symbol function_parameters) [49486 49489])
+                            ("msg" variable nil (reparse-symbol function_parameters) [49491 49494]))                          
+                        :documentation "Same as self.assertTrue(obj is None), with a nicer default message.")
+                        (reparse-symbol indented_block_body) [49463 49736])
+                    ("assertIsNotNone" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [49761 49765])
+                            ("obj" variable nil (reparse-symbol function_parameters) [49767 49770])
+                            ("msg" variable nil (reparse-symbol function_parameters) [49772 49775]))                          
+                        :documentation "Included for symmetry with assertIsNone.")
+                        (reparse-symbol indented_block_body) [49741 49969])
+                    ("assertIsInstance" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [49995 49999])
+                            ("obj" variable nil (reparse-symbol function_parameters) [50001 50004])
+                            ("cls" variable nil (reparse-symbol function_parameters) [50006 50009])
+                            ("msg" variable nil (reparse-symbol function_parameters) [50011 50014]))                          
+                        :documentation "Same as self.assertTrue(isinstance(obj, cls)), with a nicer
+        default message.")
+                        (reparse-symbol indented_block_body) [49974 50299])
+                    ("assertNotIsInstance" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [50328 50332])
+                            ("obj" variable nil (reparse-symbol function_parameters) [50334 50337])
+                            ("cls" variable nil (reparse-symbol function_parameters) [50339 50342])
+                            ("msg" variable nil (reparse-symbol function_parameters) [50344 50347]))                          
+                        :documentation "Included for symmetry with assertIsInstance.")
+                        (reparse-symbol indented_block_body) [50304 50584])
+                    ("assertRaisesRegex" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [50611 50615])
+                            ("expected_exception" variable nil (reparse-symbol function_parameters) [50617 50635])
+                            ("expected_regex" variable nil (reparse-symbol function_parameters) [50637 50651])
+                            ("args" variable nil (reparse-symbol function_parameters) [50679 50684])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [50686 50694]))                          
+                        :documentation "Asserts that the message in a raised exception matches a regex.
+
+        Args:
+            expected_exception: Exception class expected to be raised.
+            expected_regex: Regex (re.Pattern object or string) expected
+                    to be found in error message.
+            args: Function to be called and extra positional args.
+            kwargs: Extra kwargs.
+            msg: Optional message used in case of failure. Can only be used
+                    when assertRaisesRegex is used as a context manager.
+        ")
+                        (reparse-symbol indented_block_body) [50589 51389])
+                    ("assertWarnsRegex" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [51415 51419])
+                            ("expected_warning" variable nil (reparse-symbol function_parameters) [51421 51437])
+                            ("expected_regex" variable nil (reparse-symbol function_parameters) [51439 51453])
+                            ("args" variable nil (reparse-symbol function_parameters) [51480 51485])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [51487 51495]))                          
+                        :documentation "Asserts that the message in a triggered warning matches a regexp.
+        Basic functioning is similar to assertWarns() with the addition
+        that only warnings whose messages also match the regular expression
+        are considered successful matches.
+
+        Args:
+            expected_warning: Warning class expected to be triggered.
+            expected_regex: Regex (re.Pattern object or string) expected
+                    to be found in error message.
+            args: Function to be called and extra positional args.
+            kwargs: Extra kwargs.
+            msg: Optional message used in case of failure. Can only be used
+                    when assertWarnsRegex is used as a context manager.
+        ")
+                        (reparse-symbol indented_block_body) [51394 52377])
+                    ("assertRegex" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [52398 52402])
+                            ("text" variable nil (reparse-symbol function_parameters) [52404 52408])
+                            ("expected_regex" variable nil (reparse-symbol function_parameters) [52410 52424])
+                            ("msg" variable nil (reparse-symbol function_parameters) [52426 52429]))                          
+                        :documentation "Fail the test unless the text matches the regular expression.")
+                        (reparse-symbol indented_block_body) [52382 53028])
+                    ("assertNotRegex" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [53052 53056])
+                            ("text" variable nil (reparse-symbol function_parameters) [53058 53062])
+                            ("unexpected_regex" variable nil (reparse-symbol function_parameters) [53064 53080])
+                            ("msg" variable nil (reparse-symbol function_parameters) [53082 53085]))                          
+                        :documentation "Fail the test if the text matches the regular expression.")
+                        (reparse-symbol indented_block_body) [53033 53700])
+                    ("_deprecate" function (:arguments 
+                      ( ("original_func" variable nil (reparse-symbol function_parameters) [53721 53734]))                      ) (reparse-symbol indented_block_body) [53706 54004])
+                    ("failUnlessEqual" variable nil (reparse-symbol indented_block_body) [54025 54081])
+                    ("failIfEqual" variable nil (reparse-symbol indented_block_body) [54086 54144])
+                    ("failUnlessAlmostEqual" variable nil (reparse-symbol indented_block_body) [54149 54223])
+                    ("failIfAlmostEqual" variable nil (reparse-symbol indented_block_body) [54228 54304])
+                    ("failUnless" variable nil (reparse-symbol indented_block_body) [54309 54354])
+                    ("failUnlessRaises" variable nil (reparse-symbol indented_block_body) [54359 54402])
+                    ("failIf" variable nil (reparse-symbol indented_block_body) [54407 54439])
+                    ("assertRaisesRegexp" variable nil (reparse-symbol indented_block_body) [54444 54494])
+                    ("assertRegexpMatches" variable nil (reparse-symbol indented_block_body) [54499 54544])
+                    ("assertNotRegexpMatches" variable nil (reparse-symbol indented_block_body) [54549 54600]))                  
+                :type "class")
+                nil [11294 54601])
+            ("FunctionTestCase" type
+               (:documentation "A test case that wraps a test function.
+
+    This is useful for slipping pre-existing test functions into the
+    unittest framework. Optionally, set-up and tidy-up functions can be
+    supplied. As with TestCase, the tidy-up ('tearDown') function will
+    always be called if the set-up ('setUp') function ran successfully.
+    "
+                :superclasses ("TestCase")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [55066 55106])
+                            ("self" variable nil (reparse-symbol indented_block_body) [55115 55138])
+                            ("self" variable nil (reparse-symbol indented_block_body) [55147 55176])
+                            ("self" variable nil (reparse-symbol indented_block_body) [55185 55210])
+                            ("self" variable nil (reparse-symbol indented_block_body) [55219 55250]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [54996 55000])
+                            ("testFunc" variable nil (reparse-symbol function_parameters) [55002 55010])
+                            ("setUp" variable nil (reparse-symbol function_parameters) [55012 55017])
+                            ("tearDown" variable nil (reparse-symbol function_parameters) [55024 55032])
+                            ("description" variable nil (reparse-symbol function_parameters) [55039 55050]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [54983 55251])
+                    ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [55266 55270]))                          )
+                        (reparse-symbol indented_block_body) [55256 55343])
+                    ("tearDown" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [55361 55365]))                          )
+                        (reparse-symbol indented_block_body) [55348 55444])
+                    ("runTest" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [55461 55465]))                          )
+                        (reparse-symbol indented_block_body) [55449 55493])
+                    ("id" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [55505 55509]))                          )
+                        (reparse-symbol indented_block_body) [55498 55551])
+                    ("__eq__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [55567 55571])
+                            ("other" variable nil (reparse-symbol function_parameters) [55573 55578]))                          )
+                        (reparse-symbol indented_block_body) [55556 55896])
+                    ("__hash__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [55914 55918]))                          )
+                        (reparse-symbol indented_block_body) [55901 56048])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [56065 56069]))                          )
+                        (reparse-symbol indented_block_body) [56053 56179])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [56197 56201]))                          )
+                        (reparse-symbol indented_block_body) [56184 56315])
+                    ("shortDescription" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [56341 56345]))                          )
+                        (reparse-symbol indented_block_body) [56320 56522]))                  
+                :type "class")
+                nil [54604 56522])
+            ("_SubTest" type
+               (:superclasses ("TestCase")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [56611 56629])
+                            ("self" variable nil (reparse-symbol indented_block_body) [56638 56661])
+                            ("self" variable nil (reparse-symbol indented_block_body) [56670 56696])
+                            ("self" variable nil (reparse-symbol indented_block_body) [56705 56725])
+                            ("self" variable nil (reparse-symbol indented_block_body) [56734 56784]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [56568 56572])
+                            ("test_case" variable nil (reparse-symbol function_parameters) [56574 56583])
+                            ("message" variable nil (reparse-symbol function_parameters) [56585 56592])
+                            ("params" variable nil (reparse-symbol function_parameters) [56594 56600]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [56555 56785])
+                    ("runTest" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [56802 56806]))                          )
+                        (reparse-symbol indented_block_body) [56790 56878])
+                    ("_subDescription" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [56903 56907]))                          )
+                        (reparse-symbol indented_block_body) [56883 57291])
+                    ("id" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [57303 57307]))                          )
+                        (reparse-symbol indented_block_body) [57296 57385])
+                    ("shortDescription" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [57411 57415]))                          
+                        :documentation "Returns a one-line description of the subtest, or None if no
+        description has been provided.
+        ")
+                        (reparse-symbol indented_block_body) [57390 57590])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [57607 57611]))                          )
+                        (reparse-symbol indented_block_body) [57595 57684]))                  
+                :type "class")
+                nil [56524 57684]))          
+          :file "case.py"
+          :pointmax 57684
+          :fsize 57683
+          :lastmodtime '(23891 8392 0 0)
+          :unmatched-syntax '((INDENT_BLOCK 42095 . 42176) (NEWLINE 42094 . 42095) (COLON 42093 . 42094) (AS 42089 . 42091) (EXCEPT 42067 . 42073) (INDENT_BLOCK 41982 . 42059) (NEWLINE 41981 . 41982) (COLON 41980 . 41981) (AS 41976 . 41978) (INDENT_BLOCK 41809 . 41889) (NEWLINE 41808 . 41809) (COLON 41807 . 41808) (AS 41803 . 41805) (EXCEPT 41781 . 41787) (INDENT_BLOCK 41696 . 41773) (NEWLINE 41695 . 41696) (COLON 41694 . 41695) (TRY 41612 . 41615) (AS 41690 . 41692) (RAISE 20857 . 20862) (FROM 20882 . 20886) (NEWLINE 20891 . 20892) (NAME 16052 . 16056) (MULT 16058 . 16059) (NAME 15782 . 15786) (MULT 15798 . 15799) (NAME 4985 . 4997) (MULT 4999 . 5000) (INDENT_BLOCK 2115 . 2171) (NEWLINE 2114 . 2115) (COLON 2113 . 2114) (FINALLY 2106 . 2113) (INDENT_BLOCK 1981 . 2098) (NEWLINE 1980 . 1981) (COLON 1979 . 1980) (ELSE 1975 . 1979) (INDENT_BLOCK 1607 . 1967) (NEWLINE 1606 . 1607) (COLON 1605 . 1606) (EXCEPT 1599 . 1605) (INDENT_BLOCK 1574 . 1591) (NEWLINE 1573 . 1574) (COLON 1572 . 1573) (EXCEPT 1554 . 1560) (INDENT_BLOCK 1460 . 1546) (NEWLINE 1459 . 1460) (COLON 1458 . 1459) (TRY 1355 . 1358) (AS 1454 . 1456) (FROM 207 . 211) (PERIOD 212 . 213) (FROM 186 . 190) (PERIOD 191 . 192)))
+        (semanticdb-table "semanticdb-table"
+          :major-mode python-mode
+          :tags 
+        '( ("\"\"\"
+Python unit testing framework, based on Erich Gamma's JUnit and Kent Beck's
+Smalltalk testing framework (used with permission).
+
+This module contains the core framework classes that form the basis of
+specific test cases and suites (TestCase, TestSuite etc.), and also a
+text-based utility class for running the tests and reporting the results
+ (TextTestRunner).
+
+Simple usage:
+
+    import unittest
+
+    class IntegerArithmeticTestCase(unittest.TestCase):
+        def testAdd(self):  # test method names begin with 'test'
+            self.assertEqual((1 + 2), 3)
+            self.assertEqual(0 + 1, 1)
+        def testMultiply(self):
+            self.assertEqual((0 * 10), 0)
+            self.assertEqual((5 * 8), 40)
+
+    if __name__ == '__main__':
+        unittest.main()
+
+Further information is available in the bundled documentation, and from
+
+  http://docs.python.org/library/unittest.html
+
+Copyright (c) 1999-2003 Steve Purcell
+Copyright (c) 2003-2010 Python Software Foundation
+This module is free software, and you may redistribute it and/or modify
+it under the same terms as Python itself, so long as this copyright message
+and disclaimer are retained in their original form.
+
+IN NO EVENT SHALL THE AUTHOR BE LIABLE TO ANY PARTY FOR DIRECT, INDIRECT,
+SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OF
+THIS CODE, EVEN IF THE AUTHOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH
+DAMAGE.
+
+THE AUTHOR SPECIFICALLY DISCLAIMS ANY WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+PARTICULAR PURPOSE.  THE CODE PROVIDED HEREUNDER IS ON AN \"AS IS\" BASIS,
+AND THERE IS NO OBLIGATION WHATSOEVER TO PROVIDE MAINTENANCE,
+SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
+\"\"\"" code nil nil [1 1748])
+            ("__all__" variable nil nil [1750 2074])
+            ("__all__" code nil nil [2132 2198])
+            ("__unittest" variable nil nil [2200 2217])
+            ("TestResult" include nil nil [2232 2249])
+            ("" code nil nil [2268 2368])
+            ("TestSuite" include nil nil [2381 2412])
+            ("BaseTestSuite" include nil nil [2381 2412])
+            ("" code nil nil [2433 2529])
+            ("main" include nil nil [2541 2565])
+            ("TestProgram" include nil nil [2541 2565])
+            ("TextTestResult" include nil nil [2579 2616])
+            ("TextTestRunner" include nil nil [2579 2616])
+            ("removeHandler" include nil nil [2631 2697])
+            ("removeResult" include nil nil [2631 2697])
+            ("registerResult" include nil nil [2631 2697])
+            ("installHandler" include nil nil [2631 2697])
+            ("_TextTestResult" variable nil nil [2712 2744])
+            ("load_tests" function (:arguments 
+              ( ("loader" variable nil (reparse-symbol function_parameters) [2943 2949])
+                ("tests" variable nil (reparse-symbol function_parameters) [2951 2956])
+                ("pattern" variable nil (reparse-symbol function_parameters) [2958 2965]))              ) nil [2928 3144]))          
+          :file "__init__.py"
+          :pointmax 3144
+          :fsize 3143
+          :lastmodtime '(23891 8392 0 0)
+          :unmatched-syntax '((FROM 2617 . 2621) (PERIOD 2622 . 2623) (FROM 2566 . 2570) (PERIOD 2571 . 2572) (FROM 2530 . 2534) (PERIOD 2535 . 2536) (FROM 2413 . 2417) (PERIOD 2418 . 2419) (FROM 2369 . 2373) (PERIOD 2374 . 2375) (FROM 2250 . 2254) (PERIOD 2255 . 2256) (FROM 2219 . 2223) (PERIOD 2224 . 2225))))
+      :file "!home!praharsh!anaconda3!lib!python3.7!unittest!semantic.cache"
+      :semantic-tag-version "2.0"
+      :semanticdb-version "2.2")

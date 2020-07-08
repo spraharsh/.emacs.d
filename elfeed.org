@@ -1,0 +1,53 @@
+* Blogs                                                              :elfeed:
+** ArXiv-blogs                                                        :arxiv:
+*** http://arxiv.org/rss/hep-th                                       :hepth:
+*** cond-mat                                                        :condmat:
+**** http://arxiv.org/rss/cond-mat.mes-hall                         :meshall:
+**** http://arxiv.org/rss/cond-mat.quant-gas                       :quantgas:
+**** http://arxiv.org/rss/cond-mat.stat-mech                       :statmech: 
+**** http://arxiv.org/rss/cond-mat.str-el                             :strel:
+**** http://arxiv.org/rss/cond-mat.supr-con                         :suprcon:
+** Journals                                                        :journals:
+*** APS                                                      :physicalreview:
+**** Topical feed                                                   :topical:
+***** http://feeds.aps.org/rss/topics/top-insulator.xml :topologicalinsulator:condmat:
+***** http://feeds.aps.org/rss/topics/ironsuperconductors.xml       :condmat:
+**** Editor's suggestions                                  :editorsuggestion:
+***** http://feeds.aps.org/rss/recent/prlsuggestions.xml                :PRL:
+***** http://feeds.aps.org/rss/prasuggestions.xml               :PRA:quantph:
+***** http://feeds.aps.org/rss/prbsuggestions.xml               :PRB:condmat:
+**** Normal Publications
+***** http://feeds.aps.org/rss/recent/prx.xml                           :PRX:
+***** http://feeds.aps.org/rss/recent/rmp.xml                           :RMP:
+***** Physical Review A                                         :PRA:quantph:
+****** http://feeds.aps.org/rss/tocsec/PRA-Fundamentalconcepts.xml :quantfound:
+****** http://feeds.aps.org/rss/tocsec/PRA-Quantuminformation.xml :quantinfo:
+****** http://feeds.aps.org/rss/tocsec/PRA-Matterwaves.xml          :condmat:
+***** Physical Review B                                         :PRB:condmat:
+****** http://feeds.aps.org/rss/tocsec/PRB-Magnetism.xml    :magnetism:strel:
+****** http://feeds.aps.org/rss/tocsec/PRB-Electronicstructurewidebandnarrowbandandstronglycorrelatedsystems.xml :strel:
+****** http://feeds.aps.org/rss/tocsec/PRB-Superfluidityandsuperconductivity.xml :suprcon:
+
+** News                                                                :news:
+*** New york times                                                      :nyt:
+**** http://rss.nytimes.com/services/xml/rss/nyt/AsiaPacific.xml
+**** http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml
+** Emacs                                                              :emacs:
+*** http://pragmaticemacs.com/feed/
+
+** Comics                                                            :comics:
+*** https://xkcd.com/atom.xml
+*** http://www.smbc-comics.com/rss.php
+*** http://feeds.feedburner.com/oatmealfeed
+*** http://phdcomics.com/gradfeed.php
+** Science Blogs                                               :scienceblogs:
+*** https://api.quantamagazine.org/feed/
+*** Physics                                                     :physicsblog:
+**** https://quantumfrontiers.com/feed/
+**** http://www.preposterousuniverse.com/blog/feed/
+*** Math
+**** https://terrytao.wordpress.com/feed/                               :tao:
+**** https://gowers.wordpress.com/feed/
+*** CS                                                               :csblog:
+**** http://www.scottaaronson.com/blog/?feed=rss2
+     

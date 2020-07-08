@@ -1,0 +1,1 @@
+#s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8 data ((ignore-errors (ghubp-get-repos-owner-repo (quote ((owner (login . "spraharsh")) (name . ".xmonad"))))) ((22870 38194 601860 653000))))

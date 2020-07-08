@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: textbf
+# key: bm
+# --
+\textbf{$1}$0

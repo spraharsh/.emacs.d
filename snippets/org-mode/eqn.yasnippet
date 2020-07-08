@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: equation(punctuated)
+# key: eqn
+# condition: (or (= (current-column) 3) (= (current-column) 0))
+# contributor: 
+# --
+# <<$1>>
+\begin{equation}
+\label{${1:label$(unless yas/modified-p (reftex-label nil 'dont-insert))}}
+${2: label} ~ ${3: punctuation}
+\end{equation}
+$0

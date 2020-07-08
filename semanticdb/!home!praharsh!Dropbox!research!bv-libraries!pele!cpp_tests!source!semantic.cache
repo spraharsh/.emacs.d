@@ -1,0 +1,1053 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+    (semanticdb-project-database-file "semanticdb-project-database-file"
+      :tables
+      (list
+        (semanticdb-table "semanticdb-table"
+          :major-mode c++-mode
+          :tags 
+        '( ("random" include (:system-flag t) nil [1 18])
+            ("numeric" include (:system-flag t) nil [19 37])
+            ("iterator" include (:system-flag t) nil [38 57])
+            ("gtest/gtest.h" include (:system-flag t) nil [59 83])
+            ("pele/distance.h" include nil nil [85 111])
+            ("test_utils.hpp" include nil nil [112 137])
+            ("pele::Array" using (:type ("pele::Array" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [139 157])
+            ("pele::periodic_distance" using (:type ("pele::periodic_distance" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [158 188])
+            ("pele::cartesian_distance" using (:type ("pele::cartesian_distance" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [189 220])
+            ("pele::leesedwards_distance" using (:type ("pele::leesedwards_distance" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [221 254])
+            ("EPS" variable
+               (:typemodifiers ("static")
+                :default-value "std::numeric_limits<double>::min()"
+                :type "double")
+                nil [256 317])
+            ("EXPECT_NEAR_RELATIVE" variable (:constant-flag t) nil [326 346])
+            ("TEST_REPEAT" variable (:constant-flag t) nil [435 446])
+            ("BOX_LENGTH" variable (:constant-flag t) nil [459 469])
+            ("testing::Test" variable (:type "int") nil [507 1765])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("DistanceTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1775 1788])
+                    ("" variable (:type ("CartesianDistanceNorm_Works" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1789 1817]))                  
+                :type "int")
+                nil [1768 3288])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("DistanceTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3297 3310])
+                    ("" variable (:type ("NearestImageConvention_Works" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3311 3340]))                  
+                :type "int")
+                nil [3290 5453])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("DistanceTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5532 5545])
+                    ("" variable (:type ("PeriodicPutAtomInBox_BoxBoundaryWorks" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5546 5584]))                  
+                :type "int")
+                nil [5525 6241])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("DistanceTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6334 6347])
+                    ("" variable (:type ("LeesEdwardsPutAtomInBox_BoxBoundaryWorks" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6348 6389]))                  
+                :type "int")
+                nil [6327 7830])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("DistanceTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7839 7852])
+                    ("" variable (:type ("SimplePeriodicNorm_Works" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7853 7878]))                  
+                :type "int")
+                nil [7832 9231])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("DistanceTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9341 9354])
+                    ("" variable (:type ("LeesEdwards_Image_Y" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9355 9375]))                  
+                :type "int")
+                nil [9334 10096])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("DistanceTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10201 10214])
+                    ("" variable (:type ("LeesEdwards_Image_NotY" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10215 10238]))                  
+                :type "int")
+                nil [10194 13346])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("DistanceTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13451 13464])
+                    ("" variable (:type ("LeesEdwards_NoShear" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13465 13485]))                  
+                :type "int")
+                nil [13444 15081])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("DistanceTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15199 15212])
+                    ("" variable (:type ("LeesEdwards_ShearPeriodic" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15213 15239]))                  
+                :type "int")
+                nil [15192 17270])
+            ("norm" function
+               (:template 
+                  ( ("dtype" type (:type "class") nil nil)
+                    ("size_t" type (:typevar "length") nil nil))                  
+                :type ("dtype" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable
+                       (:constant-flag t
+                        :type ("dtype" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17364 17382]))                  )
+                nil [17313 17498])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("DistanceTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17659 17672])
+                    ("" variable (:type ("LeesEdwards_Shear" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17673 17691]))                  
+                :type "int")
+                nil [17652 21263]))          
+          :file "test_distance.cpp"
+          :pointmax 21263
+          :fsize 21262
+          :lastmodtime '(24105 56201 127276 806000)
+          :unmatched-syntax '((semantic-list 17382 . 17390) (semantic-list 17376 . 17382) (punctuation 506 . 507) (punctuation 505 . 506) (PUBLIC 498 . 504) (punctuation 495 . 496) (symbol 482 . 494) (CLASS 476 . 481))
+          :lexical-table 
+        '(("BOX_LENGTH" . ((number "10.0" 470 . 474)))
+          ("EXPECT_NEAR_RELATIVE" (spp-arg-list ("A" "B" "T") 346 . 355) . ((symbol "ASSERT_NEAR" 357 . 368) (semantic-list "(A/(fabs(A)+fabs(B) + EPS), B/(fabs(A)+fabs(B) + EPS), T)" 368 . 425)))
+          ("TEST_REPEAT" . ((number "100" 447 . 450)))
+          )
+)
+        (semanticdb-table "semanticdb-table"
+          :major-mode c++-mode
+          :tags 
+        '( ("random" include (:system-flag t) nil [1 18])
+            ("numeric" include (:system-flag t) nil [19 37])
+            ("gtest/gtest.h" include (:system-flag t) nil [39 63])
+            ("pele/combination.h" include nil nil [65 94])
+            ("pele/array.h" include nil nil [95 118])
+            ("pele::make_combination_generator" using (:type ("pele::make_combination_generator" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [120 159])
+            ("EPS" variable
+               (:typemodifiers ("static")
+                :default-value "std::numeric_limits<double>::min()"
+                :type "double")
+                nil [161 222])
+            ("EXPECT_NEAR_RELATIVE" variable (:constant-flag t) nil [231 251])
+            ("testing::Test" variable (:type "int") nil [366 634])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("CombinationTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [643 659])
+                    ("" variable (:type ("Combination_Works" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [660 678]))                  
+                :type "int")
+                nil [636 1077])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("CombinationTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1086 1102])
+                    ("" variable (:type ("Combination_Works2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1103 1122]))                  
+                :type "int")
+                nil [1079 1486]))          
+          :file "test_combinations.cpp"
+          :pointmax 1487
+          :fsize 1486
+          :lastmodtime '(24096 56860 499089 63000)
+          :unmatched-syntax '((punctuation 365 . 366) (punctuation 364 . 365) (PUBLIC 357 . 363) (punctuation 354 . 355) (symbol 338 . 353) (CLASS 332 . 337))
+          :lexical-table 
+        '(("EXPECT_NEAR_RELATIVE" (spp-arg-list ("A" "B" "T") 251 . 260) . ((symbol "ASSERT_NEAR" 262 . 273) (semantic-list "(A/(fabs(A)+fabs(B) + EPS), B/(fabs(A)+fabs(B) + EPS), T)" 273 . 330)))
+          )
+)
+        (semanticdb-table "semanticdb-table"
+          :major-mode c++-mode
+          :tags 
+        '( ("pele/array.h" include nil nil [1 24])
+            ("pele/vecn.h" include nil nil [25 47])
+            ("pele/cell_lists.h" include nil nil [48 76])
+            ("pele/distance.h" include nil nil [77 103])
+            ("pele/hs_wca.h" include nil nil [104 128])
+            ("pele/inversepower.h" include nil nil [129 159])
+            ("pele/lj_cut.h" include nil nil [160 184])
+            ("pele/modified_fire.h" include nil nil [185 216])
+            ("test_utils.hpp" include nil nil [217 242])
+            ("iostream" include (:system-flag t) nil [244 263])
+            ("stdexcept" include (:system-flag t) nil [264 284])
+            ("gtest/gtest.h" include (:system-flag t) nil [285 309])
+            ("random" include (:system-flag t) nil [310 327])
+            ("ctime" include (:system-flag t) nil [328 344])
+            ("omp.h" include (:system-flag t) nil [345 361])
+            ("algorithm" include (:system-flag t) nil [362 382])
+            ("vector" include (:system-flag t) nil [383 400])
+            ("pele::Array" using (:type ("pele::Array" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [402 420])
+            ("pele::InversePowerPeriodic" using (:type ("pele::InversePowerPeriodic" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [421 454])
+            ("pele::InversePower_interaction" using (:type ("pele::InversePower_interaction" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [455 492])
+            ("EPS" variable
+               (:typemodifiers ("static")
+                :default-value "std::numeric_limits<double>::min()"
+                :type "double")
+                nil [494 555])
+            ("EXPECT_NEAR_RELATIVE" variable (:constant-flag t) nil [564 584])
+            ("stupid_counter" type
+               (:template 
+                  ( ("size_t" type (:typevar "ndim") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [710 718])
+                    ("m_count" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("size_t" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [721 749])
+                    ("public" label nil (reparse-symbol classsubparts) [750 757])
+                    ("stupid_counter" function
+                       (:constructor-flag t
+                        :type ("stupid_counter" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [760 914])
+                    ("insert_atom_pair" function
+                       (:arguments 
+                          ( ("atom_i" variable
+                               (:constant-flag t
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [940 960])
+                            ("atom_j" variable
+                               (:constant-flag t
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [961 981])
+                            ("isubdom" variable
+                               (:constant-flag t
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [982 1003]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [918 1094])
+                    ("get_count" function (:type "double") (reparse-symbol classsubparts) [1098 1185]))                  )
+                nil [665 1188])
+            ("overlap_counter" type
+               (:template 
+                  ( ("DIST_POL" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [1242 1250])
+                    ("DIST_POL::_ndim" variable (:type "int") (reparse-symbol classsubparts) [1282 1298])
+                    ("m_count" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("size_t" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1301 1329])
+                    ("m_coords" variable (:type ("pele::Array" type
+                         (:template-specifier 
+                            ( ("double" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1332 1361])
+                    ("m_radii" variable (:type ("pele::Array" type
+                         (:template-specifier 
+                            ( ("double" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1364 1392])
+                    ("m_dist" variable (:type ("std::shared_ptr" type
+                         (:template-specifier 
+                            ( ("DIST_POL" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1395 1428])
+                    ("public" label nil (reparse-symbol classsubparts) [1429 1436])
+                    ("overlap_counter" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("coords" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("pele::Array" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1455 1490])
+                            ("radii" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("pele::Array" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1491 1525])
+                            ("dist" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("DIST_POL" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1526 1565]))                          
+                        :type ("overlap_counter" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1439 1756])
+                    ("insert_atom_pair" function
+                       (:arguments 
+                          ( ("atom_i" variable
+                               (:constant-flag t
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1782 1802])
+                            ("atom_j" variable
+                               (:constant-flag t
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1803 1823])
+                            ("isubdom" variable
+                               (:constant-flag t
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1824 1845]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1760 2230])
+                    ("get_count" function (:type "double") (reparse-symbol classsubparts) [2234 2321]))                  )
+                nil [1190 2324])
+            ("get_nr_unique_pairs" function
+               (:template 
+                  ( ("distance_policy" type (:type "class") nil nil))                  
+                :type ("size_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("coords" variable (:type ("Array" type
+                         (:template-specifier 
+                            ( ("double" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [2388 2409])
+                    ("cl" variable
+                       (:reference 1
+                        :type ("pele::CellLists" type
+                             (:template-specifier 
+                                ( ("distance_policy" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2410 2448]))                  )
+                nil [2326 2639])
+            ("get_direct_nr_unique_pairs" function
+               (:template 
+                  ( ("distance_policy" type (:type "class") nil nil))                  
+                :type ("size_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("dist" variable (:type ("std::shared_ptr" type
+                         (:template-specifier 
+                            ( ("distance_policy" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [2710 2748])
+                    ("max_distance" variable
+                       (:constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [2783 2809])
+                    ("x" variable (:type ("pele::Array" type
+                         (:template-specifier 
+                            ( ("double" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [2810 2832]))                  )
+                nil [2641 3410])
+            ("testing::Test" variable (:type "int") nil [3444 4417])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("CellListsTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4465 4479])
+                    ("" variable (:type ("Number_of_neighbors" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4480 4500]))                  
+                :type "int")
+                nil [4458 5141])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("CellListsTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5150 5164])
+                    ("" variable (:type ("Number_of_neighbors_Cartesian" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5165 5195]))                  
+                :type "int")
+                nil [5143 5928])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("CellListsTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5937 5951])
+                    ("" variable (:type ("NumberNeighborsDifferentRcut_Works" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5952 5987]))                  
+                :type "int")
+                nil [5930 6695])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("CellListsTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6704 6718])
+                    ("" variable (:type ("NumberNeighborsDifferentRcut_WorksLeesEdwards" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6719 6765]))                  
+                :type "int")
+                nil [6697 7690])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("CellListsTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7699 7713])
+                    ("" variable (:type ("NumberNeighborsDifferentRcut_WorksCartesian" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7714 7758]))                  
+                :type "int")
+                nil [7692 8475])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("CellListsTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8484 8498])
+                    ("" variable (:type ("getEnergy_nan" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8499 8513]))                  
+                :type "int")
+                nil [8477 8682])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("CellListsTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8691 8705])
+                    ("" variable (:type ("getEnergy_inf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8706 8720]))                  
+                :type "int")
+                nil [8684 8894])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("CellListsTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8903 8917])
+                    ("" variable (:type ("getEnergyGradient_nan" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8918 8940]))                  
+                :type "int")
+                nil [8896 9315])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("CellListsTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9324 9338])
+                    ("" variable (:type ("getEnergyGradient_inf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9339 9361]))                  
+                :type "int")
+                nil [9317 9746])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("CellListsTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9755 9769])
+                    ("" variable (:type ("getEnergyGradientHessian_nan" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9770 9799]))                  
+                :type "int")
+                nil [9748 10390])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("CellListsTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10399 10413])
+                    ("" variable (:type ("getEnergyGradientHessian_inf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10414 10443]))                  
+                :type "int")
+                nil [10392 11049])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("CellListsTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11058 11072])
+                    ("" variable (:type ("Energy_Works" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11073 11086]))                  
+                :type "int")
+                nil [11051 11861])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("CellListsTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11870 11884])
+                    ("" variable (:type ("ChangeCoords_Works" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11885 11904]))                  
+                :type "int")
+                nil [11863 12490])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("CellListsTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13357 13371])
+                    ("" variable (:type ("EnergyGradient_AgreesWithNumerical" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13372 13407]))                  
+                :type "int")
+                nil [13350 14334])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("CellListsTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15366 15380])
+                    ("" variable (:type ("EnergyGradientHessian_AgreesWithNumerical" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15381 15423]))                  
+                :type "int")
+                nil [15359 16432])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("CellListsTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17649 17663])
+                    ("" variable (:type ("HS_WCAEnergy_Works" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17664 17683]))                  
+                :type "int")
+                nil [17642 18444])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("CellListsTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18453 18467])
+                    ("" variable (:type ("HS_WCAEnergyLeesEdwards_Works" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18468 18498]))                  
+                :type "int")
+                nil [18446 19398])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("CellListsTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19407 19421])
+                    ("" variable (:type ("HS_WCAEnergyCartesian_Works" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19422 19450]))                  
+                :type "int")
+                nil [19400 20179])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("CellListsTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20188 20202])
+                    ("" variable (:type ("Norm_SimpleTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20203 20219]))                  
+                :type "int")
+                nil [20181 20472])
+            ("testing::Test" variable (:type "int") nil [20519 21252])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("CellListsTestHomogeneous3D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21261 21288])
+                    ("" variable (:type ("GridAndSpacing_Works" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21289 21310]))                  
+                :type "int")
+                nil [21254 22140])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("CellListsTestHomogeneous3D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22149 22176])
+                    ("" variable (:type ("GridAndSpacingLeesEdwards_Works" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22177 22209]))                  
+                :type "int")
+                nil [22142 23436])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("CellListsTestHomogeneous3D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23445 23472])
+                    ("" variable (:type ("GridAndSpacingCartesian_Works" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23473 23503]))                  
+                :type "int")
+                nil [23438 24334])
+            ("testing::Test" variable (:type "int") nil [24381 25114])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("CellListsTestHomogeneous2D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25123 25150])
+                    ("" variable (:type ("GridAndSpacing_Works" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25151 25172]))                  
+                :type "int")
+                nil [25116 26014])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("CellListsTestHomogeneous2D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26023 26050])
+                    ("" variable (:type ("GridAndSpacingCartesian_Works" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26051 26081]))                  
+                :type "int")
+                nil [26016 26911])
+            ("testing::Test" variable (:type "int") nil [26952 27525])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("LatticeNeighborsTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27534 27555])
+                    ("" variable (:type ("LargeRcut_Works" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27556 27572]))                  
+                :type "int")
+                nil [27527 29699])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("LatticeNeighborsTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29708 29729])
+                    ("" variable (:type ("SmallRcut_Works2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29730 29747]))                  
+                :type "int")
+                nil [29701 31351])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("LatticeNeighborsTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31360 31381])
+                    ("" variable (:type ("NonPeriodic_Works2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31382 31401]))                  
+                :type "int")
+                nil [31353 32006])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("LatticeNeighborsTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32015 32036])
+                    ("" variable (:type ("positionToCellVec_BoxBoundaryWorks" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32037 32072]))                  
+                :type "int")
+                nil [32008 32620])
+            ("pele::SimplePairwisePotential" using (:type ("pele::SimplePairwisePotential" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [32622 32658])
+            ("pele::lj_interaction_cut_smooth" using (:type ("pele::lj_interaction_cut_smooth" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [32659 32697])
+            ("pele::periodic_distance" using (:type ("pele::periodic_distance" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [32698 32728])
+            ("LJCutPeriodicN" type
+               (:template 
+                  ( ("size_t" type (:typevar "NDIM") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [32861 32868])
+                    ("LJCutPeriodicN" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("C6" variable (:type "double") (reparse-symbol arg-sub-list) [32886 32896])
+                            ("C12" variable (:type "double") (reparse-symbol arg-sub-list) [32897 32908])
+                            ("rcut" variable (:type "double") (reparse-symbol arg-sub-list) [32909 32921])
+                            ("boxvec" variable
+                               (:constant-flag t
+                                :type ("Array" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [32922 32949]))                          
+                        :type ("LJCutPeriodicN" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [32871 33408]))                  
+                :superclasses 
+                  ( ("SimplePairwisePotential" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [32730 33411])
+            ("test_rectangular_cell_lists" function
+               (:template 
+                  ( ("size_t" type (:typevar "ndim") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("rcut" variable
+                       (:constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [33468 33486])
+                    ("boxvec" variable (:type ("Array" type
+                         (:template-specifier 
+                            ( ("double" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [33487 33508])
+                    ("x" variable (:type ("Array" type
+                         (:template-specifier 
+                            ( ("double" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [33509 33525]))                  )
+                nil [33413 34979])
+            ("get_boxvec" function
+               (:arguments 
+                  ( ("rcut" variable
+                       (:constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [34997 35015])
+                    ("ndim" variable
+                       (:constant-flag t
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35016 35034])
+                    ("boxvec" variable
+                       (:reference 1
+                        :type ("Array" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [35035 35057]))                  
+                :type "void")
+                nil [34981 35194])
+            ("get_boxvec_x0L" function
+               (:template 
+                  ( ("size_t" type (:typevar "ndim") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("rcut" variable
+                       (:constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [35238 35256])
+                    ("N" variable
+                       (:constant-flag t
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35257 35272])
+                    ("boxvec" variable
+                       (:reference 1
+                        :type ("Array" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [35273 35295])
+                    ("x" variable
+                       (:reference 1
+                        :type ("Array" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [35296 35313]))                  )
+                nil [35196 35577])
+            ("get_boxvec_x05" function
+               (:template 
+                  ( ("size_t" type (:typevar "ndim") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("rcut" variable
+                       (:constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [35621 35639])
+                    ("N" variable
+                       (:constant-flag t
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35640 35655])
+                    ("boxvec" variable
+                       (:reference 1
+                        :type ("Array" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [35656 35678])
+                    ("x" variable
+                       (:reference 1
+                        :type ("Array" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [35679 35696]))                  )
+                nil [35579 35981])
+            ("get_boxvec_x_all" function
+               (:template 
+                  ( ("size_t" type (:typevar "ndim") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("rcut" variable
+                       (:constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [36027 36045])
+                    ("N" variable
+                       (:constant-flag t
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36046 36061])
+                    ("boxvec" variable
+                       (:reference 1
+                        :type ("Array" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [36062 36084])
+                    ("x" variable
+                       (:reference 1
+                        :type ("Array" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [36085 36102]))                  )
+                nil [35983 36313])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("LatticeNeighborsTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36322 36343])
+                    ("" variable (:type ("RectangleWorks" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36344 36359]))                  
+                :type "int")
+                nil [36315 36881])
+            ("testing::Test" variable (:type "int") nil [36921 38331])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("OpenMPCellListsTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38340 38360])
+                    ("" variable (:type ("HSWCAEnergyLeesEdwards_Works" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38361 38390]))                  
+                :type "int")
+                nil [38333 39115])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("OpenMPCellListsTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39124 39144])
+                    ("" variable (:type ("HSWCAEnergyGradientLeesEdwards_Works" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39145 39182]))                  
+                :type "int")
+                nil [39117 40310])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("OpenMPCellListsTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40319 40339])
+                    ("" variable (:type ("HSWCAEnergyGradientHessianLeesEdwards_Works" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40340 40384]))                  
+                :type "int")
+                nil [40312 41804])
+            ("testing::Test" variable (:type "int") nil [41846 43639])
+            ("get_neighbors" function
+               (:template 
+                  ( ("distance_policy" type (:type "class") nil nil))                  
+                :type ("size_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("coords" variable
+                       (:reference 1
+                        :type ("Array" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [43697 43720])
+                    ("iatoms" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("long" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [43721 43748])
+                    ("old_coords" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [43749 43782])
+                    ("cl" variable
+                       (:reference 1
+                        :type ("pele::CellLists" type
+                             (:template-specifier 
+                                ( ("distance_policy" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [43783 43821]))                  )
+                nil [43641 44064])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("CellListsSpecificTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44073 44095])
+                    ("" variable (:type ("Number_of_neighbors" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44096 44116]))                  
+                :type "int")
+                nil [44066 44782])
+            ("get_overlaps" function
+               (:template 
+                  ( ("distance_policy" type (:type "class") nil nil))                  
+                :type ("size_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("coords" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Array" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [44860 44889])
+                    ("iatoms" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("long" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [44910 44943])
+                    ("old_coords" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [44964 45003])
+                    ("radii" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Array" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [45024 45052])
+                    ("cl" variable
+                       (:reference 1
+                        :type ("pele::CellLists" type
+                             (:template-specifier 
+                                ( ("distance_policy" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [45073 45111])
+                    ("dist" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::shared_ptr" type
+                             (:template-specifier 
+                                ( ("distance_policy" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [45132 45178]))                  )
+                nil [44784 45436])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("CellListsSpecificTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45445 45467])
+                    ("" variable (:type ("Number_of_overlaps" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45468 45487]))                  
+                :type "int")
+                nil [45438 45948]))          
+          :file "test_cell_lists.cpp"
+          :pointmax 45948
+          :fsize 45947
+          :lastmodtime '(24105 55751 29991 559000)
+          :unmatched-syntax '((punctuation 41845 . 41846) (punctuation 41844 . 41845) (PUBLIC 41837 . 41843) (punctuation 41835 . 41836) (symbol 41813 . 41834) (CLASS 41807 . 41812) (punctuation 36920 . 36921) (punctuation 36919 . 36920) (PUBLIC 36912 . 36918) (punctuation 36910 . 36911) (symbol 36890 . 36909) (CLASS 36884 . 36889) (punctuation 26951 . 26952) (punctuation 26950 . 26951) (PUBLIC 26943 . 26949) (punctuation 26941 . 26942) (symbol 26920 . 26940) (CLASS 26914 . 26919) (punctuation 24380 . 24381) (punctuation 24379 . 24380) (PUBLIC 24372 . 24378) (punctuation 24370 . 24371) (symbol 24343 . 24369) (CLASS 24337 . 24342) (punctuation 20518 . 20519) (punctuation 20517 . 20518) (PUBLIC 20510 . 20516) (punctuation 20508 . 20509) (symbol 20481 . 20507) (CLASS 20475 . 20480) (punctuation 3443 . 3444) (punctuation 3442 . 3443) (PUBLIC 3435 . 3441) (punctuation 3433 . 3434) (symbol 3419 . 3432) (CLASS 3413 . 3418) (punctuation 1280 . 1281) (symbol 1273 . 1279) (symbol 1266 . 1272) (STATIC 1259 . 1265) (CONST 1253 . 1258))
+          :lexical-table 
+        '(("EXPECT_NEAR_RELATIVE" (spp-arg-list ("A" "B" "T") 584 . 593) . ((symbol "EXPECT_NEAR" 595 . 606) (semantic-list "(A/(fabs(A)+fabs(B) + EPS), B/(fabs(A)+fabs(B) + EPS), T)" 606 . 663)))
+          )
+)
+        (semanticdb-table "semanticdb-table"
+          :major-mode c++-mode
+          :tags 
+        '( ("pele/array.h" include nil nil [1 24])
+            ("pele/lj.h" include nil nil [25 45])
+            ("pele/lj_cut.h" include nil nil [46 70])
+            ("test_utils.hpp" include nil nil [71 96])
+            ("iostream" include (:system-flag t) nil [98 117])
+            ("stdexcept" include (:system-flag t) nil [118 138])
+            ("vector" include (:system-flag t) nil [139 156])
+            ("gtest/gtest.h" include (:system-flag t) nil [157 181])
+            ("cmath" include (:system-flag t) nil [182 198])
+            ("memory" include (:system-flag t) nil [199 216])
+            ("pele::Array" using (:type ("pele::Array" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [218 236])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("LJInteractionTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [244 262])
+                    ("" variable (:type ("Energy_Works" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [263 276]))                  
+                :type "int")
+                nil [239 450])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("LJInteractionTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [457 475])
+                    ("" variable (:type ("EnergyGradient_Works" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [476 497]))                  
+                :type "int")
+                nil [452 767])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("LJInteractionTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [774 792])
+                    ("" variable (:type ("Hessian_Works" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [793 807]))                  
+                :type "int")
+                nil [769 1142])
+            ("LJTest" type
+               (:superclasses 
+                  ( ("PotentialTest" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1184 1191])
+                    ("c6" variable (:type "double") (reparse-symbol classsubparts) [1197 1212])
+                    ("c12" variable (:type "double") (reparse-symbol classsubparts) [1197 1212])
+                    ("natoms" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1217 1231])
+                    ("setup_potential" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1237 1350])
+                    ("SetUp" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1356 1729]))                  
+                :type "class")
+                nil [1145 1734])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("LJTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1743 1750])
+                    ("" variable (:type ("Energy_Works" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1751 1764]))                  
+                :type "int")
+                nil [1736 1786])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("LJTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1795 1802])
+                    ("" variable (:type ("EnergyGradient_AgreesWithNumerical" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1803 1838]))                  
+                :type "int")
+                nil [1788 1869])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("LJTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1878 1885])
+                    ("" variable (:type ("EnergyGradientHessian_AgreesWithNumerical" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1886 1928]))                  
+                :type "int")
+                nil [1871 1967])
+            ("LJNeighborListTest" type
+               (:superclasses 
+                  ( ("LJTest" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("setup_potential" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2068 2479]))                  
+                :type "class")
+                nil [2020 2482])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("LJNeighborListTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2491 2510])
+                    ("" variable (:type ("Energy_Works" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2511 2524]))                  
+                :type "int")
+                nil [2484 2546])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("LJNeighborListTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2555 2574])
+                    ("" variable (:type ("EnergyGradient_AgreesWithNumerical" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2575 2610]))                  
+                :type "int")
+                nil [2548 2641])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("LJNeighborListTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2650 2669])
+                    ("" variable (:type ("EnergyGradientHessian_AgreesWithNumerical" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2670 2712]))                  
+                :type "int")
+                nil [2643 2751])
+            ("LJCutTest" type
+               (:superclasses 
+                  ( ("PotentialTest" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2796 2803])
+                    ("c6" variable (:type "double") (reparse-symbol classsubparts) [2808 2829])
+                    ("c12" variable (:type "double") (reparse-symbol classsubparts) [2808 2829])
+                    ("rcut" variable (:type "double") (reparse-symbol classsubparts) [2808 2829])
+                    ("natoms" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2834 2848])
+                    ("setup_potential" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2854 2976])
+                    ("SetUp" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2982 3377]))                  
+                :type "class")
+                nil [2754 3380])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("LJCutTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3389 3399])
+                    ("" variable (:type ("Energy_Works" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3400 3413]))                  
+                :type "int")
+                nil [3382 3435])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("LJCutTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3444 3454])
+                    ("" variable (:type ("EnergyGradient_AgreesWithNumerical" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3455 3490]))                  
+                :type "int")
+                nil [3437 3521])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("LJCutTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3530 3540])
+                    ("" variable (:type ("EnergyGradientHessian_AgreesWithNumerical" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3541 3583]))                  
+                :type "int")
+                nil [3523 3622])
+            ("LJCutAtomListTest" type
+               (:superclasses 
+                  ( ("LJCutTest" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [3701 3708])
+                    ("setup_potential" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [3714 4012]))                  
+                :type "class")
+                nil [3655 4016])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("LJCutAtomListTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4026 4044])
+                    ("" variable (:type ("Energy_Works" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4045 4058]))                  
+                :type "int")
+                nil [4019 4080])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("LJCutAtomListTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4089 4107])
+                    ("" variable (:type ("EnergyGradient_AgreesWithNumerical" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4108 4143]))                  
+                :type "int")
+                nil [4082 4174])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("LJCutAtomListTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4183 4201])
+                    ("" variable (:type ("EnergyGradientHessian_AgreesWithNumerical" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4202 4244]))                  
+                :type "int")
+                nil [4176 4283])
+            ("LJCutPeriodicAtomListTest" type
+               (:superclasses 
+                  ( ("LJCutTest" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [4339 4346])
+                    ("setup_potential" function
+                       (:typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [4352 5045]))                  
+                :type "class")
+                nil [4285 5049])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("LJCutPeriodicAtomListTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5059 5085])
+                    ("" variable (:type ("Energy_Works" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5086 5099]))                  
+                :type "int")
+                nil [5052 5121])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("LJCutPeriodicAtomListTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5130 5156])
+                    ("" variable (:type ("EnergyGradient_AgreesWithNumerical" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5157 5192]))                  
+                :type "int")
+                nil [5123 5223])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("LJCutPeriodicAtomListTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5232 5258])
+                    ("" variable (:type ("EnergyGradientHessian_AgreesWithNumerical" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5259 5301]))                  
+                :type "int")
+                nil [5225 5340]))          
+          :file "test_lj.cpp"
+          :pointmax 5341
+          :fsize 5340
+          :lastmodtime '(24096 56860 499089 63000)
+          :unmatched-syntax nil))
+      :file "!home!praharsh!Dropbox!research!bv-libraries!pele!cpp_tests!source!semantic.cache"
+      :semantic-tag-version "2.0"
+      :semanticdb-version "2.2")

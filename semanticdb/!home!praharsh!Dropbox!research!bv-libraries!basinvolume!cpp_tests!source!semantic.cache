@@ -1,0 +1,224 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("random" include (:system-flag t) nil [1 18])
+            ("gtest/gtest.h" include (:system-flag t) nil [20 44])
+            ("pele/hs_wca.h" include nil nil [46 70])
+            ("pele/lbfgs.h" include nil nil [71 94])
+            ("pele/harmonic.h" include nil nil [95 121])
+            ("mcpele/mc.h" include nil nil [123 145])
+            ("mcpele/gaussian_coords_displacement.h" include nil nil [146 194])
+            ("basinvolume/check_overlap.h" include nil nil [196 234])
+            ("basinvolume/check_overlap_cell_lists.h" include nil nil [235 284])
+            ("testing::Test" variable (:type "int") nil [320 1310])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("CheckOverlapTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1954 1971])
+                    ("" variable (:type ("CellLists_Works" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1972 1988]))                  
+                :type "int")
+                nil [1947 3051])
+            ("testing::Test" variable (:type "int") nil [3100 4370])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("CheckOverlapManyParticlesTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4379 4409])
+                    ("" variable (:type ("CellListsOverlap_Works" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4410 4433]))                  
+                :type "int")
+                nil [4372 5463]))          
+      :file "test_check_overlap.cpp"
+      :pointmax 5464
+      :fsize 5463
+      :lastmodtime '(24113 57425 635766 314000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("stdexcept" include (:system-flag t) nil [21 41])
+            ("cmath" include (:system-flag t) nil [42 58])
+            ("vector" include (:system-flag t) nil [59 76])
+            ("algorithm" include (:system-flag t) nil [77 97])
+            ("memory" include (:system-flag t) nil [98 115])
+            ("gtest/gtest.h" include (:system-flag t) nil [117 141])
+            ("pele/array.h" include nil nil [143 166])
+            ("pele/distance.h" include nil nil [167 193])
+            ("pele/harmonic.h" include nil nil [194 220])
+            ("pele/lbfgs.h" include nil nil [221 244])
+            ("pele/modified_fire.h" include nil nil [245 276])
+            ("mcpele/random_coords_displacement.h" include nil nil [278 324])
+            ("mcpele/gaussian_coords_displacement.h" include nil nil [325 373])
+            ("mcpele/metropolis_test.h" include nil nil [374 409])
+            ("mcpele/adaptive_takestep.h" include nil nil [410 447])
+            ("basinvolume/check_same_minimum.h" include nil nil [449 492])
+            ("basinvolume/findk.h" include nil nil [493 523])
+            ("EXPECT_NEAR_RELATIVE" variable (:constant-flag t) nil [533 553])
+            ("std::shared_ptr" using (:type ("std::shared_ptr" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [650 672])
+            ("testing::Test" variable (:type "int") nil [711 1984])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("CheckSameMinimumTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1993 2014])
+                    ("" variable (:type ("BasicFunctionality" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2015 2034]))                  
+                :type "int")
+                nil [1986 3060])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("CheckSameMinimumTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3069 3090])
+                    ("" variable (:type ("CGDBasicFunctionality" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3091 3113]))                  
+                :type "int")
+                nil [3062 4198])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("CheckSameMinimumTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4207 4228])
+                    ("" variable (:type ("MCInteraction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4229 4243]))                  
+                :type "int")
+                nil [4200 5992])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("CheckSameMinimumTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6001 6022])
+                    ("" variable (:type ("CGDMCInteraction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6023 6040]))                  
+                :type "int")
+                nil [5994 7859])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("CheckSameMinimumTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7868 7889])
+                    ("" variable (:type ("FindkTestSingleBasin" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7890 7911]))                  
+                :type "int")
+                nil [7861 9389]))          
+      :file "test_check_same_minimum.cpp"
+      :pointmax 9390
+      :fsize 9389
+      :lastmodtime '(24105 57026 647305 421000)
+      :unmatched-syntax '((punctuation 710 . 711) (punctuation 709 . 710) (PUBLIC 702 . 708) (punctuation 700 . 701) (symbol 680 . 700) (CLASS 674 . 679))
+      :lexical-table 
+        '(("EXPECT_NEAR_RELATIVE" (spp-arg-list ("A" "B" "T") 553 . 562) . ((symbol "EXPECT_NEAR" 564 . 575) (semantic-list "(fabs(A) / (fabs(A) + fabs(B) + 1), fabs(B) / (fabs(A) + fabs(B) + 1), T)" 575 . 648)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("stdexcept" include (:system-flag t) nil [21 41])
+            ("cmath" include (:system-flag t) nil [42 58])
+            ("vector" include (:system-flag t) nil [59 76])
+            ("algorithm" include (:system-flag t) nil [77 97])
+            ("memory" include (:system-flag t) nil [98 115])
+            ("gtest/gtest.h" include (:system-flag t) nil [117 141])
+            ("pele/array.h" include nil nil [143 166])
+            ("pele/distance.h" include nil nil [167 193])
+            ("pele/harmonic.h" include nil nil [194 220])
+            ("pele/lbfgs.h" include nil nil [221 244])
+            ("pele/modified_fire.h" include nil nil [245 276])
+            ("mcpele/random_coords_displacement.h" include nil nil [278 324])
+            ("basinvolume/find_nr_decorrelation_steps.h" include nil nil [326 378])
+            ("EXPECT_NEAR_RELATIVE" variable (:constant-flag t) nil [388 408])
+            ("std::shared_ptr" using (:type ("std::shared_ptr" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [493 515])
+            ("testing::Test" variable (:type "int") nil [561 1624])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("FindNrDecorrelationSepsTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1633 1661])
+                    ("" variable (:type ("BasicWorks" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1662 1673]))                  
+                :type "int")
+                nil [1626 3033])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("FindNrDecorrelationSepsTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3042 3070])
+                    ("" variable (:type ("NullTargetWorks" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3071 3087]))                  
+                :type "int")
+                nil [3035 4495])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("FindNrDecorrelationSepsTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4504 4532])
+                    ("" variable (:type ("MoreNeedsMoreWorks" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4533 4552]))                  
+                :type "int")
+                nil [4497 7252]))          
+      :file "test_find_nr_decorrelation_steps.cpp"
+      :pointmax 7254
+      :fsize 7253
+      :lastmodtime '(24105 57026 647305 421000)
+      :unmatched-syntax '((punctuation 560 . 561) (punctuation 559 . 560) (PUBLIC 552 . 558) (punctuation 550 . 551) (symbol 523 . 550) (CLASS 517 . 522))
+      :lexical-table 
+        '(("EXPECT_NEAR_RELATIVE" (spp-arg-list ("A" "B" "T") 408 . 417) . ((symbol "EXPECT_NEAR" 419 . 430) (semantic-list "(fabs(A)/(fabs(A)+fabs(B)+1), fabs(B)/(fabs(A)+fabs(B)+1), T)" 430 . 491)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("stdexcept" include (:system-flag t) nil [21 41])
+            ("cmath" include (:system-flag t) nil [42 58])
+            ("vector" include (:system-flag t) nil [59 76])
+            ("gtest/gtest.h" include (:system-flag t) nil [77 101])
+            ("pele/array.h" include nil nil [103 126])
+            ("basinvolume/minima_list.h" include nil nil [128 164])
+            ("EXPECT_NEAR_RELATIVE" variable (:constant-flag t) nil [174 194])
+            ("testing::Test" variable (:type "int") nil [310 1226])
+            ("nr_minima_visits" function
+               (:arguments 
+                  ( ("ml" variable
+                       (:reference 1
+                        :type ("bv::MinimaList" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1265 1285]))                  
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("size_t" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1228 1447])
+            ("energies" function
+               (:arguments 
+                  ( ("ml" variable
+                       (:reference 1
+                        :type ("bv::MinimaList" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1531 1551]))                  
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1502 1725])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("MinimaListTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1735 1750])
+                    ("" variable (:type ("CountingAndCoords" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1751 1769]))                  
+                :type "int")
+                nil [1728 2452])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("MinimaListTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2461 2476])
+                    ("" variable (:type ("DeltaXScalarTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2477 2494]))                  
+                :type "int")
+                nil [2454 3139])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("MinimaListTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3148 3163])
+                    ("" variable (:type ("EnergyTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3164 3175]))                  
+                :type "int")
+                nil [3141 4167])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("MinimaListTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4176 4191])
+                    ("" variable (:type ("CoordinateTest2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4192 4208]))                  
+                :type "int")
+                nil [4169 4716]))          
+      :file "test_minima_list.cpp"
+      :pointmax 4717
+      :fsize 4716
+      :lastmodtime '(24105 56984 225432 378000)
+      :unmatched-syntax '((punctuation 309 . 310) (punctuation 308 . 309) (PUBLIC 301 . 307) (punctuation 299 . 300) (symbol 285 . 299) (CLASS 279 . 284))
+      :lexical-table 
+        '(("EXPECT_NEAR_RELATIVE" (spp-arg-list ("A" "B" "T") 194 . 203) . ((symbol "EXPECT_NEAR" 205 . 216) (semantic-list "(fabs(A)/(fabs(A)+fabs(B)+1), fabs(B)/(fabs(A)+fabs(B)+1), T)" 216 . 277)))
+          )
+))
+  :file "!home!praharsh!Dropbox!research!bv-libraries!basinvolume!cpp_tests!source!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

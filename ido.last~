@@ -1,0 +1,265 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/praharsh/summerwork/" . "d20170602/")
+ ("/home/praharsh/miniconda2/envs/" . "basemacs/")
+ ("/home/praharsh/miniconda2/" . "envs/")
+ ("/home/praharsh/py2/envs/" . "bootstrap/")
+ ("/home/praharsh/py2/" . "envs/")
+ ("/home/praharsh/Documents/journal/" . "personalfiles/")
+ ("/home/praharsh/magnet/present/" . "magnetpresent/")
+ ("/home/praharsh/magnet/" . "present/")
+ ("/home/praharsh/backup/coursework/particle/homework/" . "hw1/")
+ ("/home/praharsh/backup/coursework/particle/" . "homework/")
+ ("/home/praharsh/backup/coursework/" . "particle/")
+ ("/home/praharsh/backup/" . "coursework/")
+ ("/home/praharsh/mp2/" . "thing/")
+ ("/home/praharsh/SOPs/inb/December15th/" . "Maryland/")
+ ("/home/praharsh/SOPs/inb/" . "December15th/")
+ ("/home/praharsh/SOPs/December15th/Chicago/" . "auto/")
+ ("/home/praharsh/SOPs/December15th/" . "Chicago/")
+ ("/home/praharsh/SOPs/" . "December15th/")
+ ("/home/praharsh/reports/" . "endsempresent/")
+ ("/" . "home/")
+ ("/home/praharsh/yasnippets-latex/" . "snippets/")
+ ("/home/praharsh/readproj/" . "operator product expansion/")
+ ("/home/" . "praharsh/")
+ ("/home/praharsh/mp/" . "d20161204/")
+ ("/home/praharsh/" . "miniconda2/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/praharsh/.emacs.d/lisp/"
+ "/home/praharsh/summerwork/d20170602/"
+ "/home/praharsh/"
+ "/home/praharsh/magnet/"
+ "/home/praharsh/magnet/present/magnetpresent/"
+ "/home/praharsh/reports/endsempresent/"
+ "/home/praharsh/reports/midsempresent/"
+ "/home/praharsh/backup/coursework/particle/homework/hw1/"
+ "/home/praharsh/reports/borofunny/"
+ "/home/praharsh/mp2/thing/"
+ "/home/praharsh/mp2/new/"
+ "/home/praharsh/SOPs/December15th/Chicago/"
+ "/home/praharsh/SOPs/personalstatement/"
+ "/home/praharsh/SOPs/inb/December15th/UCLA/"
+ "/home/praharsh/SOPs/inb/December15th/Maryland/"
+ "/home/praharsh/SOPs/December15th/UCSD/"
+ "/home/praharsh/SOPs/Toronto/"
+ "/home/praharsh/SOPs/December15th/Chicago/auto/"
+ "/home/praharsh/SOPs/currivita/"
+ "/home/praharsh/SOPs/December15th/John Hopkins/"
+ "/home/praharsh/SOPs/December15th/Boulder/"
+ "/home/praharsh/SOPs/austin/"
+ "/home/praharsh/SOPs/Chicago/"
+ "/home/praharsh/SOPs/experimenttex/"
+ "/home/praharsh/mp/d20161204/"
+ "/home/praharsh/mp/d20161210/"
+ "/home/praharsh/SOPs/ohiostate/"
+ "/home/praharsh/SOPs/CurrriculumVita/"
+ "/home/praharsh/reports/supercollalgo/"
+ "/home/praharsh/readproj/operator product expansion/"
+ "/home/praharsh/experimentalcode/"
+ "/home/praharsh/exmpl.tex/"
+ "/home/praharsh/reports/"
+ "/home/praharsh/reports/borophenetransportpaperform/"
+ "/home/praharsh/mp/d20161029/"
+ "/home/praharsh/mp/d20160905/"
+ "/home/praharsh/mp/d20160916/"
+ "/home/praharsh/mp/d20161008/"
+ "/home/praharsh/mp/d20160904/"
+ "/home/praharsh/.xmonad/"
+ "/home/praharsh/bin/"
+ "/home/praharsh/.bin/"
+ "/home/praharsh/mp/d20160831/"
+ "/home/praharsh/mp/d20160811/"
+ "/home/praharsh/.emacs.d/"
+ "/home/praharsh/readproj/freepolch/"
+ "/home/praharsh/mp/d20160903/"
+ "/home/praharsh/mp/d20160804/"
+ "/home/praharsh/mp/d20160802/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "arxiv-reader.el"
+ "boundata.py"
+ ".emacs"
+ "newer.tex"
+ "frustmag.tex"
+ "presentendsem.tex"
+ "presentendsem.log"
+ "midsempresent.tex"
+ "hw1.tex"
+ "thing.tex"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/praharsh/summerwork/d20170602/" (22837 24810 717901 458000) "parallelgrid.py" "../" "./" "boundata.py")
+
+ ("/home/praharsh/" (22837 23723 651435 121000) ".emacs.d/" "Templates/" "summerwork/" ".gnome/" "praharsh@10.42.75.247/" ".bashrc" "localbin/" "Maildir/" ".ssh/" ".bash_history" "mail" ".xmonad/" ".conda/" ".emacs" ".astropy/" ".nano/" ".local/" "emacsbackup/" ".xsession-errors.old" ".dmrc" "git-work-reps/" ".mozilla/" ".compiz/" ".bash_logout" "../" "miniconda2/" ".gconf/" "./" ".xsession-errors" ".mu/" ".offlineimap/" ".gnupg/" ".cache/" ".emacs~" "Downloads/" ".gitconfig" ".muttrc" "examples.desktop" ".profile" ".vim/" ".config/" ".bashrc-miniconda2.bak" "installs/" "Documents/" ".cabal/" ".sudo_as_admin_successful" "Videos/" "Pictures/" "Music/" ".ICEauthority" ".pki/" ".Xauthority" ".thunderbird/" ".viminfo" "Desktop/" ".offlineimaprc" "praharsh-backup/" "Public/")
+
+ ("/home/praharsh/summerwork/" (22833 20780 473458 690000) "d20170602/" "../" "./")
+
+ ("/home/praharsh/miniconda2/envs/basemacs/" (22837 20858 685067 510000) "phrasebooks/" "share/" "var/" "sbin/" "plugins/" "mkspecs/" "doc/" "lib/" "qml/" "ssl/" "bin/" "../" "./" "libexec/" "translations/" "conda-meta/" "etc/" "include/")
+
+ ("/home/praharsh/miniconda2/envs/" (22837 19936 154972 253000) "../" "./" "basemacs/")
+
+ ("/home/praharsh/miniconda2/" (22837 18950 802943 580000) "share/" "pkgs/" "lib/" "ssl/" "bin/" "../" "LICENSE.txt" "./" "envs/" "conda-meta/" "etc/" "include/")
+
+ ("/home/praharsh/.emacs.d/" (22837 7124 21667 987000) "session.10e13b9f6ae5e74556148948744768985900000014300050" ".emacs.d/" "tramp" "elpa/" "ido.last" "current-theme" "plugins/" "session.10470fdd40dad9be1a147440268018371200000016490050" "session.10ac4df67587a30b86149631940480513500000184290035" "snippets/" "session.10462192915a47723b1495287696737200000013970054" "session.1019e277763e350a51149173316051025300000153050052" ".graphene-geometry" "../" "smex-items" "./" ".mc-lists.el" "thing-theme.el" "auto-save-list/")
+
+ ("/home/praharsh/.emacs.d/elpa/" (22837 7058 870122 250000) "flycheck-20160901.128/" "project-persist-drawer-20151108.422/" "let-alist-1.0.4/" "seq-2.16.signed" "pyvenv-20160527.442/" "leuven-theme-20170508.1319/" "goto-last-change-20150109.1023/" "auto-complete-auctex-20140223.958/" "sr-speedbar-20150804.951/" "auctex-latexmk-20160706.503/" "find-file-in-project-20160809.526/" "color-theme-sanityinc-tomorrow-20160829.2324/" "company-20160829.1206/" "seq-2.16/" "haskell-mode-20160827.1033/" "smex-20151212.1409/" "yasnippet-20160801.1142/" "let-alist-1.0.4.signed" "zenburn-theme-20170511.1337/" "zenburn-theme-readme.txt" "look-mode-20151211.1026/" "ido-completing-read+-20160623.815/" "auctex-readme.txt" "auctex-11.89.4/" "multiple-cursors-20160719.216/" "async-20160711.2235/" "archives/" "auctex-11.89.7.signed" "pkg-info-20150517.443/" "rainbow-delimiters-20160430.2358/" "elpy-20160613.1005/" "helm-core-20170601.217/" "auctex-11.89.7/" "ac-rtags-readme.txt" "org-journal-20170221.612/" "ivy-20160831.911/" "d-mode-20160504.955/" "../" "undo-tree-20160922.853/" "lua-mode-20160821.1216/" "color-theme-20080305.34/" "dash-20170207.2056/" "dash-20160820.501/" "./" "solarized-theme-20161222.109/" "arxiv-reader.el" "auctex-lua-20151121.810/" "graphene-20151108.2340/" "project-persist-20150519.1324/" "epl-20150517.433/" "auctex-11.89.4.signed" "highlight-indentation-20150307.208/" "cyberpunk-theme-20160121.1712/" "request-20160822.1659/" "popup-20160709.729/" "graphene-meta-theme-20160724.454/" "helm-20170529.2236/" "exec-path-from-shell-20160812.159/" "4clojure-20131014.1507/" "auctex-latexmk-readme.txt" "gnupg/" "web-mode-20160828.2311/" "ppd-sr-speedbar-20151108.424/" "auto-complete-20160827.649/" "ido-ubiquitous-20160623.815/" "smartparens-20160828.1136/")
+
+ ("/home/" (22831 55989 919587 123000) "../" "./" "praharsh/")
+
+ ("/home/praharsh/summerwork/pycftboot/" (22830 59573 696050 708000) "bootstrap.pyc" "tab_-0.894_-0.894" ".git/" "../" "tab_0.882_-0.882" "blocks2.py" "tab_0.894_-0.894" "compat_juliboots.py" "tab_0_0" "tab_-0.882_-0.882" "blocks1.py" "./" "bootstrapvirtualenv/" "README.md" "wrap.py" "bootstrap.py" "common.py" "mySDP.out" "boundata.py" "LICENSE" "tutorial.py" "mySDP.xml")
+
+ ("/home/praharsh/py2/envs/bootstrap/" (22829 50435 76040 244000) "../" "share/" "./" "conda-meta/" "include/" "ssl/" "bin/" "lib/")
+
+ ("/home/praharsh/py2/envs/" (22829 38174 162491 565000) "bootstrap/" "../" "./")
+
+ ("/home/praharsh/py2/" (22829 40716 494403 426000) "sbin/" "exec/" "plugins/" "translations/" "../" "pkgs/" "LICENSE.txt" "envs/" "qml/" "mkspecs/" "doc/" "share/" "./" "etc/" "conda-meta/" "libexec/" "include/" "var/" "ssl/" "bin/" "lib/" "phrasebooks/")
+
+ ("/home/praharsh/Documents/journal/personalfiles/" (22825 37921 463437 612000) "../" "jokes.org" "./")
+
+ ("/home/praharsh/Documents/journal/todofiles/" (22818 48051 823319 990000) "../" "agenda.org" "./")
+
+ ("/home/praharsh/Documents/journal/" (22826 25261 643845 321000) "../" "20170527" "20170524" "20170522" "todofiles/" ".#20170528" "./" "personalfiles/" "20170521" "20170520" "20170523" "20170526")
+
+ ("/home/praharsh/magnet/" (22762 31919 787423 528000) "VBsolid.jpg" "Ineneutronscat.jpg" "auto/" "kagome.jpg" "bibo.bib" "../" "RVB.jpg" "frustmag.blg" "frustmag.pdf" "Inelaneutron.jpeg" "frustmag.aux" "present/" "frustmagNotes.bib" "frustmag.log" "spinons.jpg" "frustmag.tex" "./" "frustmag.synctex.gz" "struct.jpeg" ".frustmag.tex.swp" "spinspin.jpeg" "frustmag.bbl")
+
+ ("/home/praharsh/magnet/present/magnetpresent/" (22761 47229 163391 725000) "presentendsem.bbl" "VBsolid.jpg" "Ineneutronscat.jpg" "auto/" "kagome.jpg" "bibo.bib" "../" "presentendsem.out" "RVB.jpg" "presentendsem.blg" "presentendsem.pdf" "Inelaneutron.jpeg" "presentendsem.synctex.gz" "presentendsem.aux" "presentendsem.nav" "presentendsem.snm" "presentendsem.tex" "spinons.jpg" "presentendsem.log" "./" "struct.jpeg" "spinspin.jpeg" "presentendsem.toc")
+
+ ("/home/praharsh/magnet/present/" (22761 41399 115812 588000) "../" "./" "magnetpresent/")
+
+ ("/home/praharsh/reports/endsempresent/" (22584 886 667999 823000) "presentendsem.bbl" "boropristinex.png" "disorderunderH0.png" "boroprop.png" "auto/" "bibo.bib" "../" "borodiag.png" "presentendsem.out" "presentendsem.blg" "presentendsem.pdf" "presentendsem.aux" "graphdiag.png" "plainnodisorder.png" "presentendsem.nav" "presentendsem.snm" "presentendsem.tex" "figure_1.png" "presentendsem.log" "./" "presentendsem.toc" "graphenepristine.png")
+
+ ("/home/praharsh/reports/midsempresent/" (22563 17867 863318 823000) "midsempresent.blg" "disorderunderH0.png" "auto/" "midsempresent.aux" "bibo.bib" "../" "plainnodisorder.png" "midsempresent.bbl" "midsempresent.toc" "figure_1.png" "midsempresent.snm" "./" "midsempresent.pdf" "midsempresent.tex" "midsempresent.out" "midsempresent.log" "midsempresent.nav")
+
+ ("/home/praharsh/backup/coursework/particle/homework/hw1/" (22728 8163 201264 519000) "hw1.pdf" "hw1.log" "auto/" "../" "./" "hw1.aux" "hw1.synctex.gz" "hw1.tex")
+
+ ("/home/praharsh/backup/coursework/particle/" (22728 3280 206161 828000) "noteswritten/" "../" "homework/" "one.pdf" "./")
+
+ ("/home/praharsh/backup/coursework/particle/homework/" (22721 57612 787269 516000) "../" "hw1/" "./")
+
+ ("/home/praharsh/backup/coursework/homework/" (22721 57612 695269 518000) "../" "work1/" "./" "work2/")
+
+ ("/home/praharsh/backup/coursework/" (22721 57612 831269 515000) "../" "homework/" "quantumhall-updates.pdf" "./" "particle/" "homework1.pdf" "magnetism/")
+
+ ("/home/praharsh/backup/" (22721 57612 603269 521000) "coursework/" ".emacs.d/" "../" "./")
+
+ ("/home/praharsh/courses/" (22519 52876 395425 214000) "../" "./" "Cohquantent/" ".emacs" "quantdyn/")
+
+ ("/home/praharsh/reports/borofunny/" (22583 64074 535998 215000) "thing.aux" "reportsemester-1.pdf" "thing.log" "auto/" "thing.tex" "../" "boropheneprop.png" "disorderham1.png" "thing.blg" "borophenepropdiagonal.png" "completedcalculations.pdf" "figure_1.png" "./" "thingNotes.bib" "reportsem1.pdf" "thing.pdf" "biblio.bib" "figure_1-1.png" "thing.bbl")
+
+ ("/home/praharsh/mp2/thing/" (22668 51298 916601 285000) ".#report1.tex" "../" "./")
+
+ ("/home/praharsh/mp2/" (22668 51249 924599 869000) "thing/" "../" "./")
+
+ ("/home/praharsh/masters project/" (22651 4435 887979 757000) "../" "klein tunneling.pdf" "./" "PhysRevB.66.205320 (1).pdf")
+
+ ("/home/praharsh/SOPs/December15th/Chicago/" (22619 54619 945799 233000) "thing.aux" "thing.log" "auto/" "thing.synctex.gz" "thing.tex" "../" "thing.blg" "thing.out" "./" "thingNotes.bib" "thing.pdf" "biblio.bib" "thing.bbl")
+
+ ("/home/praharsh/SOPs/inb/December15th/Maryland/" (22610 63890 53697 851000) "thing.aux" "thing.log" "auto/" "thing.synctex.gz" "thing.tex" "../" "thing.blg" "./" "thingNotes.bib" "thing.pdf" "biblio.bib" "thing.bbl")
+
+ ("/home/praharsh/SOPs/personalstatement/" (22610 56948 420366 994000) "thing.aux" "thing.log" "auto/" "thing.synctex.gz" "thing.tex" "../" "thing.out" "./" "thingNotes.bib" "thing.pdf")
+
+ ("/home/praharsh/physics gre/" (22545 49278 588852 899000) "exam_GR0177.pdf" "PGRE-Notes.pdf" "practice_book_physics.pdf" "../" "36386595-Complete-Solutions-to-the-Physics-GRE-PGRE9277.pdf" "./" "exam_GR9677.pdf")
+
+ ("/home/praharsh/SOPs/experimenttex/" (22601 16735 937535 125000) "thing.aux" "thing.log" "auto/" "thing.synctex.gz" "thing.tex" "../" "thing.blg" "./" "thingNotes.bib" "thing.pdf" "biblio.bib" "thing.bbl")
+
+ ("/home/praharsh/SOPs/December15th/UCSD/" (22610 63985 653532 739000) "thing.aux" "thing.log" "auto/" "thing.synctex.gz" "thing.tex" "../" "thing.blg" "thing.out" "./" "thingNotes.bib" "thing.pdf" "biblio.bib" "thing.bbl")
+
+ ("/home/praharsh/SOPs/inb/December15th/UCLA/" (22610 61647 466126 803000) "thing.aux" "thing.log" "auto/" "thing.tex" "../" "thing.blg" "./" "thingNotes.bib" "thing.pdf" "biblio.bib" "thing.bbl")
+
+ ("/home/praharsh/SOPs/inb/December15th/" (22610 61647 454126 833000) "UCLA/" "UCSD/" "../" "John Hopkins/" "Maryland/" "Chicago/" "./" "Boulder/")
+
+ ("/home/praharsh/SOPs/inb/" (22610 61647 438126 873000) "../" "December15th/" "./")
+
+ ("/home/praharsh/SOPs/" (22610 61634 794158 130000) "../" "personalstatement/" "austin/" "December15th/" "experimenttex/" "./" "Toronto/" "inb/" "kevinexp.pdf" "ohiostate/" "currivita/")
+
+ ("/home/praharsh/SOPs/December15th/Chicago/auto/" (22610 9793 411488 733000) "../" "./" "biblio.el" "thing.el")
+
+ ("/home/praharsh/Summerwork2016/" (22563 18119 151307 599000) "writeup-supercollpaper.log" "writeup-supercollpaper.aux" "auto/" "../" "writeup-supercollpaper.tex" "./" "writeup-supercollpaper.pdf")
+
+ ("/home/praharsh/SOPs/currivita/" (22609 13958 243990 929000) "cv.log" "auto/" "cv.pdf" "../" "cv.aux" "cv.tex" "cv.synctex.gz" "ree.tex" "./" "biblio.bib" "cv.out")
+
+ ("/home/praharsh/SOPs/December15th/John Hopkins/" (22604 13533 539997 244000) "thing.aux" "thing.log" "auto/" "thing.synctex.gz" "thing.tex" "../" "thing.blg" "./" "thingNotes.bib" "thing.pdf" "biblio.bib" "thing.bbl")
+
+ ("/home/praharsh/SOPs/December15th/Boulder/" (22604 807 535959 325000) "thing.aux" "thing.log" "auto/" "thing.synctex.gz" "thing.tex" "../" "thing.blg" "./" "thingNotes.bib" "thing.pdf" "biblio.bib" "thing.bbl")
+
+ ("/home/praharsh/SOPs/austin/" (22602 61224 389133 650000) "thing.aux" "thing.log" "auto/" "thing.synctex.gz" "thing.tex" "../" "thing.blg" "./" "thingNotes.bib" "thing.pdf" "biblio.bib" "thing.bbl")
+
+ ("/home/praharsh/SOPs/December15th/" (22603 54661 123992 984000) "UCLA/" "UCSD/" "../" "John Hopkins/" "Maryland/" "Chicago/" "./" "Boulder/")
+
+ ("/home/praharsh/SOPs/Chicago/" (22601 5701 716980 138000) "thing.aux" "thing.log" "auto/" "thing.synctex.gz" "thing.tex" "../" "thing.blg" "./" "thingNotes.bib" "thing.pdf" "biblio.bib" "thing.bbl")
+
+ ("/home/praharsh/mp/d20161204/" (22600 16146 915247 341000) "../" "thing.py" "./" "fig2.png")
+
+ ("/home/praharsh/mp/" (22600 16148 183247 308000) "d20160820/" "PhysRevLett.113.026802.pdf" "d20160901/" "d20160830/" "code/" "d20160904/" "d20161204/" "d20161029/" "document.log" "../" "initial.png" "d20160905/" "katsnelson2006.pdf" "d20160827/" "d20160814/" "document.pdf" "d20160802/" "d20160817/" "d20160811/" "d20161008/" "seemingcoll.png" "d20160822/" "d20160831/" "d20160818" "document.tex" "./" "kosloff1983.pdf" "d20161210/" "d20160804/" "document.aux" "kleintunnel.pdf" "document.synctex.gz" "d20160806/" "d20160916/" "d20160816/" "d20160805/" "d20160813/" "d20160803/" "d20160815/" "kleintunneling.pdf" "d20160903/" "d20160829/")
+
+ ("/home/praharsh/mp/d20161210/" (22600 19575 895157 458000) "../" "thing.py" ".#thing.py" "./" "fig2.png")
+
+ ("/home/praharsh/SOPs/Toronto/" (22595 62835 350272 983000) "thing.aux" "thing.log" "auto/" "thing.tex" "../" "thing.blg" "./" "thingNotes.bib" "thing.pdf" "biblio.bib" "thing.bbl")
+
+ ("/home/praharsh/SOPs/ohiostate/" (22591 12558 96528 179000) "thing.aux" "thing.log" "auto/" "thing.tex" "../" "extra.log" "thing.blg" "./" "thingNotes.bib" "anushkacorrection.pdf" "thing.pdf" "biblio.bib" "extra.tex" "thing.bbl")
+
+ ("/home/praharsh/reports/" (22583 64041 659998 310000) "sayantani/" "../" "borophenetransportpaperform/" "borofunny/" "./" "midsempresent/" "supercollalgo/" "borophenetransp/" "endsempresent/")
+
+ ("/home/praharsh/reports/supercollalgo/" (22566 60321 715325 420000) "auto/" "example.tex" "bibo.bib" "../" "example.bbl" "bibo.tex" "example.pdf" "./" "example.blg" "exampleNotes.bib" "example.log" "example.aux")
+
+ ("/home/praharsh/readproj/operator product expansion/" (22572 10780 638550 908000) "auto/" "../" "maindoc.tex" "maindoc.log" "maindoc.pdf" "./" "maindoc.aux")
+
+ ("/home/praharsh/experimentalcode/" (22474 36277 995060 94000) "../" "thing.py" "thing.c" "a.out" "./")
+
+ ("/home/praharsh/exmpl.tex/" (22572 5642 226765 89000) "../" "./")
+
+ ("/home/praharsh/reports/borophenetransportpaperform/" (22564 48126 917016 979000) "thing.aux" "thing.log" "auto/" "thing.tex" "../" "thing.blg" "completedcalculations.pdf" "./" "thingNotes.bib" "thing.pdf" "biblio.bib" "thing.bbl")
+
+ ("/home/praharsh/mp/d20160905/" (22548 39769 391279 640000) "rungekuttatry.py" "../" "fig.png" "figure_1.png" "./" "figure_2.png" "fig2.png")
+
+ ("/home/praharsh/mp/d20160916/" (22548 38842 387316 302000) "../" "fig.png" "tryforthing.py" "./" "masterp.py" ".#masterp.py" "fig2.png")
+
+ ("/home/praharsh/mp/d20161008/" (22548 38465 491331 208000) "../" "chebyshevexp1d.py" ".#chebyshevexp1d.py" "./")
+
+ ("/home/praharsh/mp/d20160816/" (22465 32174 0 0) "initialstate.png" "convergcetest1024.png" "weakdisorder256.png" "convergencetest2048.png" "../" "rp.py" "weakdisorder4096.png" "1024.png" "./" "2dpropagationdisorder.png" "convergencetest256.png" "figure_2.png" "convergencetest4096.png" "convergencetest512.png" "weakdisorder512.png" "unitaritytest.py" "weakdisorder1.png" "weakdisorder8192.png")
+
+ ("/home/praharsh/.xmonad/" (22526 21145 446612 553000) ".git/" "../" ".gitignore" "xmonad.errors" "xmonad.hs" "xmonad.o" "./" "thing.txt" "xmobar.hs" "README.markdown" "xmonad.hi" "xmonad-x86_64-linux" "bin/" "screenshot.png" "kjdsanksal.hs" "xmonad-session-rc")
+
+ ("/home/praharsh/mp/d20160831/" (22523 37628 770010 292000) "../" "optimized1d2.py" "optimized1d.py" "praharsh@172.31.100.92" "./" "server.py")
+
+ ("/home/praharsh/bin/" (22523 44628 37494 509000) "../" "wireless.sh" "volume.sh" "./")
+
+ ("/home/praharsh/.bin/" (22523 40327 391779 311000) "../" "wireless.sh" "./")
+
+ ("/home/praharsh/mp/d20160903/" (22500 758 94790 553000) "../" "thing.py" "./")
+
+ ("/home/praharsh/yasnippets-latex/snippets/" (22519 54295 585770 364000) "int.yasnippet" "align.yasnippet" "ssub.yasnippet" "block.yasnippet" "ssubstar.yasnippet" "case.yasnippet" "begin.yasnippet" "use.yasnippet" "eqs.yasnippet" "ref.yasnippet" ".yas-parents" "../" "itd.yasnippet" "item.yasnippet" "coprod.yasnippet" "abstract.yasnippet" "it.yasnippet" "gls.yasnippet" "label.yasnippet" "array.yasnippet" "matrix.yasnippet" "table.yasnippet" "bigop.yasnippet" "frac.yasnippet" "cite.yasnippet" "chastar.yasnippet" "substar.yasnippet" "lim.yasnippet" ".yas-ignore-filenames-as-triggers" "math.yasnippet" "binom.yasnippet" "bib.yasnippet" "cha.yasnippet" "eq.yasnippet" "sum.yasnippet" "minipage.yasnippet" "article.yasnippet" "par.yasnippet" "./" "doc.yasnippet" "fig.yasnippet" "frame.yasnippet" "desc.yasnippet" "alignstar.yasnippet" "sec.yasnippet" "bold.yasnippet" "prod.yasnippet" "graphics.yasnippet" ".yas-make-groups" "url.yasnippet" "secstar.yasnippet" "big.yasnippet" "em.yasnippet" "sub.yasnippet" "beamer.yasnippet" "sc.yasnippet" "tt.yasnippet" "href.yasnippet" "subfig.yasnippet" "letter.yasnippet" "verb.yasnippet" "enum.yasnippet")
+
+ ("/home/praharsh/yasnippets-latex/" (22519 54329 160812 868000) ".git/" "../" ".gitignore" "snippets/" "./" "install.sh" "README" "COPYING")
+
+ ("/home/praharsh/.emacs.d/snippets/" (22472 33041 608345 823000) "../" "./")
+
+ ("/home/praharsh/readproj/" (22493 6897 937437 832000) "operator product expansion/" "../" "./")
+
+ ("/home/praharsh/mp/d20160811/" (22448 48968 0 0) "testcode2.py" "testcode.py" "../" "./" "Creating a random variable.py" "testcode3.py")
+
+ ("/home/praharsh/Desktop/" (22494 32091 797876 483000) "../" "./")
+
+ ("/home/praharsh/mp/d20160904/" (22481 16260 707381 389000) "__pycache__/" "thingy.png" "../" "praharsh@172.31.130:progrs" "expgraph.py" "praharsh@172.31.100.92:programs" "./" "graphprop.py" "foo.png" "profiling.py")
+
+ ("/home/praharsh/mp/d20160804/" (22475 5478 495354 966000) "graphprop_flymake.py" "../" "basicwaveequation.py" "basicwaveequationtest.py" "./" "diracpointsupressed.py")
+
+ ("/home/praharsh/mp/d20160802/" (22474 38268 752522 544000) "funct2.py" "../" "newerversion.py" "./" "functiononly.py")
+
+ ("/home/praharsh/mp/d20160901/" (22473 4596 12055 290000) "../" "./")
+
+ ("/home/praharsh/Templates/" (22472 8381 435360 63000) "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
