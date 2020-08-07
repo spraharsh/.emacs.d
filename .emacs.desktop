@@ -1,0 +1,31 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Tue Jul 28 13:25:24 2020
+;; Desktop file format version 208
+;; Emacs version 26.3
+
+;; Global section:
+(setq desktop-saved-frameset nil)
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring '("desk" "workgr" "workg" "workgroup" "minim" "step iss" "T=T" "TR" "quenchl" "LBFGS_MP" "quench" "oplis" "precondition" "lbfgs" "precon" "pre"))
+(setq regexp-search-ring nil)
+(setq register-alist (list (list 313465889 "Unprintable entity" (let ((mk (make-marker))) (add-hook 'desktop-delay-hook `(lambda nil (set-marker ,mk ,nil (get-buffer ," *temp*")))) mk))))
+(setq file-name-history '("~/.emacs.d/init.el" "~/Dropbox/presentations/2020/may/20200528/praharsh20200528.tex" "~/Dropbox/presentations/2020/may/praharsh20200514/praharsh20200514.tex" "~/Dropbox/presentations/2020/may/praharsh20200509/praharsh20200506.tex" "~/Dropbox/research/bv-libraries/pele/source/lbfgs.cpp" "~/Dropbox/research/bv-libraries/pele/source/bracketing.cpp" "~/Dropbox/research/bv-libraries/pele/source/nwpele.cpp" "~/Dropbox/research/journal-research/2020lspreconpresentationv.tex" "~/Dropbox/research/bv-libraries/basinvolume/basinvolume/spheres/tests/test_hs_generate_packing.py" "~/Dropbox/research/bv-libraries/compareminmeth/transitionstate.py" "~/Dropbox/research/bv-libraries/compareminmeth/difpix.py" "~/Dropbox/research/journal-research/2020lsprecon/2020lsprecon.tex" "~/Dropbox/research/bv-libraries/pele/pele/optimize/_modified_fire_cpp.pyx" "~/Dropbox/research/bv-libraries/pele/pele/optimize/_pele_opt.pyx" "~/Dropbox/research/bv-libraries/pele/pele/optimize/result.py" "~/Dropbox/research/bv-libraries/pele/pele/optimize/_lbfgs_cpp.pyx" "~/Dropbox/research/bv-libraries/pele/source/pele/lbfgs.h" "~/Dropbox/research/bv-libraries/scratch.py" "~/Dropbox/research/bv-libraries/ths.py" "~/Dropbox/research/bv-libraries/new.py" "~/Dropbox/research/bv-libraries/ljoptimizer.py" "~/Dropbox/research/bv-libraries/compareminmeth/opt.py" "~/Dropbox/research/bv-libraries/nfevlistM4precon.txt" "~/Dropbox/research/bv-libraries/compareminmeth/makeplot.py" "~/Dropbox/research/bv-libraries/pele/pele/version.py" "~/Dropbox/LBFGSpp/include/LBFGSpp/Param.h" "~/Dropbox/research/bv-libraries/pele/source/pele/base_interaction.h" "~/Dropbox/research/bv-libraries/pele/source/pele/lsparameters.h" "~/Dropbox/research/bv-libraries/pele/source/pele/nwpele.h" "~/Dropbox/LBFGSpp/include/LBFGSpp/LineSearchBacktracking.h" "~/Dropbox/todo.org" "~/.emacs.ddoom/modules/ui/workspaces/autoload/evil.el" "~/.emacs.ddoom/modules/ui/workspaces/autoload/workspaces.el" "~/.doom.d/init.el" "~/Dropbox/research/bv-libraries/pele/source/more_thuente.cpp" "~/Dropbox/research/bv-libraries/pele/source/linesearch.cpp" "~/Dropbox/research/bv-libraries/pele/source/pele/graph.hpp" "~/.doom.d/config.el" "~/Dropbox/research/bv-libraries/pele/cpp_tests/source/test_lbfgs.cpp" "~/Dropbox/research/bv-libraries/pele/source/pele/nocedal_wright.h" "~/Dropbox/research/bv-libraries/pele/source/pele/array.h" "~/Dropbox/LBFGSpp/include/LBFGSpp/LineSearchNocedalWright.h" "~/Dropbox/research/bv-libraries/pele/source/pele/optimizer.h" "~/Dropbox/LBFGSpp/include/LBFGSpp/LineSearchMoreThuente.h" "~/Dropbox/research/journal-research/scripts/scripts.py" "~/Dropbox/research/bv-libraries/scratch/CppNumericalSolvers/include/cppoptlib/linesearch/more_thuente.h" "~/Dropbox/research/bv-libraries/scratch/CppNumericalSolvers/README.md" "~/Dropbox/research/bv-libraries/scratch/CppNumericalSolvers/src/test/verify.cc" "~/Dropbox/research/bv-libraries/scratch/CppNumericalSolvers/src/examples/simple.cc" "~/Dropbox/LBFGSpp/include/LBFGSpp/LineSearchBracketing.h"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "/home/praharsh/.emacs.d/init.el"
+  "init.el"
+  'emacs-lisp-mode
+  '(visual-line-mode eldoc-mode override-global-mode smartparens-mode company-mode global-auto-revert-mode project-persist-mode yas-minor-mode undo-tree-mode helm-ff-cache-mode helm-mode auto-complete-mode projectile-mode flycheck-mode aggressive-indent-mode anzu-mode workgroups-mode TeX-PDF-mode)
+  29038
+  '(29038 nil)
+  nil
+  nil
+  '((buffer-display-time 24352 24421 906611 518000) (buffer-file-coding-system . prefer-utf-8-unix) (truncate-lines))
+  '((mark-ring (39003 10798 1))))
+

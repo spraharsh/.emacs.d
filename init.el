@@ -11,8 +11,8 @@
 (add-to-list 'package-archives '("marmalade" . "https://marmalade-repo.org/packages/") t)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t)
-
 (package-initialize)
+;; (package-initialize)
 ;;;; custom elpy files
 ;; (add-to-list 'load-path
 ;;              "~/.emacs.d/plugins")
@@ -24,6 +24,7 @@
 ;;;; change graphene meta theme
 
 (use-package graphene)
+
 
 ;; unset useless key bindings from graphene
 
@@ -97,6 +98,17 @@
 ;; (add-hook 'js-mode-hook #'smartparens-mode)
 ;; ;; Autocomplete with company-mode
 (add-hook 'after-init-hook 'global-company-mode)
+
+(defun my/python-mode-hook ()
+  (add-to-list 'company-backends '(company-jedi company-files          ; files & directory
+                                                company-keywords       ; keywords
+                                                company-capf
+                                                company-yasnippet
+                                                company-abbrev
+                                                company-dabbrev)))
+
+(add-hook 'python-mode-hook 'my/python-mode-hook)
+
 ;; ;; Web mode for html pages
 ;; (require 'web-mode)
 ;; (add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
@@ -145,7 +157,7 @@
  '(cua-overwrite-cursor-color "#b58900")
  '(cua-read-only-cursor-color "#859900")
  '(cursor-type t)
- '(custom-enabled-themes (quote (solarized-dark)))
+ '(custom-enabled-themes (quote (solarized-light)))
  '(custom-safe-themes
    (quote
     ("dde8c620311ea241c0b490af8e6f570fdd3b941d7bc209e55cd87884eb733b0e" "c83c095dd01cde64b631fb0fe5980587deec3834dc55144a6e78ff91ebc80b19" "e1ef2d5b8091f4953fe17b4ca3dd143d476c106e221d92ded38614266cea3c8b" "2809bcb77ad21312897b541134981282dc455ccd7c14d74cc333b6e549b824f3" "c433c87bd4b64b8ba9890e8ed64597ea0f8eb0396f4c9a9e01bd20a04d15d358" "285d1bf306091644fb49993341e0ad8bafe57130d9981b680c1dbd974475c5c7" "51ec7bfa54adf5fff5d466248ea6431097f5a18224788d0bd7eb1257a4f7b773" "bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" "e074be1c799b509f52870ee596a5977b519f6d269455b84ed998666cf6fc802a" "7f791f743870983b9bb90c8285e1e0ba1bf1ea6e9c9a02c60335899ba20f3c94" "7f6d4aebcc44c264a64e714c3d9d1e903284305fd7e319e7cb73345a9994f5ef" default)))
@@ -264,7 +276,7 @@
  '(org2jekyll-source-directory (expand-file-name "~/website") nil (org2jekyll))
  '(package-selected-packages
    (quote
-    (cmake-mode cmake-ide ess ein jupyter ac-helm helm-rtags flycheck-rtags company-rtags ac-rtags ggtags function-args origami alert all-the-icons auctex biblio biblio-core company dash elfeed find-file-in-project flycheck ghub git-commit helm helm-core ht hydra ido-completing-read+ ivy sublimity smooth-scrolling command-log-mode writeroom-mode atom-one-dark-theme dracula-theme yasnippet-snippets helm-swoop oceanic-theme green-phosphor-theme solarized-theme julia-mode espresso-theme cherry-blossom-theme anzu paradox python-mode xkcd screenshot dashboard projectile spacemacs-theme neotree org-ac all-the-icons-dired spaceline-all-the-icons evil doom-themes dad-joke ac-math org-alert dired-quick-sort aggressive-indent emojify dired+ json-mode yaml-mode org2jekyll magit helm-tramp helm-bibtex htmlize xbm-life rainbow-blocks flycheck-cython cython-mode edit-server elpy mu4e-maildirs-extension look-mode undo-tree rainbow-delimiters org-journal multiple-cursors leuven-theme haskell-mode graphene goto-last-change d-mode cyberpunk-theme color-theme-sanityinc-tomorrow color-theme auto-complete-auctex auctex-lua auctex-latexmk 4clojure)))
+    (flycheck-irony company-jedi helm-company company-irony company-math langtool irony org-bullets helm-projectile cmake-mode cmake-ide ess ein jupyter ac-helm helm-rtags flycheck-rtags company-rtags ac-rtags ggtags function-args origami alert all-the-icons auctex biblio biblio-core company dash elfeed find-file-in-project flycheck ghub git-commit helm helm-core ht hydra ido-completing-read+ ivy sublimity smooth-scrolling command-log-mode writeroom-mode atom-one-dark-theme dracula-theme yasnippet-snippets helm-swoop oceanic-theme green-phosphor-theme solarized-theme julia-mode espresso-theme cherry-blossom-theme anzu paradox python-mode xkcd screenshot dashboard projectile spacemacs-theme neotree org-ac all-the-icons-dired spaceline-all-the-icons evil doom-themes dad-joke ac-math org-alert dired-quick-sort aggressive-indent emojify dired+ json-mode yaml-mode org2jekyll magit helm-tramp helm-bibtex htmlize xbm-life rainbow-blocks flycheck-cython cython-mode edit-server elpy mu4e-maildirs-extension look-mode undo-tree rainbow-delimiters org-journal multiple-cursors leuven-theme haskell-mode graphene goto-last-change d-mode cyberpunk-theme color-theme-sanityinc-tomorrow color-theme auto-complete-auctex auctex-lua auctex-latexmk 4clojure)))
  '(paradox-github-token t)
  '(pdf-view-midnight-colors (quote ("#DCDCCC" . "#383838")))
  '(pos-tip-background-color "#073642")
@@ -313,17 +325,37 @@
  '(xterm-color-names-bright
    ["#002b36" "#cb4b16" "#586e75" "#657b83" "#839496" "#6c71c4" "#93a1a1" "#fdf6e3"]))
 
+
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(preview-reference-face ((t (:foreground "black")))))
+
+
+
+
+
+(use-package preview
+  :commands LaTeX-preview-setup
+  :init
+  (setq-default preview-scale 1.4
+                preview-scale-function '(lambda () (* (/ 10.0 (preview-document-pt)) preview-scale))))
+
 ;; (load-theme 'dracula-theme)
 
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; python Config ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (package-initialize)
-(elpy-enable)
+
 
 (pyvenv-activate "/home/praharsh/anaconda3")
-
-
+(setq elpy-rpc-python-command "/home/praharsh/anaconda3/bin/python")
+;; (setq elpy-rpc-pythonpath "/home/praharsh/Dropbox/research/bv-libraries/mcpele1")
+(elpy-enable)
+(setq flycheck-python-flake8-executable "flake8")
 
 
 ;; (setq elpy-rpc-python-command "~/py2/bin/./python")
@@ -371,11 +403,7 @@
 
 
 
-(use-package company-rtags
-  :after company)
 
-(use-package helm-rtags
-  :after helm)
 
 (use-package rtags
   :config
@@ -414,6 +442,64 @@
 (add-hook 'c-mode-hook 'rtags-start-process-unless-running)
 (add-hook 'c++-mode-hook 'rtags-start-process-unless-running)
 (add-hook 'objc-mode-hook 'rtags-start-process-unless-running)
+(cmake-ide-setup)
+
+(add-hook 'c++-mode-hook 'irony-mode)
+(req-package helm-rtags
+  :require helm rtags
+  :config
+  (progn
+    (setq rtags-display-result-backend 'helm)
+    ))
+
+;; use irony for autocompletion
+
+
+
+(setq company-backends
+      '((company-files          ; files & directory
+         company-keywords       ; keywords
+         company-capf
+         company-yasnippet
+         company-abbrev
+         company-dabbrev
+         )
+        ))
+(dolist (hook '(c-mode-hook
+                c++-mode-hook
+                objc-mode-hook
+                ))
+  (add-hook hook
+            (lambda()
+              (make-local-variable 'company-backends)
+              (setq company-backends (copy-tree company-backends))
+              (setf (car company-backends)
+                    (append '(company-irony)
+                            (car company-backends)))
+              ))
+  )
+
+
+
+(eval-after-load 'flycheck
+  '(add-hook 'flycheck-mode-hook #'flycheck-irony-setup))
+
+;; ;; Live code checking.
+;; (req-package flycheck-rtags
+;;   :require flycheck rtags
+;;   :config
+;;   (progn
+;;     ;; ensure that we use only rtags checking
+;;     ;; https://github.com/Andersbakken/rtags#optional-1
+;;     (defun setup-flycheck-rtags ()
+;;       (flycheck-select-checker 'rtags)
+;;       (setq-local flycheck-highlighting-mode nil) ;; RTags creates more accurate overlays.
+;;       (setq-local flycheck-check-syntax-automatically nil)
+;;       (rtags-set-periodic-reparse-timeout 4.0)  ;; Run flycheck 2 seconds after being idle.
+;;       )
+;;     (add-hook 'c-mode-hook #'setup-flycheck-rtags)
+;;     (add-hook 'c++-mode-hook #'setup-flycheck-rtags)
+;;     ))
 
 
 
@@ -429,6 +515,14 @@
 
 
 
+
+(use-package langtool
+  :defer 1
+  :config
+  ;; install with `brew install languagetool`
+  (setq langtool-language-tool-server-jar "/home/praharsh/Dropbox/LanguageTool-5.0/languagetool-server.jar")
+  (setq langtool-java-bin "/usr/bin/java")
+  (setq langtool-default-language "en-US"))
 
 ;; (req-package helm-rtags
 ;;   :require helm rtags
@@ -499,28 +593,37 @@
   :defer t
   :ensure t)
 ;;;;;;;;;;;;;;;;;;;;;;;;; Latex Config
-(use-package tex-site)
-(autoload 'reftex-mode "reftex" "RefTeX Minor Mode" t)
-(setq reftex-plug-into-AUCTeX t) ;; why
-(autoload 'turn-on-reftex "reftex" "RefTeX Minor Mode" nil)
-(autoload 'reftex-citation "reftex-cite" "Make citation" nil)
-(autoload 'reftex-index-phrase-mode "reftex-index" "Phrase Mode" t)
-(add-hook 'latex-mode-hook 'turn-on-reftex) ; with Emacs latex mode
-;; (add-hook 'reftex-load-hook 'imenu-add-menubar-index)
-(add-hook 'LaTeX-mode-hook 'turn-on-reftex)
-(add-hook 'LaTeX-mode-hook 'LaTeX-math-mode)
 
+;; (add-to-list 'company-backends 'company-math-symbols-unicode)
 
 ;; Latex add environment to math mode
 (add-hook 'LaTeX-mode-hook 'add-my-latex-environments)
+(add-hook 'LaTeX-mode-hook 'LaTeX-math-mode)
+
+;; (defun latex-company ()
+;;   (setq-local company-backends
+;;               (append '((company-math-symbols-latex company-latex-commands))
+;;                       company-backends)))
 
 (defun add-my-latex-environments () 
   (LaTeX-add-environments 
-   '("empheq" LaTeX-env-label))) 
+   '("empheq" LaTeX-env-label)))
+
+
+;; (add-hook 'TeX-mode-hook 'my-latex-mode-setup)
+
+(global-set-key "\C-x4w" 'langtool-check)
+(global-set-key "\C-x4W" 'langtool-check-done)
+(global-set-key "\C-x4l" 'langtool-switch-default-language)
+(global-set-key "\C-x44" 'langtool-show-message-at-point)
+(global-set-key "\C-x4c" 'langtool-correct-buffer)
+(global-set-key (kbd "<kp-6>") 'langtool-goto-next-error)
+(global-set-key (kbd "<kp-4>") 'langtool-goto-previous-error)
+
 
 ;; Code I added to make syntax highlighting work in Auctex 
 
- ;;Stops putting {} on argumentless commands to "save" whitespace 
+;;Stops putting {} on argumentless commands to "save" whitespace 
 
 ;; Additionally, reftex code to recognize this environment as an equation 
 (setq reftex-label-alist 
@@ -550,6 +653,8 @@
 
 
 
+
+
 ;; bibliography
 (autoload 'helm-bibtex "helm-bibtex" "" t)
 (setq reftex-default-bibliography '("~/Dropbox/biblio.bib"
@@ -566,8 +671,8 @@
 (global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
 
 
-
-(global-undo-tree-mode)
+(use-package undo-tree)
+(global-undo-tree-mode 1)
 ;; Helm commands
 (global-set-key (kbd "M-x") #'helm-M-x)
 (global-set-key (kbd "C-x r b") #'helm-filtered-bookmarks)
@@ -576,6 +681,12 @@
 
 (helm-mode 1)
 
+
+
+;; STOP POPUPS
+
+
+(add-hook 'python-mode-hook (lambda () (auto-complete-mode -1)))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; Moving about ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -673,6 +784,15 @@
   "ace-jump-mode"
   "Ace jump back:-)"
   t)
+
+
+;; (setq helm-projectile-fuzzy-match nil)
+(require 'helm-projectile)
+(helm-projectile-on)
+
+(define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
+
+;; this makes sense
 (eval-after-load "ace-jump-mode"
   '(ace-jump-mode-enable-mark-sync))
 (define-key global-map (kbd "C-x SPC") 'ace-jump-mode-pop-mark)
@@ -710,14 +830,28 @@
 (global-set-key (kbd "<f12>") 'org-agenda)
 (global-set-key "\C-cc" 'org-capture)
 (global-set-key "\C-cb" 'org-iswitchb)
+
+
+
+
+
 ;; Hide leading stars
 (setq org-startup-indented t
       org-hide-leading-stars t)
 
 (setq org-log-done 'time)
 (setq org-log-done 'note)
+
+;; org bullets
+(use-package org-bullets)
+(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+
 ;; use org journal
 (use-package org-journal)
+
+
+
+
 (setq org-agenda-window-setup 'only-window)
 (global-set-key (kbd "<f10>") 'org-journal-new-entry)
 
@@ -801,6 +935,7 @@ This can be 0 for immediate, or a floating point value.")
 
 (setq org-babel-python-command "~/miniconda2/envs/basemacs/bin/./python")
 (add-hook 'after-init-hook 'org-agenda-list)
+
 ;; yasnippet cofiguration
 (add-hook 'org-mode-hook
           (lambda ()
@@ -811,6 +946,8 @@ This can be 0 for immediate, or a floating point value.")
 
 (setq yas-snippet-dirs '("~/.emacs.d/snippets"))
 
+
+
 ;;;;; org gcal integration with google-calendar ;;;
 
 (use-package org-alert)
@@ -819,8 +956,25 @@ This can be 0 for immediate, or a floating point value.")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; end org mode ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+
+;; save emacs sessions
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; flycheck mode ;;;;;;;;;;;;;;;;;;;;;;
 ;; making flycheck not treat emacs as a package
-(setq-default flycheck-disabled-checkers '(emacs-lisp-checkdoc))
+(global-flycheck-mode)
+
+'(flycheck-check-syntax-automatically (quote (save idle-change mode-
+                                                   enabled)))
+'(flycheck-idle-change-delay 10) ;; Set delay based on what suits you the best
+
+
+;; Optional explicitly select the RTags Flycheck checker for c or c++ major mode.
+;; Turn off Flycheck highlighting, use the RTags one.
+;; Turn off automatic Flycheck syntax checking rtags does this manually.
+
+;; the default value was '(save idle-change new-line mode-enabled)
+
 
 ;; code to load themes on
 
@@ -1098,8 +1252,9 @@ This can be 0 for immediate, or a floating point value.")
 (global-auto-complete-mode t)
 (set-default 'preview-scale-function 1.2)
 
-;; Set font
 
+
+;; Set font
 
 (set-face-attribute 'default t :font "-UKWN-SF Mono-normal-normal-extracondensed-*-14-*-*-*-m-0-iso10646-1")
 
@@ -1144,6 +1299,10 @@ This can be 0 for immediate, or a floating point value.")
 
 
 
+
+(define-key company-active-map (kbd "C-s") 'company-complete-common-or-cycle)
+(define-key company-active-map (kbd "C-r") 'company-select-previous-or-abort)
+
 ;; mcpele pele stuff
 
 (setenv "PYTHONPATH"
@@ -1157,9 +1316,4 @@ This can be 0 for immediate, or a floating point value.")
 
 
 
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+

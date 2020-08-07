@@ -3,8 +3,8 @@
  (magit-cherry-pick
   ("--ff"))
  (magit-commit nil)
- (magit-diff
-  ("--no-ext-diff" "--stat"))
+ (magit-diff nil
+             ("--no-ext-diff" "--stat"))
  (magit-dispatch nil)
  (magit-fetch nil)
  (magit-gitignore nil)

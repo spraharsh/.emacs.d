@@ -1,0 +1,2 @@
+;;; Generated package description from /home/praharsh/.emacs.d/elpa/workgroups2-20200707.1108/workgroups2.el  -*- no-byte-compile: t -*-
+(define-package "workgroups2" "20200707.1108" "New workspaces for Emacs" '((emacs "25.1") (dash "2.8.0")) :stars '("") :commit "92bf4e0298c39d43c1a057a8fb29be76dae3e863" :keywords '("session" "management" "window-configuration" "persistence") :authors '(("Sergey Pashinin <sergey at pashinin dot com>")) :maintainer '("Sergey Pashinin <sergey at pashinin dot com>") :url "https://github.com/pashinin/workgroups2")
