@@ -24,7 +24,7 @@ Add ADDITIONAL-SEGMENTS to the end of the theme.
 ;;;;;;  (0 0 0 0))
 ;;; Generated autoloads from spaceline-all-the-icons-segments.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "spaceline-all-the-icons-segments" '("files" "define-spaceline-all-the-icons--" "dirs" "spaceline-all-the-icons-" "new" "upgrade")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "spaceline-all-the-icons-segments" '("define-spaceline-all-the-icons--" "dirs" "files" "new" "spaceline-all-the-icons-" "upgrade")))
 
 ;;;***
 
@@ -32,7 +32,7 @@ Add ADDITIONAL-SEGMENTS to the end of the theme.
 ;;;;;;  (0 0 0 0))
 ;;; Generated autoloads from spaceline-all-the-icons-separators.el
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "spaceline-all-the-icons-separators" '("paradox-" "right-" "left-" "minor-mode-" "define-spaceline-all-the-icons--separator" "spaceline-all-the-icons-separator")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "spaceline-all-the-icons-separators" '("define-spaceline-all-the-icons--separator" "left-" "minor-mode-" "paradox-" "right-" "spaceline-all-the-icons-separator")))
 
 ;;;***
 

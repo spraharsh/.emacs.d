@@ -132,7 +132,7 @@
                               (yas-expand-snippet template nil nil
                                                   '((yas-indent-line 'fixed))))))
                         "parameters" nil nil nil "/home/praharsh/.emacs.d/snippets/python-mode/parameters.yasnippet" nil nil)
-                       ("prm"
+                       ("parameters"
                         (progn
                           (flet
                               ((parse-args
@@ -240,12 +240,13 @@
                               (yas-expand-snippet template nil nil
                                                   '((yas-indent-line 'fixed))))))
                         "parameters" nil nil nil "/home/praharsh/.emacs.d/snippets/python-mode/parameters" nil nil)
-                       ("npdef" "def ${1:function}(${2:args}):\n    \"\"\"${3:short description}\n\n    $0\n\n    ${4:Parameters\n    ----------\n    ${5:Please press the tab key twice.$(replace-regexp-in-string\n                                           \".*\" \"parameters\" yas-text)}\n    }\"\"\"" "npdef" nil nil nil "/home/praharsh/.emacs.d/snippets/python-mode/npdef.yasnippet" nil nil)
+                       ("npdef" "def ${1:function}(${2:args}):\n    \"\"\"${3:short description}\n\n    $0\n\n    ${4:Parameters\n    ----------\n    ${5:Please press the tab key twice$(replace-regexp-in-string\n                                           \"Please press the tab key twice\" \"prm\" yas-text)}\n    }\"\"\"" "npdef" nil nil nil "/home/praharsh/.emacs.d/snippets/python-mode/npdef.yasnippet" nil nil)
                        ("f" "for $1 in $2:\n    $0" "for" nil nil nil "/home/praharsh/.emacs.d/snippets/python-mode/forloop.yasnippet" nil nil)
                        ("example.yasnippet" "" "example.yasnippet" nil nil nil "/home/praharsh/.emacs.d/snippets/python-mode/example.yasnippet" nil nil)
+                       ("dret" "Returns\n----------\n" "document return" nil nil nil "/home/praharsh/.emacs.d/snippets/python-mode/dret.yasnippet" nil nil)
                        ("defg" "def ${1:name}($2):\n    \\\"\\\"\\\"$3\n    ${2:$(python-args-to-google-docstring yas-text t)}\n    ${5:Returns:\n        $6\n}\n    \\\"\\\"\\\"\n    ${0:$$(let ((beg yas-snippet-beg)\n                (end yas-snippet-end))\n        (yas-expand-snippet\n          (buffer-substring-no-properties beg end) beg end\n              (quote ((yas-indent-line nil) (yas-wrap-around-region nil))))\n            (delete-trailing-whitespace beg (- end 1)))}" "Python Google style Docstring" nil nil nil "/home/praharsh/.emacs.d/snippets/python-mode/defg.yasnippet" nil nil)
                        ("de" "def ${1:name}($2):\n    \\\"\\\"\\\"$3\n    ${2:$(python-args-to-google-docstring yas-text t)}\n    ${5:Returns:\n        $6\n}\n    \\\"\\\"\\\"\n    ${0:$$(let ((beg yas-snippet-beg)\n                (end yas-snippet-end))\n        (yas-expand-snippet\n          (buffer-substring-no-properties beg end) beg end\n              (quote ((yas-indent-line nil) (yas-wrap-around-region nil))))\n            (delete-trailing-whitespace beg (- end 1)))}" "Python Google style Docstring" nil nil nil "/home/praharsh/.emacs.d/snippets/python-mode/def.yasnippet" nil nil)
                        ("jsoajn" "'$1'$0" "'" nil nil nil "/home/praharsh/.emacs.d/snippets/python-mode/colons.py" "' '" nil)))
 
 
-;;; Do not edit! File generated at Sat Aug  1 14:33:38 2020
+;;; Do not edit! File generated at Sat Nov 28 18:18:29 2020

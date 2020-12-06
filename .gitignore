@@ -1,0 +1,4 @@
+.session*
+.elpa/
+elpa
+projectile-bookmarks*

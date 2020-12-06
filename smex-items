@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ rgrep
+ describe-font
  package-list-packages
  python-mode
  byte-compile-file
  package-install
  package-autoremove
- load-theme
- customize-group
 )
 
 ;; ----- smex-data -----
@@ -33,4 +33,6 @@
  (package-autoremove . 1)
  (byte-compile-file . 1)
  (python-mode . 2)
+ (describe-font . 2)
+ (rgrep . 1)
 )

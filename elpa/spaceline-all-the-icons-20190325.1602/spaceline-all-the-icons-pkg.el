@@ -3,7 +3,7 @@
     (all-the-icons "2.6.0")
     (spaceline "2.0.0")
     (memoize "1.0.1"))
-  :keywords
+  :commit "5afd48c10f1bd42d9b9648c5e64596b72f3e9042" :keywords
   '("convenience" "lisp" "tools")
   :authors
   '(("Dominic Charlesworth" . "dgc336@gmail.com"))

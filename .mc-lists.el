@@ -17,6 +17,7 @@
         LaTeX-math-mu
         LaTeX-math-phi
         LaTeX-math-pi
+        LaTeX-math-sigma
         LaTeX-math-theta
         LaTeX-math-xi
         TeX-insert-backslash
@@ -44,6 +45,7 @@
         helm-M-x
         helm-show-kill-ring
         indent-for-tab-command
+        indent-new-comment-line
         keyboard-escape-quit
         kill-region
         kmacro-start-macro-or-insert-counter
@@ -63,6 +65,7 @@
         save-some-buffers
         sp-remove-active-pair-overlay
         upcase-region
+        vimish-fold-unfold
         yas-abort-snippet
         yas-expand
         yas-expand-from-keymap
@@ -71,10 +74,15 @@
 (setq mc/cmds-to-run-once
       '(
         TeX-insert-dollar
+        TeX-newline
         delete-window
         elpy-shell-send-region-or-buffer
+        handle-switch-frame
+        helm-buffers-list
         help-for-help
+        ignore
         kmacro-end-or-call-macro
+        lsp-ui-doc--handle-mouse-movement
         mouse-drag-vertical-line
         mouse-set-region
         mu4e

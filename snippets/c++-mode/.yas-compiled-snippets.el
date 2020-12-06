@@ -7,4 +7,4 @@
                        ("d" "double $0" "double" nil nil nil "/home/praharsh/.emacs.d/snippets/c++-mode/double.yasnippet" nil nil)))
 
 
-;;; Do not edit! File generated at Sat Aug  1 14:33:37 2020
+;;; Do not edit! File generated at Sat Nov 28 18:18:29 2020

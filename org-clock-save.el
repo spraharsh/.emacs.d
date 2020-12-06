@@ -1,1 +1,2 @@
-;; org-clock-save.el - praharsh-tp at <2020-08-07 Fri 13:50>
+;; org-clock-save.el - praharsh-tp at <2020-12-06 Sun 16:51>
+(setq org-clock-stored-history '(("/home/praharsh/Dropbox/todo.org_archive" . 130098) ("/home/praharsh/Dropbox/todo.org_archive" . 130556)))

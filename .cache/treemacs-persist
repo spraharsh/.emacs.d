@@ -1,0 +1,16 @@
+* Default
+** .emacs.d
+ - path :: ~/.emacs.d
+** pele
+ - path :: ~/Dropbox/research/bv-libraries/pele
+** basinvolume
+ - path :: ~/Dropbox/research/bv-libraries/basinvolume
+** mcpele
+ - path :: ~/Dropbox/research/bv-libraries/mcpele
+** basinerror
+ - path :: ~/Dropbox/research/bv-libraries/basinerror
+** journal-research
+ - path :: ~/Dropbox/research/journal-research
+* No Perspective
+** praharsh
+ - path :: ~

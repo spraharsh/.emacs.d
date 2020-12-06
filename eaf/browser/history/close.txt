@@ -1,0 +1,4 @@
+https://github.com/SciML/DifferentialEquations.jl
+https://www.google.com/
+https://diffeq.sciml.ai/stable/
+https://www.google.com/search?source=hp&ei=k29RX6WsHpm4tAbr0Y-4Cw&q=blah&oq=blah&gs_lcp=CgZwc3ktYWIQAzIICC4QsQMQkwIyBQgAELEDMgIIADICCC4yAggAMgIIADIICC4QxwEQrwEyAggAMgIIADICCAA6CAgAELEDEIMBOgsILhCxAxDHARCjAjoOCAAQ6gIQtAIQmgEQ5QI6DgguELEDEMcBEKMCEJMCOggILhCxAxCDAToLCC4QsQMQgwEQkwI6BQguELEDOggILhDHARCjAlDkCFi2H2CDImgDcAB4AIABVYgB-wOSAQE3mAEAoAEBqgEHZ3dzLXdperABBg&sclient=psy-ab&ved=0ahUKEwjlwZHmhc7rAhUZHM0KHevoA7cQ4dUDCAg&uact=5

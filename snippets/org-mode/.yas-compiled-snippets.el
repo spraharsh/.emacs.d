@@ -23,4 +23,4 @@
                        ("char" "#+title: ${1:Title}\n#+author: ${2}\n#+PROPERTY: friendcircles ${3}\n#+PROPERTY: interests ${4}\n#+PROPERTY: att-to-me ${5}/10\n#+PROPERTY: prating ${6}/10\n#+PROPERTY: value ${7}/10\n#+PROPERTY: socialintp ${8}/3\n#+TAGS: ${9}\n\n* Background\n${9}\n* Personality\n$0" "character sheet" nil nil nil "/home/praharsh/.emacs.d/snippets/org-mode/charsheet.yasnippet" nil nil)))
 
 
-;;; Do not edit! File generated at Sat Aug  1 14:33:38 2020
+;;; Do not edit! File generated at Sat Nov 28 18:18:29 2020

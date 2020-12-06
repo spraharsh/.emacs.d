@@ -4,8 +4,9 @@
 (setq url-cookie-storage
  'nil)
 (setq url-cookie-secure-storage
- '((".doi.org"
-  [url-cookie "__cfduid" "d845ebe81fde1d1837b5f3e9121e574a41589326586" "Thu, 11-Jun-20 23:36:26 GMT" "/" ".doi.org" t]))
+ '(("github.com"
+  [url-cookie "_octo" "GH1.1.1731874312.1607142574" "Sun, 05 Dec 2021 04:29:34 GMT" "/" "github.com" t]
+  [url-cookie "logged_in" "no" "Sun, 05 Dec 2021 04:29:34 GMT" "/" "github.com" t]))
 )
 
 ;; Local Variables:
