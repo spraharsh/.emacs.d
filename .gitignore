@@ -2,3 +2,10 @@
 .elpa/
 elpa
 projectile-bookmarks*
+.python-enviroments
+magithub
+eln-cache
+.emacs.d
+.cache
+emojis
+
