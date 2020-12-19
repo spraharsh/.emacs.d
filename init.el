@@ -1372,21 +1372,28 @@ This can be 0 for immediate, or a floating point value.")
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; rss ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; (require 'elfeed)
-;; (require 'elfeed-goodies)
-;; (elfeed-goodies/setup)
-;; ;; Load elfeed-org
-;; (require 'elfeed-org)
+(require 'elfeed)
+(require 'elfeed-goodies)
+(elfeed-goodies/setup)
+;; Load elfeed-org
+(require 'elfeed-org)
 
-;; (elfeed-org)
-;; ;; Initialize elfeed-org
-;; ;; This hooks up elfeed-org to read the configuration when elfeed
-;; ;; is started with =M-x elfeed=
+(elfeed-org)
+;; Initialize elfeed-org
+;; This hooks up elfeed-org to read the configuration when elfeed
+;; is started with =M-x elfeed=
 
-;; ;; Optionally specify a number of files containing elfeed
-;; ;; configuration. If not set then the location below is used.
-;; ;; Note: The customize interface is also supported.
-;; (setq rmh-elfeed-org-files (list "~/.emacs./elfeed.org"))
+;; Optionally specify a number of files containing elfeed
+;; configuration. If not set then the location below is used.
+;; Note: The customize interface is also supported.
+(setq rmh-elfeed-org-files (list "~/.emacs.d/elfeed.org"))
+
+(defun elfeed-mark-all-as-read ()
+      (interactive)
+      (mark-whole-buffer)
+      (elfeed-search-untag-all-unread))
+
+(define-key elfeed-search-mode-map (kbd "R") 'elfeed-mark-all-as-read)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
