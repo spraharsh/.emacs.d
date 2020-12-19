@@ -21,3 +21,7 @@ strokes
 **/.yas-compiled-snippets*
 projectile.cache
 request/
+.emacs.desktop
+elpy/
+initdebug2.el
+logview-cache.extmap
