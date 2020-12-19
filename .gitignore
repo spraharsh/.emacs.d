@@ -25,3 +25,16 @@ request/
 elpy/
 initdebug2.el
 logview-cache.extmap
+
+.python-environments/
+eaf/
+emacs-application-framework/
+eshell/
+image-dired/
+initold/
+irony/
+org-gcal/
+persp-confs/
+transient/
+url/
+vimish-fold/
