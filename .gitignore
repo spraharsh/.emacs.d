@@ -8,10 +8,16 @@ eln-cache
 .emacs.d
 .cache
 emojis
+games/
 
 
 semanticdb/
 auto-save-list/
 strokes
+.dap-breakpoints
+.lsp-session-*
+.mc-lists.el
 
-
+**/.yas-compiled-snippets*
+projectile.cache
+request/

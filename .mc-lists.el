@@ -83,6 +83,7 @@
         ignore
         kmacro-end-or-call-macro
         lsp-ui-doc--handle-mouse-movement
+        mouse-drag-mode-line
         mouse-drag-vertical-line
         mouse-set-region
         mu4e
