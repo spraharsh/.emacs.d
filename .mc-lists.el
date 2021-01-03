@@ -62,6 +62,7 @@
         org-todo
         org-yank
         py-indent-or-complete
+        reindent-then-newline-and-indent
         save-some-buffers
         sp-remove-active-pair-overlay
         upcase-region

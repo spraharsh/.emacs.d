@@ -72,7 +72,8 @@
 (global-set-key "\C-c\C-i" 'insert-file-name)
 (global-set-key (kbd "C-c g") 'google-this)
 
-
+(require 'helm-descbinds)
+(helm-descbinds-mode)
 
 (use-package org2jekyll)
 ;; (use-package blog)
@@ -410,7 +411,10 @@ In that case, insert the number."
  '(line-number-mode t)
  '(line-spacing 0.2)
  '(linum-format 'dynamic)
+ '(lsp-auto-guess-root nil)
  '(lsp-enable-file-watchers nil)
+ '(lsp-headerline-breadcrumb-enable nil)
+ '(lsp-headerline-breadcrumb-segments '(symbols))
  '(lsp-julia-default-environment "~/.julia/environments/v1.5")
  '(lsp-pyright-typechecking-mode "off")
  '(lsp-pyright-venv-path "/home/praharsh/anaconda3/envs")
@@ -421,16 +425,16 @@ In that case, insert the number."
  '(lsp-ui-doc-max-width 80)
  '(lsp-ui-doc-position 'at-point)
  '(lsp-ui-doc-use-childframe t)
- '(lsp-ui-doc-use-webkit nil)
+ '(lsp-ui-doc-use-webkit nil t)
  '(lsp-ui-doc-winum-ignore nil)
  '(lsp-ui-peek-enable t)
- '(lsp-ui-sideline-enable nil)
+ '(lsp-ui-sideline-enable t)
  '(lsp-ui-sideline-ignore-duplicate t)
  '(lsp-ui-sideline-show-code-actions t)
  '(lsp-ui-sideline-show-diagnostics t)
- '(lsp-ui-sideline-show-hover nil)
+ '(lsp-ui-sideline-show-hover nil t)
  '(lsp-ui-sideline-show-symbol t)
- '(lsp-ui-sideline-update-mode 'point)
+ '(lsp-ui-sideline-update-mode 'point t)
  '(magit-diff-use-overlays nil)
  '(mc/always-run-for-all nil)
  '(nrepl-message-colors
@@ -469,7 +473,7 @@ In that case, insert the number."
  '(org2jekyll-jekyll-posts-dir "_posts/" nil (org2jekyll))
  '(org2jekyll-source-directory (expand-file-name "~/website") nil (org2jekyll))
  '(package-selected-packages
-   '(treemacs-all-the-icons persp-projectile circe annotate google-this realgud dap-mode gitignore-mode gitattributes-mode forge logview ccls lsp-jedi goto-line-preview latex-preview-pane pdf-tools disable-mouse julia-snail flycheck-julia quelpa lsp-julia company-posframe hide-mode-line auto-dim-other-buffers poet-theme spaceline-all-the-icons company-tabnine gmail-message-mode vc-msg spaceline lsp-origami vimish-fold yafolding sphinx-mode nix-mode helm-ag company-prescient lsp-python-ms lsp-treemacs treemacs all-the-icons-dired highlight-indent-guides dimmer fira-code-mode pretty-mode flatui-theme one-themes ghub+ doom-modeline kaolin-themes lsp-latex eldoc-box which-key helm-lsp company-lsp company-box lsp-ui lsp-mode jsonrpc json-rpc flycheck-irony company-jedi helm-company company-irony company-math langtool irony org-bullets helm-projectile cmake-mode cmake-ide ess ein jupyter ac-helm helm-rtags flycheck-rtags company-rtags ac-rtags ggtags function-args origami alert all-the-icons auctex biblio biblio-core company dash elfeed find-file-in-project flycheck ghub git-commit helm helm-core ht hydra ido-completing-read+ ivy sublimity smooth-scrolling command-log-mode writeroom-mode atom-one-dark-theme dracula-theme yasnippet-snippets helm-swoop oceanic-theme green-phosphor-theme solarized-theme julia-mode espresso-theme cherry-blossom-theme anzu paradox python-mode xkcd screenshot dashboard projectile spacemacs-theme neotree org-ac evil doom-themes dad-joke ac-math org-alert dired-quick-sort aggressive-indent emojify dired+ json-mode yaml-mode org2jekyll magit helm-tramp helm-bibtex htmlize xbm-life rainbow-blocks flycheck-cython cython-mode edit-server elpy mu4e-maildirs-extension look-mode undo-tree rainbow-delimiters org-journal multiple-cursors leuven-theme haskell-mode graphene goto-last-change d-mode cyberpunk-theme color-theme-sanityinc-tomorrow color-theme auto-complete-auctex auctex-lua auctex-latexmk 4clojure))
+   '(helm-descbinds ob-ess-julia treemacs-all-the-icons persp-projectile circe annotate google-this realgud dap-mode gitignore-mode gitattributes-mode forge logview ccls lsp-jedi goto-line-preview latex-preview-pane pdf-tools disable-mouse julia-snail flycheck-julia quelpa lsp-julia company-posframe hide-mode-line auto-dim-other-buffers poet-theme spaceline-all-the-icons company-tabnine gmail-message-mode vc-msg spaceline lsp-origami vimish-fold yafolding sphinx-mode nix-mode helm-ag company-prescient lsp-python-ms lsp-treemacs treemacs all-the-icons-dired highlight-indent-guides dimmer fira-code-mode pretty-mode flatui-theme one-themes ghub+ doom-modeline kaolin-themes lsp-latex eldoc-box which-key helm-lsp company-lsp company-box lsp-ui lsp-mode jsonrpc json-rpc flycheck-irony company-jedi helm-company company-irony company-math langtool irony org-bullets helm-projectile cmake-mode cmake-ide ess ein jupyter ac-helm helm-rtags flycheck-rtags company-rtags ac-rtags ggtags function-args origami alert all-the-icons auctex biblio biblio-core company dash elfeed find-file-in-project flycheck ghub git-commit helm helm-core ht hydra ido-completing-read+ ivy sublimity smooth-scrolling command-log-mode writeroom-mode atom-one-dark-theme dracula-theme yasnippet-snippets helm-swoop oceanic-theme green-phosphor-theme solarized-theme julia-mode espresso-theme cherry-blossom-theme anzu paradox python-mode xkcd screenshot dashboard projectile spacemacs-theme neotree org-ac evil doom-themes dad-joke ac-math org-alert dired-quick-sort aggressive-indent emojify dired+ json-mode yaml-mode org2jekyll magit helm-tramp helm-bibtex htmlize xbm-life rainbow-blocks flycheck-cython cython-mode edit-server elpy mu4e-maildirs-extension look-mode undo-tree rainbow-delimiters org-journal multiple-cursors leuven-theme haskell-mode graphene goto-last-change d-mode cyberpunk-theme color-theme-sanityinc-tomorrow color-theme auto-complete-auctex auctex-lua auctex-latexmk 4clojure))
  '(paradox-github-token t)
  '(pdf-view-midnight-colors (cons "#556b72" "#FDF6E3"))
  '(pos-tip-background-color "#073642")
@@ -737,6 +741,8 @@ In that case, insert the number."
   :commands helm-lsp-workspace-symbol
   :bind (:map lsp-mode-map
               ("C-c f" . helm-lsp-workspace-symbol)))
+
+
 
 
 
@@ -1625,6 +1631,8 @@ This can be 0 for immediate, or a floating point value.")
 (add-hook 'prog-mode-hook #'praharsh-prog-fonts)
 (add-hook 'LaTeX-mode-hook #'praharsh-prog-fonts)
 (add-hook 'calendar-mode-hook #'praharsh-prog-fonts)
+(add-hook 'magit-revision-mode #'praharsh-prog-fonts)
+
 (add-hook 'org-mode-hook
           (lambda ()
             (variable-pitch-mode 1)))
