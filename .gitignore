@@ -19,6 +19,7 @@ strokes
 .mc-lists.el
 
 **/.yas-compiled-snippets*
+**/**/.yas-compiled-snippets*
 projectile.cache
 request/
 .emacs.desktop
@@ -38,3 +39,5 @@ persp-confs/
 transient/
 url/
 vimish-fold/
+quelpa/
+
