@@ -15,16 +15,19 @@
 (add-to-list 'load-path
              "/usr/local/share/emacs/site-lisp/rtags")
 
-
+;; path to julia
+(add-to-list 'exec-path "/home/praharsh/julia-1.6.1/bin")
 ;; (use-package company-tabnine :ensure t)
 
 
 (use-package graphene)
 
-;; (define-key prog-mode-map (kbd "<return>") 'default-indent-new-line)
+(define-key prog-mode-map (kbd "<return>") 'default-indent-new-line)
 (electric-indent-mode 1)
-(define-key prog-mode-map (kbd "<return>") 'electric-newline-and-maybe-indent)
+;; (define-key prog-mode-map (kbd "<return>") 'electric-newline-and-maybe-indent)
 ;; unset useless key bindings from graphene
+
+
 
 
 
@@ -332,6 +335,7 @@ In that case, insert the number."
  '(bibtex-dialect 'biblatex)
  '(c-basic-offset 4)
  '(column-number-mode t)
+ '(comp-async-report-warnings-errors nil)
  '(company-dabbrev-downcase nil)
  '(company-dabbrev-time-limit 0.05)
  '(company-minimum-prefix-length 1)
@@ -350,7 +354,7 @@ In that case, insert the number."
  '(cursor-type '(bar . 3))
  '(custom-enabled-themes '(doom-solarized-light))
  '(custom-safe-themes
-   '("9e39a8334e0e476157bfdb8e42e1cea43fad02c9ec7c0dbd5498cf02b9adeaf1" "d5a878172795c45441efcd84b20a14f553e7e96366a163f742b95d65a3f55d71" "e72f5955ec6d8585b8ddb2accc2a4cb78d28629483ef3dcfee00ef3745e2292f" "4bca89c1004e24981c840d3a32755bf859a6910c65b829d9441814000cf6c3d0" "b89a4f5916c29a235d0600ad5a0849b1c50fab16c2c518e1d98f0412367e7f97" "990e24b406787568c592db2b853aa65ecc2dcd08146c0d22293259d400174e37" "74ba9ed7161a26bfe04580279b8cad163c00b802f54c574bfa5d924b99daa4b9" "08a27c4cde8fcbb2869d71fdc9fa47ab7e4d31c27d40d59bf05729c4640ce834" "be9645aaa8c11f76a10bcf36aaf83f54f4587ced1b9b679b55639c87404e2499" "e6ff132edb1bfa0645e2ba032c44ce94a3bd3c15e3929cdf6c049802cf059a2a" "28a104f642d09d3e5c62ce3464ea2c143b9130167282ea97ddcc3607b381823f" "f490984d405f1a97418a92f478218b8e4bcc188cf353e5dd5d5acd2f8efd0790" "2d035eb93f92384d11f18ed00930e5cc9964281915689fa035719cab71766a15" "0fffa9669425ff140ff2ae8568c7719705ef33b7a927a0ba7c5e2ffcfac09b75" "1623aa627fecd5877246f48199b8e2856647c99c6acdab506173f9bb8b0a41ac" "76bfa9318742342233d8b0b42e824130b3a50dcc732866ff8e47366aed69de11" "5d09b4ad5649fea40249dd937eaaa8f8a229db1cec9a1a0ef0de3ccf63523014" "2f1518e906a8b60fac943d02ad415f1d8b3933a5a7f75e307e6e9a26ef5bf570" "cf3d5d77679f7daed6a2c863e4f2e30427d5e375b254252127be9359957502ec" "82360e5f96244ce8cc6e765eeebe7788c2c5f3aeb96c1a765629c5c7937c0b5b" "9efb2d10bfb38fe7cd4586afb3e644d082cbcdb7435f3d1e8dd9413cbe5e61fc" "cae81b048b8bccb7308cdcb4a91e085b3c959401e74a0f125e7c5b173b916bf9" "01cf34eca93938925143f402c2e6141f03abb341f27d1c2dba3d50af9357ce70" "54cf3f8314ce89c4d7e20ae52f7ff0739efb458f4326a2ca075bf34bc0b4f499" "6c3b5f4391572c4176908bb30eddc1718344b8eaff50e162e36f271f6de015ca" "7f1d414afda803f3244c6fb4c2c64bea44dac040ed3731ec9d75275b9e831fe5" "711efe8b1233f2cf52f338fd7f15ce11c836d0b6240a18fffffc2cbd5bfe61b0" "c4bdbbd52c8e07112d1bfd00fee22bf0f25e727e95623ecb20c4fa098b74c1bd" "99ea831ca79a916f1bd789de366b639d09811501e8c092c85b2cb7d697777f93" "37144b437478e4c235824f0e94afa740ee2c7d16952e69ac3c5ed4352209eefb" "ae88c445c558b7632fc2d72b7d4b8dfb9427ac06aa82faab8d760fff8b8f243c" "b73a23e836b3122637563ad37ae8c7533121c2ac2c8f7c87b381dd7322714cd0" "0dd2666921bd4c651c7f8a724b3416e95228a13fca1aa27dc0022f4e023bf197" "669e02142a56f63861288cc585bee81643ded48a19e36bfdf02b66d745bcc626" "04589c18c2087cd6f12c01807eed0bdaa63983787025c209b89c779c61c3a4c4" "bb08c73af94ee74453c90422485b29e5643b73b05e8de029a6909af6a3fb3f58" "a3b6a3708c6692674196266aad1cb19188a6da7b4f961e1369a68f06577afa16" "7a994c16aa550678846e82edc8c9d6a7d39cc6564baaaacc305a3fdc0bd8725f" "f2927d7d87e8207fa9a0a003c0f222d45c948845de162c885bf6ad2a255babfd" "79278310dd6cacf2d2f491063c4ab8b129fee2a498e4c25912ddaa6c3c5b621e" "71e5acf6053215f553036482f3340a5445aee364fb2e292c70d9175fb0cc8af7" "f7216d3573e1bd2a2b47a2331f368b45e7b5182ddbe396d02b964b1ea5c5dc27" "3df5335c36b40e417fec0392532c1b82b79114a05d5ade62cfe3de63a59bc5c6" "1de8de5dddd3c5138e134696180868490c4fc86daf9780895d8fc728449805f3" "fa9fcc03b52009b2bad5b4d8a0db07de1255702c2bef2a0ddba422ae138e44b5" "fa2b58bb98b62c3b8cf3b6f02f058ef7827a8e497125de0254f56e373abee088" "12bacee81d067acf07dec4c867be541a04744a6ac6a39636de25a2c77e9b573c" "1a1cdd9b407ceb299b73e4afd1b63d01bbf2e056ec47a9d95901f4198a0d2428" "24714e2cb4a9d6ec1335de295966906474fdb668429549416ed8636196cb1441" "890a1a44aff08a726439b03c69ff210fe929f0eff846ccb85f78ee0e27c7b2ea" "37768a79b479684b0756dec7c0fc7652082910c37d8863c35b702db3f16000f8" "bf387180109d222aee6bb089db48ed38403a1e330c9ec69fe1f52460a8936b66" "c342ef444e7aca36f4b39a8e2848c4ba793d51c58fdb520b8ed887766ed6d40b" "643b4d181b6afa4306d65db76889d8b987e095ae8f262a4c71dd5669d39c9b09" "c499bf4e774b34e784ef5a104347b81c56220416d56d5fd3fd85df8704260aad" "fc0fe24e7f3d48ac9cf1f87b8657c6d7a5dd203d5dabd2f12f549026b4c67446" "8ce796252a78d1a69e008c39d7b84a9545022b64609caac98dc7980d76ae34e3" "9ef81da35ce99a4c7155db7d46e4f8c20a51860d6879cf082e3ed1c5222c17d3" "dde8c620311ea241c0b490af8e6f570fdd3b941d7bc209e55cd87884eb733b0e" "c83c095dd01cde64b631fb0fe5980587deec3834dc55144a6e78ff91ebc80b19" "e1ef2d5b8091f4953fe17b4ca3dd143d476c106e221d92ded38614266cea3c8b" "2809bcb77ad21312897b541134981282dc455ccd7c14d74cc333b6e549b824f3" "c433c87bd4b64b8ba9890e8ed64597ea0f8eb0396f4c9a9e01bd20a04d15d358" "285d1bf306091644fb49993341e0ad8bafe57130d9981b680c1dbd974475c5c7" "51ec7bfa54adf5fff5d466248ea6431097f5a18224788d0bd7eb1257a4f7b773" "bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" "e074be1c799b509f52870ee596a5977b519f6d269455b84ed998666cf6fc802a" "7f791f743870983b9bb90c8285e1e0ba1bf1ea6e9c9a02c60335899ba20f3c94" "7f6d4aebcc44c264a64e714c3d9d1e903284305fd7e319e7cb73345a9994f5ef" default))
+   '("1d5e33500bc9548f800f9e248b57d1b2a9ecde79cb40c0b1398dec51ee820daf" "171d1ae90e46978eb9c342be6658d937a83aaa45997b1d7af7657546cae5985b" "cf922a7a5c514fad79c483048257c5d8f242b21987af0db813d3f0b138dfaf53" "4f1d2476c290eaa5d9ab9d13b60f2c0f1c8fa7703596fa91b235db7f99a9441b" "aaa4c36ce00e572784d424554dcc9641c82d1155370770e231e10c649b59a074" "d74c5485d42ca4b7f3092e50db687600d0e16006d8fa335c69cf4f379dbd0eee" "4a8d4375d90a7051115db94ed40e9abb2c0766e80e228ecad60e06b3b397acab" "6c9cbcdfd0e373dc30197c5059f79c25c07035ff5d0cc42aa045614d3919dab4" "a4395e069de3314001de4e139d6a3b1a83dcf9c3fdc68ee7b13eef6c2cba4ae3" "17a58e509bbb8318abf3558c4b7b44273b4f1b555c5e91d00d4785b7b59d6d28" "9e39a8334e0e476157bfdb8e42e1cea43fad02c9ec7c0dbd5498cf02b9adeaf1" "d5a878172795c45441efcd84b20a14f553e7e96366a163f742b95d65a3f55d71" "e72f5955ec6d8585b8ddb2accc2a4cb78d28629483ef3dcfee00ef3745e2292f" "4bca89c1004e24981c840d3a32755bf859a6910c65b829d9441814000cf6c3d0" "b89a4f5916c29a235d0600ad5a0849b1c50fab16c2c518e1d98f0412367e7f97" "990e24b406787568c592db2b853aa65ecc2dcd08146c0d22293259d400174e37" "74ba9ed7161a26bfe04580279b8cad163c00b802f54c574bfa5d924b99daa4b9" "08a27c4cde8fcbb2869d71fdc9fa47ab7e4d31c27d40d59bf05729c4640ce834" "be9645aaa8c11f76a10bcf36aaf83f54f4587ced1b9b679b55639c87404e2499" "e6ff132edb1bfa0645e2ba032c44ce94a3bd3c15e3929cdf6c049802cf059a2a" "28a104f642d09d3e5c62ce3464ea2c143b9130167282ea97ddcc3607b381823f" "f490984d405f1a97418a92f478218b8e4bcc188cf353e5dd5d5acd2f8efd0790" "2d035eb93f92384d11f18ed00930e5cc9964281915689fa035719cab71766a15" "0fffa9669425ff140ff2ae8568c7719705ef33b7a927a0ba7c5e2ffcfac09b75" "1623aa627fecd5877246f48199b8e2856647c99c6acdab506173f9bb8b0a41ac" "76bfa9318742342233d8b0b42e824130b3a50dcc732866ff8e47366aed69de11" "5d09b4ad5649fea40249dd937eaaa8f8a229db1cec9a1a0ef0de3ccf63523014" "2f1518e906a8b60fac943d02ad415f1d8b3933a5a7f75e307e6e9a26ef5bf570" "cf3d5d77679f7daed6a2c863e4f2e30427d5e375b254252127be9359957502ec" "82360e5f96244ce8cc6e765eeebe7788c2c5f3aeb96c1a765629c5c7937c0b5b" "9efb2d10bfb38fe7cd4586afb3e644d082cbcdb7435f3d1e8dd9413cbe5e61fc" "cae81b048b8bccb7308cdcb4a91e085b3c959401e74a0f125e7c5b173b916bf9" "01cf34eca93938925143f402c2e6141f03abb341f27d1c2dba3d50af9357ce70" "54cf3f8314ce89c4d7e20ae52f7ff0739efb458f4326a2ca075bf34bc0b4f499" "6c3b5f4391572c4176908bb30eddc1718344b8eaff50e162e36f271f6de015ca" "7f1d414afda803f3244c6fb4c2c64bea44dac040ed3731ec9d75275b9e831fe5" "711efe8b1233f2cf52f338fd7f15ce11c836d0b6240a18fffffc2cbd5bfe61b0" "c4bdbbd52c8e07112d1bfd00fee22bf0f25e727e95623ecb20c4fa098b74c1bd" "99ea831ca79a916f1bd789de366b639d09811501e8c092c85b2cb7d697777f93" "37144b437478e4c235824f0e94afa740ee2c7d16952e69ac3c5ed4352209eefb" "ae88c445c558b7632fc2d72b7d4b8dfb9427ac06aa82faab8d760fff8b8f243c" "b73a23e836b3122637563ad37ae8c7533121c2ac2c8f7c87b381dd7322714cd0" "0dd2666921bd4c651c7f8a724b3416e95228a13fca1aa27dc0022f4e023bf197" "669e02142a56f63861288cc585bee81643ded48a19e36bfdf02b66d745bcc626" "04589c18c2087cd6f12c01807eed0bdaa63983787025c209b89c779c61c3a4c4" "bb08c73af94ee74453c90422485b29e5643b73b05e8de029a6909af6a3fb3f58" "a3b6a3708c6692674196266aad1cb19188a6da7b4f961e1369a68f06577afa16" "7a994c16aa550678846e82edc8c9d6a7d39cc6564baaaacc305a3fdc0bd8725f" "f2927d7d87e8207fa9a0a003c0f222d45c948845de162c885bf6ad2a255babfd" "79278310dd6cacf2d2f491063c4ab8b129fee2a498e4c25912ddaa6c3c5b621e" "71e5acf6053215f553036482f3340a5445aee364fb2e292c70d9175fb0cc8af7" "f7216d3573e1bd2a2b47a2331f368b45e7b5182ddbe396d02b964b1ea5c5dc27" "3df5335c36b40e417fec0392532c1b82b79114a05d5ade62cfe3de63a59bc5c6" "1de8de5dddd3c5138e134696180868490c4fc86daf9780895d8fc728449805f3" "fa9fcc03b52009b2bad5b4d8a0db07de1255702c2bef2a0ddba422ae138e44b5" "fa2b58bb98b62c3b8cf3b6f02f058ef7827a8e497125de0254f56e373abee088" "12bacee81d067acf07dec4c867be541a04744a6ac6a39636de25a2c77e9b573c" "1a1cdd9b407ceb299b73e4afd1b63d01bbf2e056ec47a9d95901f4198a0d2428" "24714e2cb4a9d6ec1335de295966906474fdb668429549416ed8636196cb1441" "890a1a44aff08a726439b03c69ff210fe929f0eff846ccb85f78ee0e27c7b2ea" "37768a79b479684b0756dec7c0fc7652082910c37d8863c35b702db3f16000f8" "bf387180109d222aee6bb089db48ed38403a1e330c9ec69fe1f52460a8936b66" "c342ef444e7aca36f4b39a8e2848c4ba793d51c58fdb520b8ed887766ed6d40b" "643b4d181b6afa4306d65db76889d8b987e095ae8f262a4c71dd5669d39c9b09" "c499bf4e774b34e784ef5a104347b81c56220416d56d5fd3fd85df8704260aad" "fc0fe24e7f3d48ac9cf1f87b8657c6d7a5dd203d5dabd2f12f549026b4c67446" "8ce796252a78d1a69e008c39d7b84a9545022b64609caac98dc7980d76ae34e3" "9ef81da35ce99a4c7155db7d46e4f8c20a51860d6879cf082e3ed1c5222c17d3" "dde8c620311ea241c0b490af8e6f570fdd3b941d7bc209e55cd87884eb733b0e" "c83c095dd01cde64b631fb0fe5980587deec3834dc55144a6e78ff91ebc80b19" "e1ef2d5b8091f4953fe17b4ca3dd143d476c106e221d92ded38614266cea3c8b" "2809bcb77ad21312897b541134981282dc455ccd7c14d74cc333b6e549b824f3" "c433c87bd4b64b8ba9890e8ed64597ea0f8eb0396f4c9a9e01bd20a04d15d358" "285d1bf306091644fb49993341e0ad8bafe57130d9981b680c1dbd974475c5c7" "51ec7bfa54adf5fff5d466248ea6431097f5a18224788d0bd7eb1257a4f7b773" "bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" "e074be1c799b509f52870ee596a5977b519f6d269455b84ed998666cf6fc802a" "7f791f743870983b9bb90c8285e1e0ba1bf1ea6e9c9a02c60335899ba20f3c94" "7f6d4aebcc44c264a64e714c3d9d1e903284305fd7e319e7cb73345a9994f5ef" default))
  '(dabbrev-check-all-buffers nil)
  '(display-line-numbers nil)
  '(display-line-numbers-width 1)
@@ -359,6 +363,7 @@ In that case, insert the number."
  '(elfeed-show-entry-author t)
  '(elpy-modules
    '(elpy-module-eldoc elpy-module-pyvenv elpy-module-highlight-indentation elpy-module-yasnippet elpy-module-django elpy-module-autodoc elpy-module-sane-defaults))
+ '(exwm-floating-border-color "#E1DBCD")
  '(fci-rule-color "#D6D6D6")
  '(flycheck-color-mode-line-face-to-color 'mode-line-buffer-id)
  '(font-latex-math-environments
@@ -415,7 +420,6 @@ In that case, insert the number."
  '(lsp-enable-file-watchers nil)
  '(lsp-headerline-breadcrumb-enable nil)
  '(lsp-headerline-breadcrumb-segments '(symbols))
- '(lsp-julia-default-environment "~/.julia/environments/v1.5")
  '(lsp-pyright-typechecking-mode "off")
  '(lsp-pyright-venv-path "/home/praharsh/anaconda3/envs")
  '(lsp-ui-doc-alignment 'frame)
@@ -428,7 +432,7 @@ In that case, insert the number."
  '(lsp-ui-doc-use-webkit nil t)
  '(lsp-ui-doc-winum-ignore nil)
  '(lsp-ui-peek-enable t)
- '(lsp-ui-sideline-enable t)
+ '(lsp-ui-sideline-enable nil)
  '(lsp-ui-sideline-ignore-duplicate t)
  '(lsp-ui-sideline-show-code-actions t)
  '(lsp-ui-sideline-show-diagnostics t)
@@ -448,7 +452,7 @@ In that case, insert the number."
    '(("en" "<p class=\"author\">Author: Praharsh Suryadevara </p>
 <p class=\"date\">Date: %d</p>
 <p class=\"creator\">%c</p>")))
- '(org-journal-dir "~/Dropbox/journal/")
+ '(org-journal-dir "~/Dropbox/research-journal")
  '(org-publish-project-alist
    `(("default" :base-directory ,(org2jekyll-input-directory)
       :base-extension "org" :publishing-directory ,(org2jekyll-output-directory)
@@ -473,13 +477,14 @@ In that case, insert the number."
  '(org2jekyll-jekyll-posts-dir "_posts/" nil (org2jekyll))
  '(org2jekyll-source-directory (expand-file-name "~/website") nil (org2jekyll))
  '(package-selected-packages
-   '(helm-descbinds ob-ess-julia treemacs-all-the-icons persp-projectile circe annotate google-this realgud dap-mode gitignore-mode gitattributes-mode forge logview ccls lsp-jedi goto-line-preview latex-preview-pane pdf-tools disable-mouse julia-snail flycheck-julia quelpa lsp-julia company-posframe hide-mode-line auto-dim-other-buffers poet-theme spaceline-all-the-icons company-tabnine gmail-message-mode vc-msg spaceline lsp-origami vimish-fold yafolding sphinx-mode nix-mode helm-ag company-prescient lsp-python-ms lsp-treemacs treemacs all-the-icons-dired highlight-indent-guides dimmer fira-code-mode pretty-mode flatui-theme one-themes ghub+ doom-modeline kaolin-themes lsp-latex eldoc-box which-key helm-lsp company-lsp company-box lsp-ui lsp-mode jsonrpc json-rpc flycheck-irony company-jedi helm-company company-irony company-math langtool irony org-bullets helm-projectile cmake-mode cmake-ide ess ein jupyter ac-helm helm-rtags flycheck-rtags company-rtags ac-rtags ggtags function-args origami alert all-the-icons auctex biblio biblio-core company dash elfeed find-file-in-project flycheck ghub git-commit helm helm-core ht hydra ido-completing-read+ ivy sublimity smooth-scrolling command-log-mode writeroom-mode atom-one-dark-theme dracula-theme yasnippet-snippets helm-swoop oceanic-theme green-phosphor-theme solarized-theme julia-mode espresso-theme cherry-blossom-theme anzu paradox python-mode xkcd screenshot dashboard projectile spacemacs-theme neotree org-ac evil doom-themes dad-joke ac-math org-alert dired-quick-sort aggressive-indent emojify dired+ json-mode yaml-mode org2jekyll magit helm-tramp helm-bibtex htmlize xbm-life rainbow-blocks flycheck-cython cython-mode edit-server elpy mu4e-maildirs-extension look-mode undo-tree rainbow-delimiters org-journal multiple-cursors leuven-theme haskell-mode graphene goto-last-change d-mode cyberpunk-theme color-theme-sanityinc-tomorrow color-theme auto-complete-auctex auctex-lua auctex-latexmk 4clojure))
+   '(lsp-julia julia-repl prettier company-reftex helm-descbinds ob-ess-julia treemacs-all-the-icons persp-projectile circe annotate google-this realgud dap-mode gitignore-mode gitattributes-mode forge logview ccls lsp-jedi goto-line-preview latex-preview-pane pdf-tools disable-mouse julia-snail flycheck-julia quelpa company-posframe hide-mode-line auto-dim-other-buffers poet-theme spaceline-all-the-icons company-tabnine gmail-message-mode vc-msg spaceline lsp-origami vimish-fold yafolding sphinx-mode nix-mode helm-ag company-prescient lsp-python-ms lsp-treemacs treemacs all-the-icons-dired highlight-indent-guides dimmer fira-code-mode pretty-mode flatui-theme one-themes ghub+ doom-modeline kaolin-themes lsp-latex eldoc-box which-key helm-lsp company-lsp company-box lsp-ui lsp-mode jsonrpc json-rpc flycheck-irony company-jedi helm-company company-irony company-math langtool irony org-bullets helm-projectile cmake-mode cmake-ide ess ein jupyter ac-helm helm-rtags flycheck-rtags company-rtags ac-rtags ggtags function-args origami alert all-the-icons auctex biblio biblio-core company dash elfeed find-file-in-project flycheck ghub git-commit helm helm-core ht hydra ido-completing-read+ ivy sublimity smooth-scrolling command-log-mode writeroom-mode atom-one-dark-theme dracula-theme yasnippet-snippets helm-swoop oceanic-theme green-phosphor-theme solarized-theme julia-mode espresso-theme cherry-blossom-theme anzu paradox python-mode xkcd screenshot dashboard projectile spacemacs-theme neotree org-ac evil doom-themes dad-joke ac-math org-alert dired-quick-sort aggressive-indent emojify dired+ json-mode yaml-mode org2jekyll magit helm-tramp helm-bibtex htmlize xbm-life rainbow-blocks flycheck-cython cython-mode edit-server elpy mu4e-maildirs-extension look-mode undo-tree rainbow-delimiters org-journal multiple-cursors leuven-theme haskell-mode graphene goto-last-change d-mode cyberpunk-theme color-theme-sanityinc-tomorrow color-theme auto-complete-auctex auctex-lua auctex-latexmk 4clojure))
  '(paradox-github-token t)
  '(pdf-view-midnight-colors (cons "#556b72" "#FDF6E3"))
  '(pos-tip-background-color "#073642")
  '(pos-tip-foreground-color "#93a1a1")
  '(rustic-ansi-faces
    ["#FDF6E3" "#dc322f" "#859900" "#b58900" "#268bd2" "#d33682" "#2aa198" "#556b72"])
+ '(shell-file-name "/usr/bin/bash")
  '(size-indication-mode t)
  '(smartrep-mode-line-active-bg (solarized-color-blend "#859900" "#073642" 0.2))
  '(sml/active-background-color "#34495e")
@@ -530,6 +535,8 @@ In that case, insert the number."
     (cons 340 "#D6D6D6")
     (cons 360 "#D6D6D6")))
  '(vc-annotate-very-old-color nil)
+ '(warning-suppress-log-types '((use-package)))
+ '(warning-suppress-types '((use-package) (use-package)))
  '(weechat-color-list
    '(unspecified "#002b36" "#073642" "#990A1B" "#dc322f" "#546E00" "#859900" "#7B6000" "#b58900" "#00629D" "#268bd2" "#93115C" "#d33682" "#00736F" "#2aa198" "#839496" "#657b83"))
  '(window-divider-mode nil)
@@ -592,7 +599,7 @@ In that case, insert the number."
 
 
 (pyvenv-activate "/home/praharsh/anaconda3/envs/changebranch3")
-;; (setq elpy-rpc-python-command "/home/praharsh/anaconda3/envs/changebranch3/bin/python")
+(setq elpy-rpc-python-command "/home/praharsh/anaconda3/envs/changebranch3/bin/python")
 ;; (elpy-enable)
 ;; not fast enough unfortunately
 ;; (add-hook 'python-mode-hook
@@ -618,8 +625,9 @@ In that case, insert the number."
 (setq lsp-keymap-prefix "C-c l")
 
 
+
 (use-package lsp-mode
-  :hook (((c-mode c++-mode python-mode) . lsp)
+  :hook (((c-mode c++-mode python-mode julia-mode) . lsp)
          (lsp-mode . yas-minor-mode))
   :custom-face
   (lsp-modeline-code-actions-face ((t (:inherit mode-line))))
@@ -631,13 +639,36 @@ In that case, insert the number."
   :bind (:map lsp-mode-map 
               ("C-c d" . lsp-describe-thing-at-point))
   :config
-  (setq lsp-clients-clangd-executable "/usr/bin/clangd-11")
-  (setq lsp-pyls-server-command "/home/praharsh/anaconda3/envs/extras/bin/pyls")
+  ;; (setq lsp-pyls-server-command "/home/praharsh/anaconda3/bin/pylsp")  
   (setq lsp-clients-clangd-args '("-j=6" "-background-index" "-log=error"))
+  (setq lsp)
+  (add-to-list 'lsp-enabled-clients 'clangd)
   )
 
 
 
+
+
+
+
+
+
+
+(use-package lsp-jedi
+  :ensure t
+  :config
+  (setq lsp-jedi-executable-command "/home/praharsh/anaconda3/bin/jedi-language-server")
+  (with-eval-after-load "lsp-mode"
+    (add-to-list 'lsp-disabled-clients 'pyls)
+    (add-to-list 'lsp-enabled-clients 'jedi)))
+
+(use-package lsp-julia
+  :config
+  (setq lsp-julia-default-environment "~/.julia/environments/v1.6")
+  (with-eval-after-load "lsp-mode"
+    (add-to-list 'lsp-enabled-clients 'julia-ls)
+    )
+  )
 
 
 
@@ -650,12 +681,12 @@ In that case, insert the number."
 
 ;; (add-hook 'lsp-after-initialize-hook 'lsp-set-cfg)
 
-(use-package lsp-pyright
-  :ensure t
-  :hook (python-mode . (lambda ()
-                         (require 'lsp-pyright)
-                         (lsp)))
-  )  ; or lsp-deferred
+;; (use-package lsp-pyright
+;;   :ensure t
+;;   :hook (python-mode . (lambda ()
+;;                          (require 'lsp-pyright)
+;;                          (lsp)))
+  ;; )  ; or lsp-deferred
 ;; (use-package lsp-jedi
 ;;   :ensure t
 ;;   :config
@@ -664,12 +695,6 @@ In that case, insert the number."
 ;;     (add-to-list 'lsp-enabled-clients 'jedi)))
 
 ;; the julia lsp package currently sucks
-(use-package lsp-julia
-  :ensure t
-  :hook (julia-mode . (lambda ()
-                        (require 'lsp-julia)
-                        (lsp)))
-  )
 
 
 
@@ -1227,7 +1252,7 @@ This can be 0 for immediate, or a floating point value.")
  'org-babel-load-languages
  '((latex . t) (python . t) (haskell . t) (emacs-lisp . t)))
 
-(setq org-babel-python-command "~/miniconda2/envs/basemacs/bin/./python")
+
 (add-hook 'after-init-hook 'org-agenda-list)
 
 ;; yasnippet cofiguration
@@ -1240,8 +1265,10 @@ This can be 0 for immediate, or a floating point value.")
 
 
 
-(setq yas-snippet-dirs '("~/.emacs.d/snippets"))
 
+;; OR, keeping YASnippet defaults try out ~/Downloads/interesting-snippets
+(setq yas-snippet-dirs (append yas-snippet-dirs
+                               '("~/.emacs.d/snippets")))
 
 
 
@@ -1395,9 +1422,9 @@ This can be 0 for immediate, or a floating point value.")
 (setq rmh-elfeed-org-files (list "~/.emacs.d/elfeed.org"))
 
 (defun elfeed-mark-all-as-read ()
-      (interactive)
-      (mark-whole-buffer)
-      (elfeed-search-untag-all-unread))
+  (interactive)
+  (mark-whole-buffer)
+  (elfeed-search-untag-all-unread))
 
 (define-key elfeed-search-mode-map (kbd "R") 'elfeed-mark-all-as-read)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
