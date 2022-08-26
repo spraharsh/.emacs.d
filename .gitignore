@@ -41,3 +41,4 @@ url/
 vimish-fold/
 quelpa/
 
+*.el
