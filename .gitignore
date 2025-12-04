@@ -42,3 +42,5 @@ vimish-fold/
 quelpa/
 
 *.el
+!init.el
+!config/*.el
