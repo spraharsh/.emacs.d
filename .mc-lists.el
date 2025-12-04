@@ -23,6 +23,7 @@
         TeX-insert-backslash
         TeX-insert-sub-or-superscript
         ac-pcmp/self-insert-command-with-ac-start
+        avy-goto-word-1
         backward-sexp
         beginning-of-visual-line
         c-electric-brace
@@ -38,14 +39,18 @@
         comment-dwim
         eide-smart-tab-jump-out-or-indent
         electric-newline-and-maybe-indent
+        elpy-nav-backward-indent
         elpy-nav-indent-shift-left
         elpy-nav-indent-shift-right
         end-of-visual-line
         forward-sexp
         helm-M-x
         helm-show-kill-ring
+        ignore-preserving-kill-region
         indent-for-tab-command
         indent-new-comment-line
+        julia-latexsub-or-indent
+        kbd-macro-query
         keyboard-escape-quit
         kill-region
         kmacro-start-macro-or-insert-counter
@@ -55,13 +60,17 @@
         org-delete-char
         org-end-of-line
         org-export-dispatch
+        org-meta-return
         org-metaright
+        org-return-and-maybe-indent
         org-return-indent
         org-schedule
         org-self-insert-command
         org-todo
         org-yank
+        overwrite-mode
         py-indent-or-complete
+        python-nav-forward-block
         reindent-then-newline-and-indent
         save-some-buffers
         sp-remove-active-pair-overlay
@@ -76,13 +85,17 @@
       '(
         TeX-insert-dollar
         TeX-newline
+        TeX-next-error
         delete-window
         elpy-shell-send-region-or-buffer
+        fill-paragraph
         handle-switch-frame
         helm-buffers-list
+        helm-find-files
         help-for-help
         ignore
         kmacro-end-or-call-macro
+        lsp-signature-activate
         lsp-ui-doc--handle-mouse-movement
         mouse-drag-mode-line
         mouse-drag-vertical-line
@@ -93,7 +106,9 @@
         org-agenda
         org-ctrl-c-ctrl-c
         org-return
+        preview-clearout-buffer
         previous-buffer
+        suspend-frame
         undo-tree-visualize
         view-emacs-problems
         ))
