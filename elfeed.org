@@ -1,19 +1,21 @@
 * Blogs                                                              :elfeed:
-** Research                                                            :PRB:
+** Research                                                            :research:
 *** ArXiv-blogs                                                     :arxiv:
 **** cond-mat                                                    :condmat:
 ***** http://arxiv.org/rss/cond-mat.dis-nn                     :disnn: 
 ***** http://arxiv.org/rss/cond-mat.soft                          :soft: 
-***** http://arxiv.org/rss/cond-mat.stat-mech                      :statmech: 
+***** http://arxiv.org/rss/cond-mat.stat-mech                      :statmech:
 *** Journals                                                     :journals:
 **** APS                                                  :physicalreview:
 ***** Editor's suggestions                             :editorsuggestion:
-****** http://feeds.aps.org/rss/recent/prlsuggestions.xml          :PRL:
+****** http://feeds.aps.org/rss/recent/prlsuggestions.xml          :PRLsuggestions:
 ****** http://feeds.aps.org/rss/prbsuggestions.xml         :PRB:condmat:
+******  http://feeds.aps.org/rss/prbsuggestions.xml         :PRE:condmat:
 ***** Normal Publications
 ****** http://feeds.aps.org/rss/recent/prx.xml                     :PRX:
 ****** http://feeds.aps.org/rss/recent/rmp.xml                     :RMP:
 ****** http://feeds.aps.org/rss/recent/pre.xml                     :PRE:
+****** http://feeds.aps.org/rss/recent/prl.xml             :PRL:
 
 ** News                                                                :news:
 *** New york times                                                      :nyt:
