@@ -32,7 +32,9 @@ ARGS controls the behavior as described above."
 (global-set-key (kbd "C-c g") 'google-this)
 
 ;; Multiple cursors
-(use-package multiple-cursors)
+(use-package multiple-cursors
+  :commands (mc/edit-lines mc/mark-next-like-this
+                           mc/mark-previous-like-this mc/mark-all-like-this))
 (global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
 (global-set-key (kbd "C->") 'mc/mark-next-like-this)
 (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
@@ -51,10 +53,11 @@ ARGS controls the behavior as described above."
                                '("~/.emacs.d/snippets")))
 
 ;; Copilot
-(require 'copilot)
-(add-hook 'prog-mode-hook 'copilot-mode)
-(define-key copilot-completion-map (kbd "<tab>") 'copilot-accept-completion)
-(define-key copilot-completion-map (kbd "TAB") 'copilot-accept-completion)
+(use-package copilot
+  :hook (prog-mode . copilot-mode)
+  :bind (:map copilot-completion-map
+              ("<tab>" . copilot-accept-completion)
+              ("TAB" . copilot-accept-completion)))
 
 ;; Macro keybindings
 (global-set-key (kbd "<f5>") 'kmacro-cycle-ring-previous)

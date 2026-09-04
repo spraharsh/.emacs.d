@@ -17,10 +17,6 @@
 (setq global-auto-revert-non-file-buffers t)
 (setq auto-revert-verbose nil)
 
-;; Garbage collection settings
-(setq gc-cons-threshold 100000000)
-(add-hook 'after-init-hook (lambda () (setq gc-cons-threshold 100000000)))
-
 ;; Process output speed
 (setq read-process-output-max (* 1024 1024))
 

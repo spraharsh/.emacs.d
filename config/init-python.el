@@ -6,8 +6,12 @@
 ;;; Code:
 
 ;; Pyvenv activation
-(pyvenv-activate "/home/praharsh/anaconda3/envs/changebranch3")
 (setq elpy-rpc-python-command "/home/praharsh/anaconda3/envs/changebranch3/bin/python")
+(use-package pyvenv
+  :defer t
+  :hook (python-mode . (lambda ()
+                         (pyvenv-activate
+                          "/home/praharsh/anaconda3/envs/changebranch3"))))
 
 ;; Python mode company backends
 (add-hook 'python-mode-hook

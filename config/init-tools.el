@@ -6,38 +6,54 @@
 ;;; Code:
 
 ;; Elfeed RSS
-(require 'elfeed)
-(require 'elfeed-goodies)
-(elfeed-goodies/setup)
-(require 'elfeed-org)
-(elfeed-org)
-(setq rmh-elfeed-org-files (list "~/.emacs.d/elfeed.org"))
-
-(defun elfeed-mark-all-as-read ()
-  "Mark all elfeed entries as read."
+(defun praharsh-elfeed-update ()
+  "Open Elfeed and update its feeds."
   (interactive)
-  (mark-whole-buffer)
-  (elfeed-search-untag-all-unread))
+  (elfeed)
+  (elfeed-update))
 
-(define-key elfeed-search-mode-map (kbd "R") 'elfeed-mark-all-as-read)
-(global-set-key (kbd "C-x w") (lambda () (interactive) (elfeed) (elfeed-update)))
+(use-package elfeed
+  :commands (elfeed elfeed-update)
+  :bind ("C-x w" . praharsh-elfeed-update)
+  :init
+  (setq rmh-elfeed-org-files (list "~/.emacs.d/elfeed.org"))
+  :config
+  (require 'elfeed-goodies)
+  (elfeed-goodies/setup)
+  (require 'elfeed-org)
+  (elfeed-org)
+
+  (defun elfeed-mark-all-as-read ()
+    "Mark all Elfeed entries as read."
+    (interactive)
+    (mark-whole-buffer)
+    (elfeed-search-untag-all-unread))
+
+  (define-key elfeed-search-mode-map (kbd "R") #'elfeed-mark-all-as-read))
 
 ;; Emojify
-(add-hook 'after-init-hook #'global-emojify-mode)
+(run-with-idle-timer 1 nil #'global-emojify-mode)
 
 ;; Dired quick sort
 (use-package dired-quick-sort
   :ensure t
-  :config
-  (dired-quick-sort-setup))
+  :hook (dired-mode . dired-quick-sort-setup))
 
 ;; Edit server (for browser integration)
-(require 'edit-server)
-(edit-server-start)
+(use-package edit-server
+  :defer 2
+  :config
+  (edit-server-start))
 
 ;; Paradox (package manager)
-(use-package paradox)
-(paradox-enable)
+(use-package paradox
+  :commands paradox-list-packages)
+
+(defun praharsh-paradox-list-packages (&optional no-fetch)
+  "Open Paradox, optionally without refreshing package data."
+  (paradox-list-packages no-fetch))
+
+(advice-add 'list-packages :override #'praharsh-paradox-list-packages)
 
 ;; Anzu (search indicator)
 (use-package anzu)

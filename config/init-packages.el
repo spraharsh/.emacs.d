@@ -19,8 +19,5 @@
 ;; Path to julia
 (add-to-list 'exec-path "/home/praharsh/julia-1.6.1/bin")
 
-;; Graphene - early load needed
-(use-package graphene)
-
 (provide 'init-packages)
 ;;; init-packages.el ends here

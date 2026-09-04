@@ -1,0 +1,1 @@
+xrandr --output eDP-1-1 --primary --auto --output eDP-1-1 --auto --right-of HDMI-0

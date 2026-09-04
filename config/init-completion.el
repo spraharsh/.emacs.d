@@ -6,10 +6,11 @@
 ;;; Code:
 
 ;; Company mode
-(use-package company-mode)
-(add-hook 'after-init-hook 'global-company-mode)
-(setq company-idle-delay 0)
-(setq company-show-numbers 'left)
+(use-package company
+  :hook (after-init . global-company-mode)
+  :init
+  (setq company-idle-delay 0
+        company-show-numbers 'left))
 
 ;; Company box - flashy company mode
 (use-package company-box
@@ -43,10 +44,10 @@ In that case, insert the number."
 (which-key-setup-side-window-bottom)
 
 ;; Eldoc box
-(use-package eldoc-box)
+(use-package eldoc-box
+  :defer t)
 
 ;; Helm
-(use-package helm-config)
 (use-package helm
   :config
   (global-set-key (kbd "M-x") #'helm-M-x)
@@ -62,16 +63,19 @@ In that case, insert the number."
   (define-key ac-complete-mode-map (kbd "C-:") 'ac-complete-with-helm))
 
 ;; Rainbow delimiters
-(use-package rainbow-delimiters)
+(use-package rainbow-delimiters
+  :defer t)
 
-;; Auto-complete base setup
-(use-package auto-complete)
-(use-package auto-complete-config)
-(ac-config-default)
-(setq ac-auto-start nil)
-(setq ac-auto-show-menu t)
-(global-auto-complete-mode t)
-(ac-flyspell-workaround)
+;; Auto-complete is retained for the Org/LaTeX math completion setup.
+(use-package auto-complete
+  :defer t
+  :hook ((org-mode LaTeX-mode) . auto-complete-mode)
+  :config
+  (require 'auto-complete-config)
+  (ac-config-default)
+  (setq ac-auto-start nil
+        ac-auto-show-menu t)
+  (ac-flyspell-workaround))
 
 (provide 'init-completion)
 ;;; init-completion.el ends here

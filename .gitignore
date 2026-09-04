@@ -43,4 +43,6 @@ quelpa/
 
 *.el
 !init.el
+!early-init.el
 !config/*.el
+!test/*.el

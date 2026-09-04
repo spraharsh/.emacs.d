@@ -21,10 +21,12 @@
   (doom-themes-org-config))
 
 ;; All the icons
-(use-package all-the-icons)
+(use-package all-the-icons
+  :defer t)
 
 ;; Neotree
-(use-package neotree)
+(use-package neotree
+  :commands neotree-toggle)
 (global-set-key [f8] 'neotree-toggle)
 (setq neo-theme (if (display-graphic-p) 'icons 'arrow))
 

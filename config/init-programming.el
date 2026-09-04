@@ -34,7 +34,8 @@
 
 ;; VTerm
 (use-package vterm
-  :load-path "/home/praharsh/emacs-libvterm")
+  :load-path "/home/praharsh/emacs-libvterm"
+  :commands vterm)
 
 (provide 'init-programming)
 ;;; init-programming.el ends here

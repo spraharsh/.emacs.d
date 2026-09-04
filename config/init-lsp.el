@@ -10,6 +10,7 @@
 
 ;; LSP mode
 (use-package lsp-mode
+  :defer t
   :hook (((c-mode c++-mode python-mode julia-mode) . lsp)
          (lsp-mode . yas-minor-mode))
   :custom-face
@@ -24,11 +25,22 @@
   :config)
 
 ;; LSP Grammarly for text modes
+(defun praharsh-lsp-grammarly ()
+  "Start Grammarly after the current text buffer becomes active."
+  (let ((buffer (current-buffer)))
+    (run-with-idle-timer
+     1 nil
+     (lambda ()
+       (when (buffer-live-p buffer)
+         (with-current-buffer buffer
+           (require 'lsp-grammarly)
+           (lsp-deferred)))))))
+
 (use-package lsp-grammarly
   :ensure t
-  :hook (text-mode . (lambda ()
-                       (require 'lsp-grammarly)
-                       (lsp))))
+  :defer t
+  :init
+  (add-hook 'text-mode-hook #'praharsh-lsp-grammarly))
 
 ;; LSP UI
 (use-package lsp-ui
@@ -61,8 +73,6 @@
   :bind (:map lsp-mode-map
               ("C-c f" . helm-lsp-workspace-symbol)))
 
-;; Company LSP
-(use-package company-lsp)
 (setq company-backends
       '((company-files
          company-keywords
@@ -71,9 +81,10 @@
          company-abbrev
          company-dabbrev)))
 
-;; DAP mode for debugging
-(require 'dap-python)
-(require 'dap-cpptools)
+;; DAP adapters are only needed when debugging starts.
+(with-eval-after-load 'dap-mode
+  (require 'dap-python)
+  (require 'dap-cpptools))
 
 (provide 'init-lsp)
 ;;; init-lsp.el ends here

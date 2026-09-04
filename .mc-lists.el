@@ -5,6 +5,7 @@
       '(
         LaTeX-babel-insert-hyphen
         LaTeX-insert-left-brace
+        LaTeX-math-Gamma
         LaTeX-math-Lambda
         LaTeX-math-alpha
         LaTeX-math-beta

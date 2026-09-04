@@ -9,7 +9,11 @@
 (global-set-key "\C-cl" 'org-store-link)
 (global-set-key (kbd "<f12>") 'org-agenda)
 (global-set-key "\C-cc" 'org-capture)
-(global-set-key "\C-cb" 'org-iswitchb)
+;; org-iswitchb was removed in newer org-mode versions
+;; C-c b now uses helm-buffers-list (set in init-completion.el)
+
+(use-package org
+  :demand t)
 
 ;; Org startup settings
 (setq org-startup-indented t
@@ -18,7 +22,8 @@
 (setq org-log-done 'note)
 
 ;; Org journal
-(use-package org-journal)
+(use-package org-journal
+  :commands org-journal-new-entry)
 (setq org-agenda-window-setup 'only-window)
 (global-set-key (kbd "<f10>") 'org-journal-new-entry)
 
@@ -87,26 +92,33 @@ This can be 0 for immediate, or a floating point value.")
 (define-key global-map (kbd "C-c t") 'bjm/org-capture-todo)
 
 ;; Org babel
-(use-package org)
-(use-package ox-latex)
+(use-package ox-latex
+  :defer t)
 (setq org-latex-create-formula-image-program 'dvipng)
-(org-babel-do-load-languages 'org-babel-load-languages '((latex . t)))
-(org-babel-do-load-languages
- 'org-babel-load-languages
- '((latex . t) (python . t) (haskell . t) (emacs-lisp . t)))
+;; ponytail: idle-load Babel backends; use per-language dispatch if the pause
+;; becomes noticeable.
+(run-with-idle-timer
+ 1 nil
+ (lambda ()
+   (org-babel-do-load-languages
+    'org-babel-load-languages
+    '((latex . t) (python . t) (haskell . t) (emacs-lisp . t)))))
 
 ;; Show agenda on startup
 (add-hook 'after-init-hook 'org-agenda-list)
 
 ;; Org alert
-(use-package org-alert)
+(use-package org-alert
+  :defer t)
 
 ;; Org download
-(require 'org-download)
-(add-hook 'dired-mode-hook 'org-download-enable)
+(use-package org-download
+  :commands org-download-enable
+  :hook (dired-mode . org-download-enable))
 
 ;; Org2jekyll
-(use-package org2jekyll)
+(use-package org2jekyll
+  :defer t)
 
 ;; Org bullets
 (setq org-hide-emphasis-markers t)
@@ -114,17 +126,10 @@ This can be 0 for immediate, or a floating point value.")
                         '(("^ *\\([-]\\) "
                            (0 (prog1 () (compose-region (match-beginning 1) (match-end 1) "•"))))))
 (use-package org-bullets
-  :config
-  (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1))))
+  :hook (org-mode . org-bullets-mode))
 
 ;; Org mode variable pitch
 (add-hook 'org-mode-hook 'variable-pitch-mode)
-(add-hook 'org-mode-hook
-          (lambda ()
-            (variable-pitch-mode 1)))
-
-;; Auto-complete for org
-(add-to-list 'ac-modes 'org-mode)
 
 ;; Org face customizations
 (let* ((variable-tuple
