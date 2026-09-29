@@ -12,9 +12,8 @@
 (add-hook 'tree-sitter-mode-hook #'tree-sitter-hl-mode)
 
 ;; Smartparens
-(use-package smartparens-mode
-  :ensure smartparens
-  :hook (prog-mode text-mode markdown-mode)
+(use-package smartparens
+  :hook ((prog-mode text-mode markdown-mode) . smartparens-mode)
   :config
   (require 'smartparens-config))
 

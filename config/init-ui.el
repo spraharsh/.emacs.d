@@ -62,7 +62,7 @@
 ;; Variable/fixed pitch base faces
 (custom-theme-set-faces
  'user
- '(variable-pitch ((t (:family "SF Pro Display" :height 100 :weight Normal))))
+ '(variable-pitch ((t (:family "SF Pro Text" :height 100 :weight Normal))))
  '(fixed-pitch ((t (:family "SF Mono" :height 90 :weight Normal)))))
 
 ;; Preview scale for LaTeX

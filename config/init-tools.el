@@ -47,13 +47,14 @@
 
 ;; Paradox (package manager)
 (use-package paradox
-  :commands paradox-list-packages)
+  :commands (paradox-list-packages paradox-enable))
 
-(defun praharsh-paradox-list-packages (&optional no-fetch)
-  "Open Paradox, optionally without refreshing package data."
-  (paradox-list-packages no-fetch))
+(defun praharsh-paradox-list-packages (&optional _no-fetch)
+  "Enable Paradox before Emacs builds the package menu."
+  (paradox-enable))
 
-(advice-add 'list-packages :override #'praharsh-paradox-list-packages)
+;; `package-list-packages' aliases `list-packages'; redirecting it recurses.
+(advice-add 'list-packages :before #'praharsh-paradox-list-packages)
 
 ;; Anzu (search indicator)
 (use-package anzu)
@@ -67,6 +68,13 @@
    "termx"
    nil
    "gnome-terminal" "-e" (read-shell-command "Shell: ")))
+
+;; Claude Code (runs `claude' in vterm; MCP bridge gives it buffers, xref, ediff diffs)
+(use-package claude-code-ide
+  :vc (:url "https://github.com/manzaltu/claude-code-ide.el" :rev :newest)
+  :bind ("C-c C-'" . claude-code-ide-menu)
+  :config
+  (claude-code-ide-emacs-tools-setup))
 
 (provide 'init-tools)
 ;;; init-tools.el ends here

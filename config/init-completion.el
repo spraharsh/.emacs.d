@@ -10,7 +10,9 @@
   :hook (after-init . global-company-mode)
   :init
   (setq company-idle-delay 0
-        company-show-numbers 'left))
+        company-show-numbers 'left
+        ;; ponytail: default 4 hides short words like "is" from dabbrev
+        company-dabbrev-minimum-length 2))
 
 ;; Company box - flashy company mode
 (use-package company-box

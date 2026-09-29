@@ -34,29 +34,28 @@
                              (lambda () (interactive)
                                (TeX-command "LatexMk-PVC" 'TeX-master-file))))))
 
-;; Company math symbols
-(add-to-list 'company-backends 'company-math-symbols-unicode)
-
-(defun latex-company ()
-  "Set up LaTeX company backends."
-  (setq-local company-backends
-              (append '((company-math-symbols-latex company-latex-commands))
-                      company-backends)))
-
 (defun add-my-latex-environments ()
   "Add custom LaTeX environments."
   (LaTeX-add-environments
    '("empheq" LaTeX-env-label)))
 
-;; LaTeX mode company backends
+;; LaTeX mode company backends.  One group, so all candidates merge.
+;; Labels/citations come from reftex (richer than the company-auctex ones).
+(setq company-ispell-dictionary "/usr/share/dict/words")
+
 (add-hook 'LaTeX-mode-hook
           (lambda ()
-            (set (make-local-variable 'company-backends)
-                 '((company-reftex
-                    company-auctex
-                    company-yasnippet
-                    company-math-symbols-latex
-                    company-dabbrev)))))
+            (setq-local company-backends
+                        '((company-reftex-labels
+                           company-reftex-citations
+                           company-auctex-macros
+                           company-auctex-environments
+                           company-math-symbols-latex
+                           company-math-symbols-unicode
+                           company-yasnippet
+                           company-files
+                           company-dabbrev
+                           company-ispell)))))
 
 ;; Reftex settings
 (setq reftex-label-alist

@@ -323,8 +323,8 @@
               lsp-origami lsp-pyright lsp-python-ms lsp-ui magit-popup
               mu4e-maildirs-extension multiple-cursors neotree
               nix-mode noflet nord-theme ob-ess-julia oceanic-theme
-              one-themes org-ac org-alert org-bullets org-download
-              org-journal org2jekyll page-break-lines paradox parsec
+              one-themes org-ac org-alert org-download
+              org-journal org-modern org2jekyll page-break-lines paradox parsec
               pdf-tools pkg-info poet-theme prettier pretty-mode
               python-mode quelpa rainbow-blocks rainbow-delimiters
               realgud req-package screenshot smooth-scrolling
@@ -383,32 +383,8 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(fixed-pitch ((t (:family "SF Mono" :height 90 :weight Normal))))
  '(lsp-modeline-code-actions-face ((t (:inherit mode-line))))
  '(markdown-table-face ((t (:inherit markdown-code-face))))
- '(org-block ((t (:inherit fixed-pitch))))
- '(org-code ((t (:inherit (shadow fixed-pitch)))))
- '(org-default ((t (:weight demibold))))
- '(org-document-info ((t (:foreground "dark orange"))))
- '(org-document-info-keyword ((t (:inherit (shadow fixed-pitch)))))
- '(org-document-title ((t (:inherit default :weight bold :foreground "#556b72" :font "SF Pro Display" :height 2.0 :underline nil))))
- '(org-indent ((t (:inherit (org-hide fixed-pitch)))))
- '(org-level-1 ((t (:inherit default :weight bold :foreground "#556b72" :font "SF Pro Display" :height 1.75))))
- '(org-level-2 ((t (:inherit default :weight bold :foreground "#556b72" :font "SF Pro Display" :height 1.5))))
- '(org-level-3 ((t (:inherit default :weight bold :foreground "#556b72" :font "SF Pro Display" :height 1.25))))
- '(org-level-4 ((t (:inherit default :weight bold :foreground "#556b72" :font "SF Pro Display" :height 1.1))))
- '(org-level-5 ((t (:inherit default :weight bold :foreground "#556b72" :font "SF Pro Display"))))
- '(org-level-6 ((t (:inherit default :weight bold :foreground "#556b72" :font "SF Pro Display"))))
- '(org-level-7 ((t (:inherit default :weight bold :foreground "#556b72" :font "SF Pro Display"))))
- '(org-level-8 ((t (:inherit default :weight bold :foreground "#556b72" :font "SF Pro Display"))))
- '(org-link ((t (:foreground "royal blue" :underline t))))
- '(org-meta-line ((t (:inherit (font-lock-comment-face fixed-pitch)))))
- '(org-property-value ((t (:inherit fixed-pitch))))
- '(org-special-keyword ((t (:inherit (font-lock-comment-face fixed-pitch)))))
- '(org-table ((t (:inherit fixed-pitch :foreground "#83a598"))))
- '(org-tag ((t (:inherit (shadow fixed-pitch) :weight bold :height 0.8))))
- '(org-verbatim ((t (:inherit (shadow fixed-pitch)))))
- '(preview-reference-face ((t (:inherit default))))
- '(variable-pitch ((t (:family "SF Pro Display" :height 100 :weight Normal)))))
+ '(preview-reference-face ((t (:inherit default)))))
 
 ;;; init.el ends here

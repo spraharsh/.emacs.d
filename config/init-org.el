@@ -120,51 +120,83 @@ This can be 0 for immediate, or a floating point value.")
 (use-package org2jekyll
   :defer t)
 
-;; Org bullets
-(setq org-hide-emphasis-markers t)
-(font-lock-add-keywords 'org-mode
-                        '(("^ *\\([-]\\) "
-                           (0 (prog1 () (compose-region (match-beginning 1) (match-end 1) "•"))))))
-(use-package org-bullets
-  :hook (org-mode . org-bullets-mode))
+;;; Appearance ---------------------------------------------------------------
 
-;; Org mode variable pitch
-(add-hook 'org-mode-hook 'variable-pitch-mode)
+;; Markup: hide *bold* markers, render \alpha as α, only x^{2} as superscript,
+;; hide the #+title keyword (the title text stays), show images inline.
+(setq org-hide-emphasis-markers t
+      org-pretty-entities t
+      org-use-sub-superscripts '{}
+      org-hidden-keywords '(title)
+      org-ellipsis "…"
+      org-startup-with-inline-images t
+      org-image-actual-width '(600))
 
-;; Org face customizations
-(let* ((variable-tuple
-        (cond ((x-list-fonts "SF Pro Display")         '(:font "SF Pro Display"))
-              ((x-family-fonts "Sans Serif")    '(:family "Sans Serif"))
-              (nil (warn "Cannot find a Sans Serif Font.  Install Source Sans Pro."))))
-       (base-font-color     (face-foreground 'default nil 'default))
-       (headline           `(:inherit default :weight bold :foreground ,base-font-color)))
+;; Tags can't right-align in a proportional font, so keep them next to the heading.
+(setq org-tags-column 0
+      org-auto-align-tags nil
+      org-agenda-tags-column 0)
+
+;; Agenda: thin separators, dotted time grid, "now" marker; monospace so columns line up.
+(setq org-agenda-block-separator ?─
+      org-agenda-time-grid '((daily today require-timed)
+                             (800 1000 1200 1400 1600 1800 2000)
+                             " ┄┄┄┄┄ " "┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄")
+      org-agenda-current-time-string "◀── now ─────────────────────────────────────────────────")
+(add-hook 'org-agenda-mode-hook #'praharsh-prog-fonts)
+
+;; org-modern: fold-state triangles for stars, pill labels for TODO/tags/dates,
+;; real table borders, • bullets, ☐/☑ checkboxes.
+(use-package org-modern
+  :ensure t
+  :hook ((org-mode . org-modern-mode)
+         (org-agenda-finalize . org-modern-agenda))
+  :custom
+  ;; Only glyphs DejaVu Sans has, so every level renders in the same font.
+  (org-modern-fold-stars '(("▶" . "▼") ("▷" . "▽") ("▸" . "▾") ("▹" . "▿"))))
+
+;; Prose layout: proportional font, soft wrap at word boundaries, a little leading.
+(defun praharsh-org-prose ()
+  "Typeset the current org buffer like a document."
+  (variable-pitch-mode 1)
+  (visual-line-mode 1)
+  (setq-local line-spacing 0.15))
+
+(add-hook 'org-mode-hook #'praharsh-org-prose)
+
+;; Headings: display cut of the body font, one color, sized by level.
+;; Change the body/code fonts in init-ui.el (variable-pitch / fixed-pitch).
+(let* ((color (face-foreground 'default nil t))
+       (h `(:inherit variable-pitch :family "SF Pro Display"
+            :weight semibold :foreground ,color)))
   (custom-theme-set-faces
    'user
-   `(org-level-8 ((t (,@headline ,@variable-tuple))))
-   `(org-level-7 ((t (,@headline ,@variable-tuple))))
-   `(org-level-6 ((t (,@headline ,@variable-tuple))))
-   `(org-level-5 ((t (,@headline ,@variable-tuple))))
-   `(org-level-4 ((t (,@headline ,@variable-tuple :height 1.1))))
-   `(org-level-3 ((t (,@headline ,@variable-tuple :height 1.25))))
-   `(org-level-2 ((t (,@headline ,@variable-tuple :height 1.5))))
-   `(org-level-1 ((t (,@headline ,@variable-tuple :height 1.75))))
-   `(org-document-title ((t (,@headline ,@variable-tuple :height 2.0 :underline nil))))))
+   `(org-document-title ((t (,@h :height 2.0 :underline nil))))
+   `(org-level-1 ((t (,@h :height 1.75))))
+   `(org-level-2 ((t (,@h :height 1.5))))
+   `(org-level-3 ((t (,@h :height 1.25))))
+   `(org-level-4 ((t (,@h :height 1.1))))
+   `(org-level-5 ((t (,@h))))
+   `(org-level-6 ((t (,@h))))
+   `(org-level-7 ((t (,@h))))
+   `(org-level-8 ((t (,@h))))))
 
+;; Everything that needs columns to line up stays monospace.
 (custom-theme-set-faces
  'user
  '(org-block ((t (:inherit fixed-pitch))))
  '(org-code ((t (:inherit (shadow fixed-pitch)))))
- '(org-document-info ((t (:foreground "dark orange"))))
+ '(org-verbatim ((t (:inherit (shadow fixed-pitch)))))
+ '(org-table ((t (:inherit fixed-pitch))))
+ '(org-formula ((t (:inherit fixed-pitch))))
+ '(org-checkbox ((t (:inherit fixed-pitch))))
+ '(org-drawer ((t (:inherit (shadow fixed-pitch)))))
+ '(org-property-value ((t (:inherit fixed-pitch))))
+ '(org-special-keyword ((t (:inherit (font-lock-comment-face fixed-pitch)))))
+ '(org-meta-line ((t (:inherit (font-lock-comment-face fixed-pitch)))))
  '(org-document-info-keyword ((t (:inherit (shadow fixed-pitch)))))
  '(org-indent ((t (:inherit (org-hide fixed-pitch)))))
- '(org-link ((t (:foreground "royal blue" :underline t))))
- '(org-meta-line ((t (:inherit (font-lock-comment-face fixed-pitch)))))
- '(org-property-value ((t (:inherit fixed-pitch))) t)
- '(org-special-keyword ((t (:inherit (font-lock-comment-face fixed-pitch)))))
- '(org-table ((t (:inherit fixed-pitch :foreground "#83a598"))))
- '(org-tag ((t (:inherit (shadow fixed-pitch) :weight bold :height 0.8))))
- '(org-verbatim ((t (:inherit (shadow fixed-pitch)))))
- '(org-default ((t (:weight demibold)))))
+ '(org-modern-symbol ((t (:family "DejaVu Sans")))))
 
 (provide 'init-org)
 ;;; init-org.el ends here
