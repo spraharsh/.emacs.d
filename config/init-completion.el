@@ -59,6 +59,8 @@ In that case, insert the number."
   (global-set-key (kbd "C-c b") 'helm-buffers-list)
   (helm-mode 1))
 
+(global-set-key (kbd "C-x k") #'kill-current-buffer)
+
 ;; ac-helm
 (with-eval-after-load 'ac-helm
   (global-set-key (kbd "C-:") 'ac-complete-with-helm)

@@ -59,6 +59,10 @@
 (add-hook 'calendar-mode-hook #'praharsh-prog-fonts)
 (add-hook 'magit-revision-mode #'praharsh-prog-fonts)
 
+;; Terminals (incl. Claude Code, which runs in vterm): monospace, no line numbers
+(add-hook 'vterm-mode-hook #'praharsh-prog-fonts)
+(add-hook 'vterm-mode-hook (lambda () (display-line-numbers-mode -1)))
+
 ;; Variable/fixed pitch base faces
 (custom-theme-set-faces
  'user
