@@ -72,7 +72,9 @@
 ;; Claude Code (runs `claude' in vterm; MCP bridge gives it buffers, xref, ediff diffs)
 (use-package claude-code-ide
   :vc (:url "https://github.com/manzaltu/claude-code-ide.el" :rev :newest)
-  :bind ("C-c C-'" . claude-code-ide-menu)
+  ;; bind* = override-global-map, so no major mode can shadow it
+  :bind* (("C-c a" . claude-code-ide-menu)
+          ("C-c C-'" . claude-code-ide-menu))
   :config
   (claude-code-ide-emacs-tools-setup))
 
