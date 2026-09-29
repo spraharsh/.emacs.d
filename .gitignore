@@ -46,3 +46,19 @@ quelpa/
 !early-init.el
 !config/*.el
 !test/*.el
+
+# Personal history/state (machine-specific, may leak paths, hosts, device IDs)
+tramp
+recentf
+projects
+projectile-frecency.eld
+bookmarks
+ido.last*
+smex-items
+ac-comphist.dat
+.org-id-locations
+network-security.data
+forge-database.sqlite
+session.*
+.vscode/configurationCache.log
+*~
