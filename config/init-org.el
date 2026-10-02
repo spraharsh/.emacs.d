@@ -155,6 +155,8 @@ This can be 0 for immediate, or a floating point value.")
   ;; Only glyphs DejaVu Sans has, so every level renders in the same font.
   (org-modern-fold-stars '(("▶" . "▼") ("▷" . "▽") ("▸" . "▾") ("▹" . "▿"))))
 
+(require 'agenda-habit-status)
+
 ;; Prose layout: proportional font, soft wrap at word boundaries, a little leading.
 (defun praharsh-org-prose ()
   "Typeset the current org buffer like a document."
