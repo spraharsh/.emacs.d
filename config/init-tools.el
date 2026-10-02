@@ -47,7 +47,9 @@
 
 ;; Paradox (package manager)
 (use-package paradox
-  :commands (paradox-list-packages paradox-enable))
+  :commands (paradox-list-packages paradox-enable)
+  :config
+  (add-to-list 'paradox--package-count '("source" . 0)))
 
 (defun praharsh-paradox-list-packages (&optional _no-fetch)
   "Enable Paradox before Emacs builds the package menu."

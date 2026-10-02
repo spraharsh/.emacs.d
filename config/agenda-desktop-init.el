@@ -1,5 +1,7 @@
 ;;; agenda-desktop-init.el --- Emacs for the desktop agenda -*- lexical-binding: t -*-
 ;; Launched separately with -Q; this never changes the main Emacs session.
+(add-to-list 'display-buffer-alist
+             '("\\`\\*Warnings\\*\\'" (display-buffer-no-window) (allow-no-window . t)))
 (require 'server)
 (unless noninteractive
   (setq server-name "agenda-desktop")
@@ -19,6 +21,7 @@
 (defvar praharsh-agenda-desktop-frame nil)
 (defvar praharsh-agenda-desktop-stamp nil)
 (defvar praharsh-agenda-desktop-history :unloaded)
+(defvar-local praharsh-agenda-desktop-body-start 1)
 
 (defconst praharsh-agenda-desktop-colors
   '((canvas . "#002b36") (surface . "#073642")
@@ -29,6 +32,12 @@
 
 (defun praharsh-agenda-desktop-color (role)
   (alist-get role praharsh-agenda-desktop-colors))
+
+(defun praharsh-agenda-desktop-size-frame ()
+  "Fit whole font cells inside the 538×950 image area and 24px borders."
+  (set-frame-size nil
+                  (* (/ 490 (frame-char-width)) (frame-char-width))
+                  (* (/ 902 (frame-char-height)) (frame-char-height)) t))
 
 (defun praharsh-agenda-desktop-style-frame ()
   "Apply the desktop planner's SF Pro typography and semantic colors."
@@ -77,7 +86,7 @@
                                 'face (list :family "SF Pro Text" :height 1.0
                                             :weight 'medium :foreground color))
                     (if today
-                        (propertize "   TODAY" 'face (list :height 0.7 :weight 'semibold
+                        (propertize "   Today" 'face (list :height 0.75 :weight 'semibold
                                                          :foreground color)) ""))
             (cl-remf properties 'face)
             (add-text-properties (line-beginning-position) (line-end-position) properties)
@@ -87,7 +96,14 @@
             (put-text-property (line-beginning-position) (1+ (line-end-position)) 'line-spacing 0.4)))
         (when (org-get-at-bol 'org-hd-marker)
           (put-text-property (line-beginning-position) (1+ (line-end-position)) 'line-spacing 0.4)
-          (when (equal (org-get-at-bol 'type) "deadline")
+          (when (member (org-get-at-bol 'type) '("deadline" "upcoming-deadline"))
+            ;; Edit only the leader; keep the task title and line-start markers.
+            (save-excursion
+              (goto-char (line-beginning-position))
+              (when (re-search-forward "\\b1 day\\(s\\)\\b"
+                                       (or (text-property-any (point) (line-end-position) 'org-heading t)
+                                           (line-end-position)) t)
+                (delete-region (match-beginning 1) (match-end 1))))
             (add-face-text-property (line-beginning-position) (line-end-position)
                                     (list :foreground (praharsh-agenda-desktop-color 'deadline)) t)))
         (when (= (line-beginning-position) (line-end-position))
@@ -99,19 +115,25 @@
              (last (car dates))
              (format-day (lambda (day)
                            (let ((date (calendar-gregorian-from-absolute day)))
-                             (encode-time 0 0 12 (nth 1 date) (car date) (nth 2 date))))))
+                             (encode-time 0 0 12 (nth 1 date) (car date) (nth 2 date)))))
+             (first-time (when first (funcall format-day first)))
+             (last-time (when last (funcall format-day last))))
         (insert (propertize "Agenda" 'agenda-desktop-open t
-                            'face (list :family "SF Pro Display" :height 2.0 :weight 'semibold
+                            'face (list :family "SF Pro Display" :height 1.75 :weight 'semibold
                                         :foreground (praharsh-agenda-desktop-color 'text)))
                 (propertize "  ↗\n" 'agenda-desktop-open t
                             'face (list :height 1.0 :foreground (praharsh-agenda-desktop-color 'today)))
                 (propertize (if first
-                                (format "%s — %s  ·  W%s\n"
-                                        (format-time-string "%d %b" (funcall format-day first))
-                                        (format-time-string "%d %b %Y" (funcall format-day last))
-                                        (format-time-string "%V" (funcall format-day first)))
+                                (format "Week %d, %s – %s\n"
+                                        (string-to-number (format-time-string "%V" first-time))
+                                        (format-time-string
+                                         (if (equal (format-time-string "%Y" first-time)
+                                                    (format-time-string "%Y" last-time))
+                                             "%-d %b" "%-d %b %Y") first-time)
+                                        (format-time-string "%-d %b %Y" last-time))
                               (format-time-string "%B %Y\n"))
-                            'face (list :height 0.85 :foreground (praharsh-agenda-desktop-color 'secondary))))))))
+                            'face (list :height 0.85 :weight 'medium
+                                        :foreground (praharsh-agenda-desktop-color 'secondary))))))))
 
 (defun praharsh-agenda-desktop-history ()
   "Read the private habit undo records without evaluating them."
@@ -156,6 +178,7 @@
   (save-window-excursion
     (save-current-buffer
       (let ((org-agenda-window-setup 'current-window)
+            (org-agenda-deadline-leaders '("Deadline " "In %d days " "%d days ago "))
             (org-agenda-sticky nil))
         ;; Keep habit tasks; their wide graphs overwrite text in a narrow card.
         (cl-letf (((symbol-function 'org-habit-insert-consistency-graphs) #'ignore))
@@ -247,14 +270,18 @@
 		(error (message "Habit restored; undo cache cleanup failed: %s" (error-message-string err)))))
             (if (or reopen undo-habit) 'todo 'done)))))))
 
+(defun praharsh-agenda-desktop-current-image-p (stamp)
+  "Whether STAMP still identifies the published image and its native positions."
+  (let* ((png (expand-file-name "agenda.png" praharsh-agenda-desktop-cache))
+         (attributes (file-attributes png)))
+    (and (integerp stamp) (equal stamp praharsh-agenda-desktop-stamp)
+         attributes
+         (= stamp (car (time-convert (file-attribute-modification-time attributes) 1000000000))))))
+
 (defun praharsh-agenda-desktop-click (x y stamp)
   "Handle a click on the rendered PNG, only if STAMP matches that image."
-  (let* ((png (expand-file-name "agenda.png" praharsh-agenda-desktop-cache))
-         (attributes (file-attributes png))
-         (frame praharsh-agenda-desktop-frame))
-    (if (or (not (integerp stamp)) (not (equal stamp praharsh-agenda-desktop-stamp))
-            (not attributes)
-            (/= stamp (car (time-convert (file-attribute-modification-time attributes) 1000000000))))
+  (let ((frame praharsh-agenda-desktop-frame))
+    (if (not (praharsh-agenda-desktop-current-image-p stamp))
         (progn (praharsh-agenda-desktop-refresh) 'stale)
       (when (and (frame-live-p frame) (integerp x) (integerp y)
                  (<= 0 x) (< x (frame-pixel-width frame))
@@ -262,9 +289,11 @@
         (let* ((window (get-buffer-window "*Org Agenda*" frame))
                (position (posn-at-x-y x y frame))
                (point (posn-point position)))
-          (when (and window (eq window (posn-window position))
+          (when (and window
+                     (memq (posn-window position)
+                           (list window (get-buffer-window "*Agenda Desktop Header*" frame)))
                      (null (posn-area position)) (integerp point))
-            (with-current-buffer (window-buffer window)
+            (with-current-buffer (window-buffer (posn-window position))
               (save-excursion
                 (goto-char point)
                 (cond
@@ -277,27 +306,104 @@
                      (with-selected-frame frame (praharsh-agenda-desktop-refresh))
                      (signal (car err) (cdr err))))))))))))))
 
-(defun praharsh-agenda-desktop-refresh ()
-  "Render the agenda atomically for the background surface."
+(defun praharsh-agenda-desktop-view ()
+  "Remember the top agenda entry, its day and wrapped-line offset."
+  (when-let* ((window (get-buffer-window "*Org Agenda*" praharsh-agenda-desktop-frame)))
+    (with-current-buffer (window-buffer window)
+      (save-excursion
+        (goto-char (window-start window))
+        (list (buffer-substring-no-properties (line-beginning-position) (line-end-position))
+              (org-get-at-bol 'day) (line-number-at-pos)
+              (- (point) (line-beginning-position)))))))
+
+(defun praharsh-agenda-desktop-show (buffer view)
+  "Display BUFFER under a fixed title, restoring VIEW after saved edits."
+  (let* ((body (or (get-buffer-window buffer) (selected-window)))
+         (header-buffer (get-buffer-create "*Agenda Desktop Header*"))
+         (header (get-buffer-window header-buffer))
+         (window-resize-pixelwise t)
+         title)
+    (set-window-buffer body buffer)
+    (dolist (window (window-list))
+      (unless (memq window (list body header)) (delete-window window)))
+    (with-current-buffer buffer
+      (save-excursion
+        (goto-char (point-min))
+        (forward-line 2)
+        (setq praharsh-agenda-desktop-body-start (point)
+              title (buffer-substring (point-min) (1- (point))))))
+    (with-current-buffer header-buffer
+      (let ((inhibit-read-only t)) (erase-buffer) (insert title))
+      (setq-local mode-line-format nil header-line-format nil cursor-type nil
+                  line-spacing 0.18 buffer-read-only t))
+    (unless header
+      (setq header (split-window body (if (display-graphic-p) -64 -3) 'above (display-graphic-p)))
+      (set-window-buffer header header-buffer)
+      (set-window-dedicated-p header t))
+    (set-window-start header 1)
+    (set-window-point header 1)
+    (select-window body)
+    (with-current-buffer buffer
+      (goto-char praharsh-agenda-desktop-body-start)
+      (when view
+        (let (found)
+          (while (and (not (equal (car view) "")) (not found)
+                      (re-search-forward (concat "^" (regexp-quote (car view)) "$") nil t))
+            (when (equal (org-get-at-bol 'day) (nth 1 view))
+              (setq found (line-beginning-position))))
+          (goto-char (or found (point-min)))
+          (unless found (forward-line (1- (nth 2 view))))
+          (goto-char (min (line-end-position) (+ (point) (nth 3 view))))))
+      (goto-char (max praharsh-agenda-desktop-body-start (point)))
+      (set-window-start body (point))
+      (set-window-point body (point)))))
+
+(defun praharsh-agenda-desktop-render ()
+  "Publish the current native viewport without rebuilding or syncing tasks."
   ;; Old pixels stop accepting clicks as soon as the agenda starts rebuilding.
   (setq praharsh-agenda-desktop-stamp nil)
+  (let ((temporary (make-temp-file (expand-file-name "agenda-" praharsh-agenda-desktop-cache) nil ".png")))
+    (unwind-protect
+        (progn
+          (setq praharsh-agenda-desktop-frame (selected-frame))
+          (redraw-frame praharsh-agenda-desktop-frame)
+          (redisplay t)
+          (let ((coding-system-for-write 'binary))
+            (write-region (x-export-frames nil 'png) nil temporary nil 'silent))
+          (let ((png (expand-file-name "agenda.png" praharsh-agenda-desktop-cache)))
+            (rename-file temporary png t)
+            (setq praharsh-agenda-desktop-stamp
+                  (car (time-convert (file-attribute-modification-time (file-attributes png)) 1000000000)))))
+      (when (file-exists-p temporary) (delete-file temporary)))))
+
+(defun praharsh-agenda-desktop-scroll (lines stamp)
+  "Scroll the body LINES native display lines only while STAMP is current."
+  (unless (integerp lines) (user-error "Scroll distance must be an integer"))
+  (if (not (praharsh-agenda-desktop-current-image-p stamp))
+      (progn
+        (praharsh-agenda-desktop-refresh)
+        (unless (praharsh-agenda-desktop-current-image-p praharsh-agenda-desktop-stamp)
+          (user-error "Agenda refresh failed; try scrolling after it recovers"))
+        'stale)
+    (with-selected-window (get-buffer-window "*Org Agenda*" praharsh-agenda-desktop-frame)
+      (setq praharsh-agenda-desktop-stamp nil)
+      (let ((scroll-preserve-screen-position t))
+        (condition-case nil (scroll-up lines)
+          ((beginning-of-buffer end-of-buffer) nil)))
+      (set-window-start nil (max praharsh-agenda-desktop-body-start (window-start)))
+      (set-window-point nil (max praharsh-agenda-desktop-body-start (point)))
+      (praharsh-agenda-desktop-render)
+      'scrolled)))
+
+(defun praharsh-agenda-desktop-refresh ()
+  "Refresh saved agenda entries while keeping the current entry in view."
+  (setq praharsh-agenda-desktop-stamp nil)
   (condition-case err
-      (let ((buffer (praharsh-agenda-desktop-build))
-            (temporary (make-temp-file (expand-file-name "agenda-" praharsh-agenda-desktop-cache) nil ".png")))
-        (unwind-protect
-            (progn
-              (setq praharsh-agenda-desktop-frame (selected-frame))
-              (set-window-buffer (selected-window) buffer)
-              (set-window-start (selected-window) 1)
-              (redraw-frame praharsh-agenda-desktop-frame)
-              (redisplay t)
-              (let ((coding-system-for-write 'binary))
-                (write-region (x-export-frames nil 'png) nil temporary nil 'silent))
-              (let ((png (expand-file-name "agenda.png" praharsh-agenda-desktop-cache)))
-                (rename-file temporary png t)
-                (setq praharsh-agenda-desktop-stamp
-                      (car (time-convert (file-attribute-modification-time (file-attributes png)) 1000000000)))))
-          (when (file-exists-p temporary) (delete-file temporary))))
+      (with-selected-frame (if (frame-live-p praharsh-agenda-desktop-frame)
+                               praharsh-agenda-desktop-frame (selected-frame))
+        (let ((view (praharsh-agenda-desktop-view)))
+          (praharsh-agenda-desktop-show (praharsh-agenda-desktop-build) view)
+          (praharsh-agenda-desktop-render)))
     (error (message "Desktop agenda refresh failed: %s" (error-message-string err))))
   (unless noninteractive (praharsh-org-calendar-sync)))
 
@@ -343,7 +449,7 @@
         frame-resize-pixelwise t
         org-agenda-span 'week
         org-agenda-prefix-format '((agenda . "  %?-5t% s"))
-        org-agenda-format-date "\n%A  ·  %d %B"
+        org-agenda-format-date "\n%A, %d %B"
         org-agenda-time-grid nil
         org-agenda-current-time-string "──────── now ────────"
         org-agenda-show-all-dates t
@@ -351,11 +457,10 @@
   (modify-frame-parameters nil '((title . "Org Agenda Renderer")
                                  (background-color . "#002b36")
                                  (foreground-color . "#eee8d5")
-                                 (internal-border-width . 22)
+                                 (internal-border-width . 24)
                                  (left-fringe . 0) (right-fringe . 0)))
   (praharsh-agenda-desktop-style-frame)
-  ;; Pixel dimensions here exclude the two 22px internal borders.
-  (set-frame-size nil 476 776 t)
+  (praharsh-agenda-desktop-size-frame)
   (make-directory praharsh-agenda-desktop-cache t)
   (set-file-modes praharsh-agenda-desktop-cache #o700)
   (dolist (directory (delete-dups (mapcar #'file-name-directory (org-agenda-files))))

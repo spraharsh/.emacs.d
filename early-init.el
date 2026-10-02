@@ -1,5 +1,7 @@
 ;;; early-init.el --- Startup performance settings -*- lexical-binding: t -*-
 
+(setq load-prefer-newer t)
+
 (setq gc-cons-threshold most-positive-fixnum
       gc-cons-percentage 0.6)
 

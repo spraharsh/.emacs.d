@@ -47,7 +47,7 @@
  '(bibtex-dialect 'biblatex)
  '(c-basic-offset 4)
  '(column-number-mode t)
- '(comp-async-report-warnings-errors nil)
+ '(native-comp-async-report-warnings-errors nil)
  '(company-dabbrev-downcase nil)
  '(company-dabbrev-time-limit 0.05)
  '(company-minimum-prefix-length 1)

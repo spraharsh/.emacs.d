@@ -207,3 +207,7 @@
         (kill-buffer buffer))
       (delete-file file)
       (delete-directory praharsh-agenda-desktop-cache t))))
+(ert-deftest desktop-warnings-do-not-split-the-rendered-agenda ()
+  (save-window-excursion
+    (let ((buffer (get-buffer-create "*Warnings*")))
+      (should-not (display-buffer buffer)))))

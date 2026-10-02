@@ -86,6 +86,20 @@ def parse_calendar(text):
     return desired
 
 
+def prepare_update(desired, current):
+    """Keep the existing CalDAV identity and revision for an event update."""
+    update = desired.clone()
+    update.set_uid(current.get_uid())
+    update.set_sequence(max(current.get_sequence(), update.get_sequence()) + 1)
+    prop = current.get_first_property(ICal.PropertyKind.X_PROPERTY)
+    while prop:
+        if prop.get_x_name() == "X-EVOLUTION-CALDAV-ETAG":
+            update.add_property(prop.clone())
+            break
+        prop = current.get_next_property(ICal.PropertyKind.X_PROPERTY)
+    return update
+
+
 def sync(client, desired):
     if not client.is_online() or client.is_readonly():
         raise RuntimeError("calendar must be online and writable")
@@ -112,9 +126,14 @@ def sync(client, desired):
                 raise RuntimeError("calendar event creation failed")
             created += 1
         elif fingerprint(old) != fingerprint(event):
-            event = event.clone()
-            event.set_uid(old.get_uid())
-            if not client.modify_object_sync(event, ECal.ObjModType.ALL, ECal.OperationFlags.NONE, None):
+            ok, current = client.get_object_sync(old.get_uid(), None, None)
+            if not ok or current.get_uid() != old.get_uid() or not re.search(
+                    r"(?m)^" + re.escape(MARKER + uid) + r"$", current.get_description() or ""):
+                raise RuntimeError("calendar event identity changed before update")
+            if fingerprint(current) == fingerprint(event):
+                continue
+            update = prepare_update(event, current)
+            if not client.modify_object_sync(update, ECal.ObjModType.ALL, ECal.OperationFlags.NONE, None):
                 raise RuntimeError("calendar event update failed")
             updated += 1
     if not client.is_online():
@@ -154,9 +173,20 @@ def check():
             self.events[uid] = event
             return True, uid
 
+        def get_object_sync(self, uid, *_):
+            return True, self.events[uid].clone()
+
         def modify_object_sync(self, event, *_):
             if self.fail:
                 raise RuntimeError("upsert failed")
+            previous = self.events[event.get_uid()]
+            if event.get_sequence() <= previous.get_sequence():
+                raise RuntimeError("stale sequence")
+            previous_tag = previous.get_first_property(ICal.PropertyKind.X_PROPERTY)
+            if previous_tag and previous_tag.get_x_name() == "X-EVOLUTION-CALDAV-ETAG":
+                update_tag = event.get_first_property(ICal.PropertyKind.X_PROPERTY)
+                if not update_tag or update_tag.as_ical_string() != previous_tag.as_ical_string():
+                    raise RuntimeError("stale ETag")
             self.events[event.get_uid()] = event.clone()
             return True
 
@@ -181,6 +211,10 @@ def check():
     assert sync(calendar, desired) == (1, 0, 0), "first sync must create the event"
     assert sync(calendar, parse_calendar(wrap(event))) == (0, 0, 0), "sync must be idempotent"
     remote = next(iter(calendar.events.values()))
+    remote.set_sequence(2)
+    tag = ICal.Property.new_x("revision-1")
+    tag.set_x_name("X-EVOLUTION-CALDAV-ETAG")
+    remote.add_property(tag)
     remote.set_dtstart(ICal.Time.new_from_string("20261002T180000Z"))
     remote.set_dtend(ICal.Time.new_from_string("20261002T190000Z"))
     assert sync(calendar, parse_calendar(wrap(event))) == (0, 0, 0), "equivalent timezones must compare equal"
