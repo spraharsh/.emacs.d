@@ -10,6 +10,8 @@
 (require 'filenotify)
 (require 'agenda-habit-status
          (expand-file-name "config/agenda-habit-status.el" user-emacs-directory))
+(require 'org-calendar-sync
+         (expand-file-name "config/org-calendar-sync.el" user-emacs-directory))
 
 (defvar praharsh-agenda-desktop-cache
   (expand-file-name "emacs-agenda-desktop/" (or (getenv "XDG_CACHE_HOME") "~/.cache")))
@@ -296,7 +298,8 @@
                 (setq praharsh-agenda-desktop-stamp
                       (car (time-convert (file-attribute-modification-time (file-attributes png)) 1000000000)))))
           (when (file-exists-p temporary) (delete-file temporary))))
-    (error (message "Desktop agenda refresh failed: %s" (error-message-string err)))))
+    (error (message "Desktop agenda refresh failed: %s" (error-message-string err))))
+  (unless noninteractive (praharsh-org-calendar-sync)))
 
 (defun praharsh-agenda-desktop-file-changed (event)
   "Refresh after a todo save, including saves using atomic rename."
