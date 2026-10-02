@@ -176,11 +176,6 @@
  '(display-time-day-and-date t)
  '(elfeed-feeds '("https://xkcd.com/rss.xml"))
  '(elfeed-show-entry-author t)
- '(elpy-modules
-   '(elpy-module-eldoc elpy-module-pyvenv
-                       elpy-module-highlight-indentation
-                       elpy-module-yasnippet elpy-module-django
-                       elpy-module-autodoc elpy-module-sane-defaults))
  '(flycheck-color-mode-line-face-to-color 'mode-line-buffer-id)
  '(font-latex-math-environments
    '("display" "displaymath" "equation" "eqnarray" "gather" "multline"
@@ -220,8 +215,6 @@
  '(lsp-enable-file-watchers nil)
  '(lsp-headerline-breadcrumb-enable nil)
  '(lsp-headerline-breadcrumb-segments '(symbols))
- '(lsp-pyright-typechecking-mode "off")
- '(lsp-pyright-venv-path "/home/praharsh/anaconda3/envs")
  '(lsp-ui-doc-alignment 'frame)
  '(lsp-ui-doc-border "#586e75")
  '(lsp-ui-doc-delay 100000)

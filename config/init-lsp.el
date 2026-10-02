@@ -11,7 +11,7 @@
 ;; LSP mode
 (use-package lsp-mode
   :defer t
-  :hook (((c-mode c++-mode python-mode julia-mode) . lsp)
+  :hook (((c-mode c++-mode julia-mode) . lsp)
          (lsp-mode . yas-minor-mode))
   :custom-face
   (lsp-modeline-code-actions-face ((t (:inherit mode-line))))
